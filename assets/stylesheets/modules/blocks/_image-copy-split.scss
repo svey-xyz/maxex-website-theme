@@ -1,0 +1,137 @@
+//
+// Image/copy split block
+//
+
+.block.image-copy-split{
+  margin: $gutter-half;
+  font-size: 0;
+  display: flex;
+  
+  @include media("<=tablet") {
+    display: block;
+  }
+  
+  @include media("<=mobile") {
+    margin: $gutter-mobile;
+  }
+  
+  &.align-image-left {
+
+    .column {
+      &.copy { order: 2; }
+      &.image { order: 1; }
+    }
+  }
+  
+  &.align-image-right {
+
+    .column {
+      &.copy { order: 1; }
+      &.image { order: 2; }
+    }
+  }
+  
+  .column {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    
+    @include media("<=tablet") {
+      width: 100%;
+    }
+      
+    &.image {
+
+      img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        max-height: calc(90vh - 90px);
+        object-fit: contain;
+      }
+    }
+      
+    &.copy {
+      margin: 0;
+        
+      &.left {
+        margin: $gutter-half $gutter-half 0 $gutter;
+        
+        @include media("<=tablet") {
+          margin: 0;
+        }
+      }
+        
+      &.right {
+        margin: $gutter-half $gutter 0 $gutter-half;
+        
+        @include media("<=tablet") {
+          margin: 0;
+        }
+      }
+        
+      h2 {
+        margin: 0 0 24px 0;
+
+        &:last-child { margin-bottom: 0; }
+        
+        @include media("<=tablet") {
+          margin: $gutter-mobile 0 24px;
+        }
+        
+        &.right {
+
+          @include media("<=tablet") {
+            margin: 24px 0;
+          }
+        }          
+      }
+
+      p {
+        margin: 0 0 24px 0;
+        font-size: 20px;
+
+        &:last-child { margin-bottom: 0; }
+      
+        &.col-1 { column-count: 1; }
+        &.col-2 {
+          column-count: 2;
+          
+          @include media("<=desktop") {
+            column-count: 1;
+          }
+        }
+        &.col-3 {
+          column-count: 3;
+
+          @include media("<=mobile") {
+            column-count: 1;
+          }
+        }
+        
+        @include media("<=tablet") {
+          margin: 0;
+        }
+        
+        &.right {
+          @include media("<=tablet") {
+            margin: 0;
+          }
+        }
+        
+        &.aboveheadline {
+          margin: 0 0 24px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          color: $midgrey;
+          font-size: 13px;
+          column-count: 1;
+          
+          @include media("<=tablet"){
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}

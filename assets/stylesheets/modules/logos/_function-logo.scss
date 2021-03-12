@@ -1,0 +1,16 @@
+// 
+// Function logo
+// 
+
+.function-logo {
+  display: block;
+  margin: 0;
+  width: 52px;
+  height: 42px;
+  background-image: url('assets/images/logos/function.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &.theme-white { background-image: url('assets/images/logos/function-white.png'); }
+}

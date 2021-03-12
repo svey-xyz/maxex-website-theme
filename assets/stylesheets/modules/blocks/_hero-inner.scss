@@ -1,0 +1,155 @@
+//
+// Hero inner block
+//
+
+.hero-inner{
+  margin: 0;
+  font-size: 0;
+  padding: 0;
+  
+  @include media("<=mobile") {
+    height: auto;
+  }
+  
+  .column {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+
+    @include media("<=tablet") {
+      width: 100%;
+    }
+  
+    .gallery {
+      width: 100%;
+      display: inline-block;
+      height: 100%;
+      
+      @include media("<=desktop") {
+        width: 100%;
+      }
+
+      .swiper-slide {
+        height: 100%;
+        height: 85vh;
+        width: 100%;
+        padding: 0;
+        
+        @include media("<=tablet") {
+          height: auto;
+          padding: 0;
+        }
+                
+        picture {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          
+          @include media("<=tablet") {
+            height: auto;
+            display: block;
+          }
+            
+          img {
+            width: 100%;
+            object-fit: cover;
+            height: auto;
+            
+            @include media("<=tablet") {
+              max-height: 50vh;
+            }
+          }
+        }
+                
+        .year p {
+          position: absolute;
+          right: 0px;
+          bottom: 145px;
+          transform: rotate(90deg);
+          //vertical-align: bottom;
+          display: block;
+          color: white;
+          font-size:11px;
+          font-weight: 700;
+          letter-spacing: 3px;
+        }
+
+        .card {
+          display: block;
+          left: 0;
+          top: 0;
+          width: 30%;
+          position: absolute;
+          height: 100%;
+          
+          @include media("<=tablet") {
+            position: relative;
+            width: auto;
+            right: 0;
+          }
+                    
+          .swiper-button-prev {
+            left: $gutter-half;
+            bottom: $gutter-half;
+            top: auto;
+
+            @include media("<=tablet") {
+              left: 30px;
+              top: -10px;
+              width: 15px;
+              height: 15px;
+            }
+          }
+          
+          .swiper-button-next {
+            right: $gutter-half;
+            bottom: $gutter-half;
+            top: auto;
+
+            @include media("<=tablet") {
+              right: 30px;
+              top: -10px;
+              width: 15px;
+              height: 15px;
+            }
+          }
+                    
+          .box {
+            margin-top: 40%;
+            
+            @include media("<=tablet") {
+              margin-top: 0;
+              padding: $gutter-half 0;
+            }
+            
+            @include media("<=mobile") {
+              margin-top: 0;
+              padding: 0 0 $gutter-mobile 0;
+            }
+          }
+                    
+          p {
+            color: white;
+            font-family: $serif;
+            font-size: 32px;
+            line-height: $heading-line-height;
+            margin: 0;
+            padding: $gutter-half;
+            
+            @include media(">=widescreen") {
+              font-size: 40px;
+            }
+          }
+          
+          a.text-link {
+            color: rgba(white,.5);
+            margin: 0 $gutter $gutter-mobile;
+            
+            &:hover { color: white; }
+            &:before { background: url('assets/images/icons/arrow-right-white.svg') no-repeat center center; }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+//
+// Section header block
+//
+
+.section-header{
+  padding: $gutter-half $gutter;
+  font-size: 0;
+  display: flex;
+  
+  @include media("<=tablet") {
+    display: inline-block;
+    padding: $gutter-half $gutter;
+  }
+  
+  @include media("<=mobile") {
+    padding: $gutter-mobile;
+  }
+  
+  &.left {
+    .column {
+      &.headline { order: 1; }
+      &.text { order: 2; }
+    }
+  }
+  
+  &.right {
+    .column {
+      &.headline {
+        order: 2;
+        
+        h2 { margin: 0 0 0 $gutter; }
+      }
+      
+      &.text { order: 1; }
+    }
+  }
+
+  .column {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    
+    @include media("<=tablet") {
+      width: 100%;
+    }
+    
+    h2 {
+      margin: 0 $gutter 24px 0;
+      
+      &:last-child { margin-bottom: 0; }
+
+      @include media("<=tablet") {
+        margin: 0;
+      }
+    }
+    
+    p {
+      margin: 0 0 $gutter-half;
+      font-size: 24px;
+
+      &:last-child { margin-bottom: 0; }
+      
+      @include media("<=laptop") {
+        font-size: 20px;
+      }
+      
+      @include media("<=tablet") {
+        margin:$gutter-half 0 0;
+      }
+    }
+  }
+}

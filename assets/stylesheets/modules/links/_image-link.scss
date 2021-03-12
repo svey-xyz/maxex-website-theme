@@ -1,0 +1,43 @@
+// 
+// Image link
+// 
+
+.image-link {
+  margin-bottom: 24px;
+
+  &:last-child { margin-bottom: 0; }
+
+  &:hover {
+    .image { opacity: .85; }
+  }
+  &:active {
+    .image { opacity: .7; }
+  }
+
+  // DRY
+  .image-caption {
+    margin-top: 12px;
+    
+    p {
+      margin: 0;
+      font-style: italic;
+      font-size: 16px;
+      line-height: $heading-line-height;
+      font-family: $serif;
+      color: rgba(black, .5);
+      text-align: right;
+    }
+  }
+
+  // image
+  .image {
+    transition: opacity .15s linear;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: none;
+      height: auto;
+    }
+  }
+}

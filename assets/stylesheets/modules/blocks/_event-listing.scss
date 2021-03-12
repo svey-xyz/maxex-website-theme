@@ -1,0 +1,87 @@
+//
+// Event listing block
+//
+
+.event-listing {
+  margin: 0 $gutter-half $gutter-half;
+  
+  @include media("<=mobile") {
+    margin: 0 $gutter-mobile $gutter-mobile;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: block;
+      border-top: 1px solid #a6a6a6;
+      padding: 30px $gutter-half;
+      font-size: 0;
+      
+      @include media("<=mobile") {
+        padding: 20px 10px;    
+      }
+      
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        width: 30%;
+        width: calc((100% - 32px) / 3);
+        color: $darkgrey;
+        font-size: 16px;
+        font-weight: bold;
+        
+        @include media("<=mobile") {
+          display: block;
+          width: 100%;
+        }
+        
+        &.date {
+          font-size: 12px;
+          font-family: $sansserif;
+          text-transform: uppercase;
+        }
+
+        &.title {
+          font-family: $sansserif;
+          
+          a {
+            transition: $timing;
+            color: $darkgrey;
+            font-size: 18px;
+
+            &:hover { color: $midgrey; }
+          }
+        }
+
+        &.description {
+          font-style: italic;
+          font-size: 18px;
+          
+          @include media("<=mobile") {
+            margin: 10px 0;
+          }
+        }
+
+        &.link {
+          width: 32px;
+          
+          a {
+            display: block;
+            transform: scale(0.8);
+            transition: $timing;
+            opacity: .5;
+            
+            img { display: block; }
+            
+            &:hover{
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

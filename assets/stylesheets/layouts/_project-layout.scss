@@ -1,0 +1,126 @@
+// 
+// Project layout
+// 
+
+.project-layout {
+  position: relative;
+  padding-top: 80px;
+
+  &.layout-simple {
+    .project-content {
+      padding: 32px 24px;
+
+      .project-content-header {
+        margin-bottom: 0;
+        text-align: right;
+
+        .student-name,
+        .project-title {
+          font-size: 13px;
+          font-weight: bold;
+        }
+
+        .student-name {
+          margin-bottom: 1px;
+          color: black;
+          -webkit-text-fill-color: inherit;
+          -webkit-text-stroke-width: 0;
+        }
+
+        .project-title {
+          margin: 0;
+          font-style: normal;
+          font-family: sans-serif;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .project-content {
+    padding: 24px;
+    
+    .project-content-header {
+      margin-bottom: 28px;
+
+      .student-name {
+        margin: 0 0 12px;
+        font-size: 27px;
+        line-height: $heading-line-height;
+        font-weight: 900;
+        font-family: $proxima-nova;
+        color: rgba(black, .5);
+        text-transform: uppercase;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(black, .5);
+      }
+  
+      .project-title {
+        margin: 0;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: $heading-line-height;
+        font-family: $serif;
+      }
+    }
+
+    p {
+      margin: 0 0 24px;
+      font-size: 14px;
+      font-family: $sans-serif;
+      line-height: $body-line-height;
+
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+
+  .project-media { padding: 0 24px 24px; }
+
+  .back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  @include breakpoint('medium-tablet') {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    &.height-auto { height: auto; }
+
+    .project-content,
+    .project-media {
+      max-height: 100vh;
+      overflow-y: auto;
+    }
+
+    .project-media { padding: 24px; }
+
+    &.layout-columns {
+      .project-content {
+        flex-basis: 33.33333%;
+        padding: 32px;
+      }
+
+      .project-media { flex-basis: 66.66666%; }
+    }
+
+    &.layout-simple {
+
+      .project-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-right: 80px;
+      }
+
+      .project-media {
+        padding: 80px;
+        width: 100%;
+      }
+    }
+  }
+}

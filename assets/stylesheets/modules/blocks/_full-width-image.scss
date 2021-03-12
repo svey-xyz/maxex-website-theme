@@ -1,0 +1,36 @@
+//
+// Full width image block
+//
+
+.full-width-image {
+  margin: $gutter-half;
+  font-size: 0;
+  text-align: center;
+  
+  @include media("<=mobile") {
+    margin: $gutter-mobile;
+  }
+  
+  .column {
+    display: inline-block;    
+    vertical-align: top;
+      
+    @include media("<=tablet") {
+      width: 100%;
+    }
+      
+    &.image {
+      
+      img {
+        max-width: 100%;
+        max-height:100vh;
+        display: block;
+        margin: 0 auto;
+        
+        @include media("<=mobile") {
+          margin:$gutter-half 0 0 0;
+        }
+      }
+    }
+  }
+}

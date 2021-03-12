@@ -1,0 +1,37 @@
+// 
+// Cards grid
+// 
+
+.cards-grid {
+  
+  .grid-items {
+    display: grid;
+    grid-gap: 32px;
+  }
+
+  @include breakpoint('large-mobile') {
+
+    .grid-items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px 16px;
+    }
+  }
+
+  @include breakpoint('medium-tablet') {
+
+    .grid-items {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 24px;
+    }
+  }
+
+  @include breakpoint('large-display') {
+
+    .grid-items { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  @include breakpoint('extra-large-display') {
+
+    .grid-items { grid-template-columns: repeat(5, 1fr); }
+  }
+}

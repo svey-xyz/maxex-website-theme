@@ -1,0 +1,51 @@
+//
+// Countdown timer
+//
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  
+  .timer-segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4px;
+  }
+  
+  .numeral-characters {
+    font-weight: 900;
+    font-family: $proxima-nova;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .label-text {
+    display: block;
+    margin-top: 2px;
+    font-size: 9px;
+    font-weight: 600;
+    font-family: $proxima-nova;
+    text-transform: uppercase;
+    color: rgba(white, .5);
+  }
+
+  @include media ('>mobile') {
+
+    .timer-segment {
+      padding: 0 16px;
+    }
+
+    .numeral-characters {
+      font-size: 22px;
+    }
+    
+    .label-text {
+      margin-top: 4px;
+      font-size: 11px;
+    }
+  }
+}

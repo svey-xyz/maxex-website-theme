@@ -1,0 +1,20 @@
+//
+// Breakpoint variables
+// (see also mixins/breakpoint-B)
+//
+
+$breakpoints-B: (
+  'small-mobile': 20em,         // ~ 320px
+  'medium-mobile': 22.5em,      // ~ 360px
+  'large-mobile': 25em,         // ~ 400px
+
+  'small-tablet': 37.5em,       // ~ 600px
+  'medium-tablet': 45em,        // ~ 720px
+  'large-tablet': 50em,         // ~ 800px
+
+  'extra-small-display': 64em,  // ~ 1024px
+  'small-display': 80em,        // ~ 1280px
+  'medium-display': 90em,       // ~ 1440px
+  'large-display': 105em,       // ~ 1680px
+  'extra-large-display': 120em, // ~ 1920px
+);

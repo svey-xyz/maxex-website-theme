@@ -1,0 +1,49 @@
+//
+// Tile
+//
+
+.tile {
+  position: relative;
+  
+  // TODO refactor this for the Max Ex 25 Splash page vs. generic implementations
+  .tile-content {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    padding: $gutter-mobile;
+
+    p {
+      margin: 0;
+      font-family: $serif;
+      font-style: italic;
+      font-size: 15px;
+      color: white;
+
+      a {
+        font-family: $serif;
+        font-style: italic;
+        font-size: 15px;
+        color: white;
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .tile-image {
+    
+    &,
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @include media ('>mobile') {
+
+    .tile-content {
+      padding: $gutter-half;
+    }
+  }
+}

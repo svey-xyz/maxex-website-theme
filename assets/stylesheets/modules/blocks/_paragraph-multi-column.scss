@@ -1,0 +1,67 @@
+//
+// Paragraph multi-column block
+//
+
+.paragraph-multi-column {
+  margin: 0;
+  font-size: 0;
+  margin: $gutter-half;
+
+  @include media("<=mobile") {
+    margin: $gutter-mobile;
+  }
+
+  .column {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+
+    .copy {
+      &.col-1 { column-count: 1; }
+      &.col-2 {
+        column-count: 2;
+
+        @include media("<tablet") {
+          column-count: 1;
+        }
+      }
+
+      &.col-3 {
+        column-count: 3;
+
+        @include media("<laptop") {
+          column-count: 2;
+        }
+
+        @include media("<tablet") {
+          column-count: 1;
+        }
+      }
+    }
+
+    @include media("<=tablet") {
+      width: 100%;
+    }
+
+    h2 {
+      margin: 0 $gutter-half $gutter-mobile $gutter-half;
+
+      @include media("<tablet") {
+        margin: $gutter-mobile 0 0 0;
+      }
+    }
+
+    p {
+      margin: 0 $gutter-half $gutter-mobile $gutter-half;
+
+      @include media("<tablet") {
+        margin: $gutter-mobile 0 0 0;
+      }
+    }
+    
+    blockquote p {
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+}

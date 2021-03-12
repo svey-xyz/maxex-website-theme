@@ -1,0 +1,15 @@
+//
+// Colour variables
+//
+
+$grey: #ccc;
+$midgrey: #989898;
+$darkgrey: #333333;
+$blue: blue;
+
+//
+$button-colors: (
+  'black': (black, white),
+  'grey': ($grey, $darkgrey),
+  'white': (white, black)
+);

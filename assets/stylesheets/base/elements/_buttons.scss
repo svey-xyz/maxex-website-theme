@@ -1,0 +1,36 @@
+//
+// Base button styles
+// (modified)
+//
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 1em;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0; // fixes iOS5+
+  font-family: $sans-serif;
+  font-weight: normal;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+
+  &:focus { outline: 0; }
+}
+
+input[type="submit"] {
+  padding-top: 0;
+  padding-bottom: 0;
+}

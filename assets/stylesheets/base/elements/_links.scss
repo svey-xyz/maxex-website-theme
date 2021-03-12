@@ -1,0 +1,17 @@
+//
+// Base link styles
+//
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: inherit;
+    text-decoration: none;
+  }
+  &:focus { outline: 0; }
+}

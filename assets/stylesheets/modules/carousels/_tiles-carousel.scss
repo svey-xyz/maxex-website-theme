@@ -1,0 +1,25 @@
+//
+// Tiles carousel
+//
+
+.tiles-carousel {
+
+  // sizing
+  &.size-fullscreen {
+    
+    // also see .tile
+    .tile-image {
+      img {
+        width: 100%; // ~ not 100vw
+        height: 100vh;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .carousel-items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}

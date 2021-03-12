@@ -1,0 +1,103 @@
+//
+// Featured post block
+//
+
+.featured-post{
+  margin: $gutter-half;
+  font-size: 0;
+  display: flex;
+  
+  @include media("<=tablet") {
+    display: block;
+  }
+  
+  @include media("<=mobile") {
+    margin: $gutter-mobile;
+  }
+  
+  &.left {
+    .column {
+      &.copy { order: 2; }
+      &.image { order: 1; }
+    }
+  }
+  
+  &.right {
+    .column {
+      &.copy { order: 1; }
+      &.image { order: 2; }
+    }
+  }
+  
+  .column {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    
+    @include media("<=tablet") {
+      width: 100%;
+    }
+      
+    &.image {
+      img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    &.copy {
+      margin: 0;
+      
+      &.left {
+        margin: $gutter $gutter-half 0 $gutter;
+        
+        @include media("<=tablet") {
+            margin: 0;
+        }
+      }
+      
+      &.right {
+        margin: $gutter $gutter 0 $gutter-half;
+        
+        @include media("<=tablet") {
+            margin: 0;
+        }
+      }
+      
+      h2 {
+        margin: 0 0 $gutter-half 0;
+        
+        @include media("<=tablet") {
+          margin: $gutter-mobile 0 $gutter-half;
+        }
+        
+        &.right {
+          @include media("<=tablet") {
+            margin: $gutter-half 0;
+          }
+        }
+      }
+
+      p {
+        margin: 0 0 $gutter-half 0;
+        column-count: 2;
+        
+        @include media("<=tablet") {
+          margin: 0;
+        }
+        
+        @include media("<=mobile") {
+          column-count: 1;
+        }
+        
+        &.right {
+
+          @include media("<=tablet") {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+// 
+// Project card
+// 
+
+.project-card {
+
+  .card-content {
+   padding-top: 6px;
+
+    p {
+      margin: 0;
+      font-family: $proxima-nova;
+      font-size: 12px;
+      line-height: $heading-line-height;
+      color: black;
+      text-transform: uppercase;
+
+      &.student-name {
+        font-weight: 900;
+        font-size: 14px;
+      }
+    }
+  }
+}

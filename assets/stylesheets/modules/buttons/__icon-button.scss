@@ -1,0 +1,45 @@
+//
+// Icon button
+//
+
+.icon-button {
+  @include button;
+
+  flex-shrink: 0;
+  padding: 0 !important;
+  width: 44px;
+  min-width: 0;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  line-height: 36px; // !
+  font-size: 32px;
+
+  // ~
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: none;
+  }
+  
+  // icon
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 28px;
+    height: 28px;
+    background-color: transparent !important;
+    background-size: 28px 28px;
+    transform: translate(-50%, -50%);
+  }
+
+  @each $color-name, $colors in $button-colors {
+
+    &.theme-#{nth($color-name, 1)} {
+      background-color: nth($colors, 1);
+      color: nth($colors, 2);
+    }
+  }
+}

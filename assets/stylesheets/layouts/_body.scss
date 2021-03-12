@@ -1,0 +1,13 @@
+//
+// Body styles
+//
+
+body {
+  margin: 0 auto;
+
+  &.overflow-y-disable { overflow-y: hidden; }
+
+  @include media("<tablet") {
+		margin-top: 70px;
+	}
+}

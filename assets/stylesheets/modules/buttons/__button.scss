@@ -1,0 +1,64 @@
+//
+// Button
+//
+
+@mixin button {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 0 20px;
+  width: auto;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  font-family: $proxima-nova;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 32px;
+  color: white;
+  text-shadow: none;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  //&:hover,
+  //&:focus {}
+  &:focus { outline: 0; }
+  //&:active {}
+  //&[disabled] {}
+
+  // styles
+  &.style-outline {
+    border-radius: 2em;
+    letter-spacing: .2em;
+  }
+
+  // sizing
+  &.size-large {
+    font-size: 21px;
+    line-height: 44px;
+  }
+}
+
+.button { @include button; }
+
+@each $color-name, $colors in $button-colors {
+
+  .button {
+    &.theme-#{nth($color-name, 1)} {
+      background-color: nth($colors, 1);
+      color: nth($colors, 2);
+
+      &.style-outline {
+        background-color: transparent;
+        border-color: nth($colors, 1);
+        color: nth($colors, 1);
+  
+        &:hover { background-color: rgba(nth($colors, 1), .07); }
+      }
+    }
+  }
+}

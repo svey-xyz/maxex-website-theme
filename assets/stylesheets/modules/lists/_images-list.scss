@@ -1,0 +1,46 @@
+// 
+// Images list
+// 
+
+.images-list {
+  margin-bottom: 24px;
+
+  &:last-child { margin-bottom: 0; }
+
+  .list-items {
+
+    .list-item {
+      margin-bottom: 24px;
+
+      &:last-child { margin-bottom: 0; }
+
+      // with caption
+      .image-wrapper {
+        .image-caption {
+          margin-top: 12px;
+          
+          p {
+            margin: 0;
+            font-style: italic;
+            font-size: 16px;
+            line-height: $heading-line-height;
+            font-family: $serif;
+            color: rgba(black, .5);
+            text-align: right;
+          }
+        }
+      }
+
+      // image
+      .image {
+
+        img {
+          display: block;
+          width: 100%;
+          max-width: none;
+          height: auto;
+        }
+      }
+    }
+  }
+}

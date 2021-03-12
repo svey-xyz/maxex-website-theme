@@ -1,0 +1,153 @@
+//
+// Square image gallery block
+//
+
+.square-image-gallery {
+  margin: 0 $gutter-half $gutter-half;
+  font-size: 0;
+  //height: calc(100vh - $gutter); // ~ NOTE $gutter not defined
+
+  @include media("<=mobile") {
+    margin: $gutter-mobile;
+  }
+
+  .column {
+    display: flex;
+    vertical-align: top;
+
+    @include media("<=tablet") {
+      width: 100%;
+      display: block;
+    }
+    
+    &.left {
+      .portrait { order: 1; }
+      .gallery { order: 2; }
+    }
+    
+    &.right {
+      .portrait { order: 2; }
+      .gallery {
+        order: 1;
+        margin: 0 $gutter-half 0 0;
+      }
+    }
+
+    .portrait {
+      width: calc(30% - 45px);
+      display: inline-block;
+      vertical-align: top;
+      height: calc(100vh - 90px);
+      
+      @include media("<=desktop") {
+        width: calc(50% - 45px);
+      }
+
+      @include media("<=tablet") {
+        width: 100%;
+        display: block;
+        height: auto;
+      }
+      
+      picture {
+        display: flex;
+        height: calc(50vh - 90px);
+        
+        @include media("<=tablet") {
+          display: block;
+          height: auto;
+        }
+        
+        img {
+          width: 100%;
+          max-width: 100%;
+          object-fit: cover;
+          height: 42vh;
+
+          @include media("<=tablet") {
+            height: auto;
+            width: 100%;
+            display: block;
+          } 
+        }
+      }
+
+      .colourbox {
+        height: calc(50vh - 90px);
+        //padding: $gutter-half;
+        padding: 45px;
+        z-index: 900;
+        position: relative;
+
+        @include media("<=tablet") {
+          display: block;
+          width: auto;
+          height: auto;
+          padding: $gutter-mobile;
+        }
+
+        h2,
+        p {
+          margin-bottom: 24px;
+          color: white;
+          font-size: 40px;
+          font-family: $serif;
+          line-height: $heading-line-height;
+          margin-top: 0;
+
+          &:last-child { margin-bottom: 0; }
+        }
+
+        a.text-link {
+          color: rgba(white, .5);
+
+          &:hover { color: white; }
+          &:before { background: url('assets/images/icons/arrow-right-white.svg') no-repeat center center; }
+        }
+      }
+    }
+    
+    .gallery {
+      width: 70%;
+      display: inline-block;
+      height: calc(100vh - 90px);
+      margin: 0 0 0 $gutter-half;
+      
+      @include media("<=desktop") {
+        width: 50%;
+      }
+      
+      @include media("<=tablet") {
+        width: 100%;
+        display: block;
+        margin: $gutter-half 0;
+        height: auto;
+      }
+      
+      @include media("<=mobile") {
+        height: auto;
+      }
+  
+      .swiper-slide {    
+        height: calc(100vh - 90px);
+        width: auto;
+        
+        @include media("<=tablet") {
+          height: auto;
+          max-width: 100%;
+        }
+
+        img {
+          display: block;
+          height: calc(100vh - 90px);
+          width: auto;
+          
+          @include media("<=tablet") {
+            height: auto;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+//
+// Sponsors block
+//
+
+.sponsors {
+  margin: $gutter $gutter-half;
+  
+  @include media("<=tablet") {
+    margin: $gutter-mobile;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: $gutter-half;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $midgrey;
+  }
+  
+  ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  
+    li {
+      width: 6%;
+      display: inline-block;
+      margin: $gutter-mobile;
+      vertical-align: middle;
+      
+      @include media("<=tablet") {
+        width: 20%;
+      }
+      @include media("<=mobile") {
+        width: 29%;
+      }
+      
+      img {
+        max-width: 100%;
+        height:auto;
+      }
+    }
+  }
+}

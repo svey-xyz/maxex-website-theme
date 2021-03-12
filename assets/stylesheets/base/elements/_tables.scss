@@ -1,0 +1,15 @@
+//
+// Base table styles
+//
+
+table {
+  margin: 2em 0;
+  width: 100%;
+
+  th { font-weight: bold; }
+
+  td {
+    padding: .25em;
+    border: 1px solid;
+  }
+}

@@ -1,0 +1,13 @@
+// 
+// Project page
+// 
+
+.project-page {
+  position: relative;
+
+  // see project-layout
+  
+  @include breakpoint('extra-small-display') {
+    margin-left: 320px; // ~ drawer margin
+  }
+}

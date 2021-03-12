@@ -1,0 +1,13 @@
+//
+// Breakpoint
+// A media-query mixin (also see variables/breakpoints)
+//
+
+@mixin breakpoint($point) {
+
+  @each $breakpoint, $query in $breakpoints-B {
+    @if $point == $breakpoint {
+      @media (min-width: $query) { @content; }
+    }
+  }
+}
