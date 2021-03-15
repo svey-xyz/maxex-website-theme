@@ -852,14 +852,13 @@ a {
     a {
       font-size: 14px; } }
   a.text-link {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    font-size: 14px;
+    letter-spacing: 2px;
     margin-left: 45px;
     display: inline-block;
     position: relative;
-    color: #989898;
-    transition: 0.4s; }
+    transition: 0.4s;
+    font-weight: 900; }
     a.text-link:before {
       content: '';
       position: absolute;
@@ -985,6 +984,113 @@ a {
     box-sizing: content-box; }
     .block *:before, .block *:after {
       box-sizing: content-box; }
+
+.dynamic-item-card {
+  width: 100%;
+  padding: 45px 90px; }
+  @media (max-width: 1024px) {
+    .dynamic-item-card {
+      padding: 30px 45px; } }
+  .dynamic-item-card .card {
+    margin: auto;
+    box-shadow: 0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 0px 5px -1px rgba(0, 0, 0, 0.06);
+    position: relative;
+    max-width: 1830px;
+    max-height: 350px; }
+    @media (max-width: 1024px) {
+      .dynamic-item-card .card {
+        max-height: none; } }
+    .dynamic-item-card .card .column {
+      display: flex;
+      vertical-align: top; }
+      @media (max-width: 1024px) {
+        .dynamic-item-card .card .column {
+          width: 100%;
+          display: block; } }
+      .dynamic-item-card .card .column.left .card-image-section {
+        order: 1; }
+      .dynamic-item-card .card .column.left .card-title-section {
+        order: 2; }
+      .dynamic-item-card .card .column.left .card-description-section {
+        order: 3; }
+      .dynamic-item-card .card .column.right .card-image-section {
+        order: 3; }
+      .dynamic-item-card .card .column.right .card-title-section {
+        order: 1;
+        margin: 0 45px 0 0; }
+      .dynamic-item-card .card .column.right .card-description-section {
+        order: 2; }
+      .dynamic-item-card .card .column .card-image-section {
+        display: inline-block;
+        vertical-align: top; }
+        @media (max-width: 1024px) {
+          .dynamic-item-card .card .column .card-image-section {
+            width: 100%;
+            display: block;
+            height: auto; } }
+        .dynamic-item-card .card .column .card-image-section picture {
+          display: flex; }
+          @media (max-width: 1024px) {
+            .dynamic-item-card .card .column .card-image-section picture {
+              display: block;
+              height: auto; } }
+          .dynamic-item-card .card .column .card-image-section picture img {
+            width: 350px;
+            max-width: 350px;
+            height: 350px;
+            -o-object-fit: cover;
+               object-fit: cover; }
+            @media (max-width: 1024px) {
+              .dynamic-item-card .card .column .card-image-section picture img {
+                height: auto;
+                width: 100%;
+                max-width: none;
+                display: block; } }
+      .dynamic-item-card .card .column .card-title-section {
+        padding: 32px 45px;
+        min-width: 25%; }
+        @media (max-width: 1024px) {
+          .dynamic-item-card .card .column .card-title-section {
+            min-width: none;
+            display: block;
+            height: auto;
+            padding: 30px; } }
+        .dynamic-item-card .card .column .card-title-section h2 {
+          color: #333333;
+          font-size: 48px;
+          font-family: "Cormorant Garamond", serif;
+          font-weight: 800;
+          line-height: 1.15;
+          margin: 0; }
+          .dynamic-item-card .card .column .card-title-section h2:last-child {
+            margin-bottom: 0; }
+        .dynamic-item-card .card .column .card-title-section a.text-link {
+          vertical-align: bottom;
+          color: #333333;
+          font-weight: 600;
+          text-decoration: none; }
+          .dynamic-item-card .card .column .card-title-section a.text-link:hover {
+            text-decoration: underline; }
+          .dynamic-item-card .card .column .card-title-section a.text-link:before {
+            background: url("assets/images/icons/arrow-right.svg") no-repeat center center; }
+      .dynamic-item-card .card .column .card-description-section {
+        padding: 32px 45px 32px 0; }
+        @media (max-width: 1024px) {
+          .dynamic-item-card .card .column .card-description-section {
+            display: block;
+            width: auto;
+            height: auto;
+            padding: 30px; } }
+        .dynamic-item-card .card .column .card-description-section p {
+          display: block;
+          overflow: hidden;
+          word-break: break-all;
+          text-overflow: ellipsis;
+          margin: 0;
+          color: #333333;
+          font-size: 18px; }
+          .dynamic-item-card .card .column .card-description-section p:last-child {
+            margin-bottom: 0; }
 
 .event-listing {
   margin: 0 45px 45px; }
@@ -1176,18 +1282,15 @@ a {
           .featured-post .column.copy p.right {
             margin: 0; } }
 .full-width-gallery {
-  margin: 90px 45px;
-  font-size: 0; }
-  @media (max-width: 640px) {
+  width: 100%;
+  padding: 30px 90px; }
+  @media (max-width: 1024px) {
     .full-width-gallery {
-      margin: 30px; } }
+      padding: 30px 45px; } }
   .full-width-gallery .column {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%; }
-    @media (max-width: 1024px) {
-      .full-width-gallery .column {
-        width: 100%; } }
+    margin: auto;
+    position: relative;
+    max-width: 1830px; }
     .full-width-gallery .column .gallery {
       width: 100%;
       display: inline-block;
@@ -1195,7 +1298,6 @@ a {
       @media (max-width: 1260px) {
         .full-width-gallery .column .gallery {
           width: 100%;
-          margin: 45px 0;
           height: auto; } }
       .full-width-gallery .column .gallery .swiper-slide {
         height: calc(100vh - 90px);
@@ -1372,7 +1474,7 @@ a {
           width: 100%; } }
       .hero .column .gallery .swiper-slide {
         height: 100%;
-        height: 85vh;
+        height: 70vh;
         width: 100%;
         padding: 0 0 45px; }
         @media (max-width: 1024px) {
@@ -1408,32 +1510,36 @@ a {
           letter-spacing: 3px; }
         .hero .column .gallery .swiper-slide .card {
           display: block;
-          bottom: 32px;
-          padding: 32px;
+          bottom: 45px;
+          padding: 32px 0;
           width: 100%;
           position: absolute; }
           @media (max-width: 1024px) {
             .hero .column .gallery .swiper-slide .card {
-              position: relative;
-              bottom: 0px;
-              width: auto;
-              right: 0; } }
+              bottom: 0px; } }
           .hero .column .gallery .swiper-slide .card .text-container {
+            padding: 0 90px;
             position: relative;
             max-width: 1920px;
-            margin: auto; }
+            margin: auto;
+            text-align: right; }
+            @media (max-width: 1024px) {
+              .hero .column .gallery .swiper-slide .card .text-container {
+                padding: 0 45px; } }
             .hero .column .gallery .swiper-slide .card .text-container p {
-              color: black;
-              font-size: 28px;
+              color: #333333;
+              font-size: 24px;
               font-weight: 800;
               line-height: 1.15;
               margin: 0; }
             .hero .column .gallery .swiper-slide .card .text-container a.text-link {
-              color: rgba(0, 0, 0, 0.5); }
+              color: #333333;
+              font-weight: 600;
+              text-decoration: none; }
               .hero .column .gallery .swiper-slide .card .text-container a.text-link:hover {
-                color: black; }
+                text-decoration: underline; }
               .hero .column .gallery .swiper-slide .card .text-container a.text-link:before {
-                background: url("assets/images/icons/arrow-right-white.svg") no-repeat center center; }
+                background: url("assets/images/icons/arrow-right.svg") no-repeat center center; }
           .hero .column .gallery .swiper-slide .card .swiper-button-prev {
             left: -30px; }
             @media (max-width: 1024px) {
@@ -2558,13 +2664,15 @@ button.carousel-pagination-bullet {
   margin-bottom: 24px; }
 
 #footer {
-  padding: 45px;
-  margin: 45px 0 90px; }
-  @media (max-width: 640px) {
+  width: 100%;
+  padding: 45px 90px; }
+  @media (max-width: 1024px) {
     #footer {
-      margin: 45px 0 0;
-      padding: 30px; } }
+      padding: 30px 45px; } }
   #footer .columns {
+    margin: auto;
+    position: relative;
+    max-width: 1830px;
     font-size: 0; }
     #footer .columns .column {
       display: inline-block;
@@ -2576,10 +2684,10 @@ button.carousel-pagination-bullet {
             display: block;
             width: 100%;
             text-align: center; } }
-      #footer .columns .column.menus {
+      #footer .columns .column.sites {
         width: 85%; }
         @media (max-width: 1023px) {
-          #footer .columns .column.menus {
+          #footer .columns .column.sites {
             display: block;
             width: 100%; } }
   #footer .menu {
@@ -2605,46 +2713,48 @@ button.carousel-pagination-bullet {
           display: block;
           width: 20px;
           height: 20px; }
-    #footer .menu.main {
+    #footer .menu.site-link {
+      text-align: right;
       display: inline-block;
-      vertical-align: top; }
+      vertical-align: top;
+      position: absolute;
+      padding-bottom: 90px;
+      right: 0; }
       @media (min-width: 1024px) {
-        #footer .menu.main:nth-child(1) {
+        #footer .menu.site-link:nth-child(1) {
           width: 80%; }
-        #footer .menu.main:nth-child(2) {
+        #footer .menu.site-link:nth-child(2) {
           width: 20%;
           text-align: right; }
-          #footer .menu.main:nth-child(2) li {
+          #footer .menu.site-link:nth-child(2) li {
             width: 50%; } }
-      @media (max-width: 1023px) {
-        #footer .menu.main {
+      @media (max-width: 1024px) {
+        #footer .menu.site-link {
+          text-align: center;
           display: block;
           width: 100%;
           margin: 45px 0; } }
-      @media (max-width: 640px) {
-        #footer .menu.main {
-          text-align: center; } }
-      #footer .menu.main li {
+      #footer .menu.site-link li {
         display: inline-block;
         vertical-align: top;
         width: 25%; }
         @media (max-width: 640px) {
-          #footer .menu.main li {
+          #footer .menu.site-link li {
             width: 50%; } }
-        #footer .menu.main li a {
+        #footer .menu.site-link li a {
           color: #333333;
           font-weight: bold;
           padding: 15px;
           display: block;
           font-size: 12px;
           transition: 0.4s; }
-          #footer .menu.main li a:hover {
+          #footer .menu.site-link li a:hover {
             color: #989898; }
-        #footer .menu.main li ul {
+        #footer .menu.site-link li ul {
           margin: 0;
           padding: 45px 0 0;
           position: relative; }
-          #footer .menu.main li ul:before {
+          #footer .menu.site-link li ul:before {
             content: '';
             position: absolute;
             top: 15px;
@@ -2655,19 +2765,19 @@ button.carousel-pagination-bullet {
             background-color: #000;
             transition: 0.4s; }
             @media (max-width: 640px) {
-              #footer .menu.main li ul:before {
+              #footer .menu.site-link li ul:before {
                 left: 50%;
                 margin: 0 0 0 -5px; } }
-          #footer .menu.main li ul li {
+          #footer .menu.site-link li ul li {
             display: block;
             width: 100%; }
-            #footer .menu.main li ul li a {
+            #footer .menu.site-link li ul li a {
               text-transform: none;
               color: #989898;
               padding: 0 15px;
               font-weight: normal;
               font-size: 14px; }
-              #footer .menu.main li ul li a:hover {
+              #footer .menu.site-link li ul li a:hover {
                 color: #333333; }
 
 .cards-grid .grid-items {
@@ -2728,10 +2838,11 @@ button.carousel-pagination-bullet {
           #header .columns .header-content .column.logo a img {
             display: block;
             height: 80px;
-            padding: 15px 20px;
+            padding: 15px 45px;
             transition: 0.4s; }
             @media (max-width: 1024px) {
               #header .columns .header-content .column.logo a img {
+                padding: 15px 0px;
                 height: 70px; } }
         #header .columns .header-content .column.logo .menu-toggle {
           position: absolute;
@@ -2752,7 +2863,6 @@ button.carousel-pagination-bullet {
           #header .columns .header-content .column.logo .menu-toggle.active {
             background-image: url("assets/images/icons/menu-close.svg"); }
     #header .columns .column {
-      display: inline-block;
       vertical-align: top; }
       #header .columns .column.menus {
         width: 75%;
@@ -2774,25 +2884,22 @@ button.carousel-pagination-bullet {
           #header .columns .column.menus {
             top: 70px; } }
         #header .columns .column.menus .mainFunctionNav {
-          padding-top: 80px; }
+          padding-top: 80px;
+          padding-bottom: 180px; }
         #header .columns .column.menus ul {
           margin: 0;
           padding: 0;
-          display: inline-block;
           vertical-align: top;
-          display: block;
           width: 100%; }
           #header .columns .column.menus ul.images {
             margin-left: 0;
             margin-top: 30px; }
           #header .columns .column.menus ul li {
             list-style: none;
-            display: block;
             overflow: hidden;
             position: relative; }
             #header .columns .column.menus ul li .sub-menu {
               opacity: 1;
-              pointer-events: auto;
               height: auto; }
             #header .columns .column.menus ul li .menu-header {
               font-size: 36px;
@@ -2800,7 +2907,6 @@ button.carousel-pagination-bullet {
               font-weight: 900;
               line-height: 40px;
               padding-top: 40px;
-              display: block;
               position: relative;
               z-index: 50; }
             #header .columns .column.menus ul li a {
@@ -2810,7 +2916,6 @@ button.carousel-pagination-bullet {
               text-decoration: underline;
               letter-spacing: 3px;
               line-height: 40px;
-              display: block;
               position: relative;
               font-weight: 500;
               z-index: 50; }

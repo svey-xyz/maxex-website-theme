@@ -3,53 +3,48 @@
 //
 
 .full-width-gallery {
-  margin: $gutter $gutter-half;
-  font-size: 0;
-  
-  @include media("<=mobile") {
-    margin: $gutter-mobile;
-  }
-  
-  .column {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
+	width: 100%;
+	padding: $gutter-mobile $gutter;
 
-    @include media("<=tablet") {
-      width: 100%;
-    }
-  
-    .gallery {
-      width: 100%;
-      display: inline-block;
-      height: calc(100vh - 90px);
-      
-      @include media("<=desktop") {
-        width: 100%;
-        margin: $gutter-half 0;
-        height: auto;
-      }
-        
-      .swiper-slide {
-        height: calc(100vh - 90px);
-        width: auto;
-        
-        @include media ("<=desktop") {
-          width: 100%;
-          height: auto;
-        }
-        
-        img {
-          height: 100%;
-          display: block;
-          height: calc(100vh - 90px);
-          
-          @include media ("<=desktop") {
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
-    }
-  }
+	@include media("<=tablet") {
+		padding: $gutter-mobile $gutter-half;
+	}
+
+	.column {
+		margin: auto;
+		position: relative;
+		max-width: $content-width - $gutter;
+
+		.gallery {
+			width: 100%;
+			display: inline-block;
+			height: calc(100vh - 90px);
+			
+			@include media("<=desktop") {
+				width: 100%;
+				height: auto;
+			}
+			
+			.swiper-slide {
+				height: calc(100vh - 90px);
+				width: auto;
+				
+				@include media ("<=desktop") {
+					width: 100%;
+					height: auto;
+				}
+				
+				img {
+					height: 100%;
+					display: block;
+					height: calc(100vh - 90px);
+					
+					@include media ("<=desktop") {
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
 }

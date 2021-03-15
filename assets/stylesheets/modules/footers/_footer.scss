@@ -4,173 +4,178 @@
 
 #footer {
     
-  padding: $gutter-half;
-  margin: $gutter-half 0 $gutter;
+  	width: 100%;
+	padding: $gutter-half $gutter;
+
+	@include media("<=tablet") {
+		padding: $gutter-mobile $gutter-half;
+	}
   
-  @include media("<=mobile") {
-      margin: $gutter-half 0 0;
-      padding: $gutter-mobile;
-  }
-  
-  .columns{
-      font-size: 0;
-      .column{
-          display: inline-block;
-          vertical-align: top;
-          
-          &.social{
-              width: 15%;
-              
-              @include media("<tablet") {
-                  display: block;
-                  width: 100%;
-                  text-align: center;
-              }
-              
-          }
-          &.menus{
-              width: 85%;
-              
-              @include media("<tablet") {
-                  display: block;
-                  width: 100%;
-              }
-              
-          }
-      }
-  }
+	.columns{
+		margin: auto;
+		position: relative;
+		max-width: $content-width - $gutter;
 
-  .menu {
+		font-size: 0;
+		.column{
+			display: inline-block;
+			vertical-align: top;
+			
+			&.social{
+				width: 15%;
+				
+				@include media("<tablet") {
+					display: block;
+					width: 100%;
+					text-align: center;
+				}
+				
+			}
+			&.sites{
+				width: 85%;
+				
+				@include media("<tablet") {
+					display: block;
+					width: 100%;
+				}
+				
+			}
+		}
+	}
 
-      display: inline-block;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      
-      li{
-          a{
-              font-size: 14;
-              text-transform: uppercase;
-          }
-      }
+	.menu {
 
-      &.social {
-          li {
-              display: inline-block;
-              a{
-                  display: block;
-                  padding: 13px 10px;
-                  transition: $timing;
-                  
-                  
-                  @include media("<tablet") {
-                      padding: 20px;
-                  }
-                  
-                  &:hover{
-                      transform: scale(1.2);
-                  }
-                  img{
-                      display: block;
-                      width: 20px;
-                      height: 20px;
-                  }
-              }
-          }
-      }
-      
-      
-      &.main{
-          display: inline-block;
-          vertical-align: top;
-          
-          @include media(">=tablet") {
-          
-              &:nth-child(1){
-                  width: 80%;
-              }
-              &:nth-child(2){
-                  width: 20%;
-                  text-align: right;
-                  li{
-                      width: 50%;
-                  }
-              }
-          }
-          @include media("<tablet") {
-              display: block;
-              width: 100%;
-              margin: $gutter-half 0;
-              
-          }
-          @include media("<=mobile") {
-              text-align: center;
-          }
-          
-          li{
-              display: inline-block;
-              vertical-align: top;
-              width: 25%;
-              @include media("<=mobile") {
-                  width: 50%;
-              }
-              
-              a{
-                  color: $darkgrey;
-                  font-weight: bold;
-                  padding: 15px;
-                  display: block;
-                  font-size: 12px;
-                  transition: $timing;
-                  
-                  &:hover{
-                      color: $midgrey;
-                  }
-              }
-              
-              ul{
-                  margin: 0;
-                  padding: $gutter-half 0 0;
-                  position: relative;
+		display: inline-block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		
+		li{
+			a{
+				font-size: 14;
+				text-transform: uppercase;
+			}
+		}
 
-                  &:before{
-                      content: '';
-                      position: absolute;
-                      top: 15px;
-                      left: 15px;
-                      margin: 0;
-                      width: 10px;
-                      height: 2px;
-                      background-color: #000;
-                      transition: $timing;
-                      @include media("<=mobile") {
-                          left: 50%;
-                          margin: 0 0 0 -5px;
-                      }
-                      
-                  }
-                  
-                  li{
-                      display: block;
-                      width: 100%;
+		&.social {
+			li {
+				display: inline-block;
+				a{
+					display: block;
+					padding: 13px 10px;
+					transition: $timing;
+					
+					
+					@include media("<tablet") {
+						padding: 20px;
+					}
+					
+					&:hover{
+						transform: scale(1.2);
+					}
+					img{
+						display: block;
+						width: 20px;
+						height: 20px;
+					}
+				}
+			}
+		}
+		
+		
+		&.site-link{
+			text-align: right;
+			display: inline-block;
+			vertical-align: top;
+			position: absolute;
+			padding-bottom: $gutter;
+			right: 0;
+			
+			@include media(">=tablet") {
+			
+				&:nth-child(1){
+					width: 80%;
+				}
+				&:nth-child(2){
+					width: 20%;
+					text-align: right;
+					li{
+						width: 50%;
+					}
+				}
+			}
+			@include media("<=tablet") {
+				text-align: center;
+				display: block;
+				width: 100%;
+				margin: $gutter-half 0;
+				
+			}
+			
+			li{
+				display: inline-block;
+				vertical-align: top;
+				width: 25%;
+				@include media("<=mobile") {
+					width: 50%;
+				}
+				
+				a{
+					color: $darkgrey;
+					font-weight: bold;
+					padding: 15px;
+					display: block;
+					font-size: 12px;
+					transition: $timing;
+					
+					&:hover{
+						color: $midgrey;
+					}
+				}
+				
+				ul{
+					margin: 0;
+					padding: $gutter-half 0 0;
+					position: relative;
 
-                      a {
-                          text-transform: none;
-                          color: $midgrey;
-                          padding: 0 15px;
-                          font-weight: normal;
-                          font-size: 14px;
-                          
-                          &:hover{
-                              color: $darkgrey;
-                          }
-                          
-                      }
-                  }
-              }
-              
-          }
-      }
-      
-  }
+					&:before{
+						content: '';
+						position: absolute;
+						top: 15px;
+						left: 15px;
+						margin: 0;
+						width: 10px;
+						height: 2px;
+						background-color: #000;
+						transition: $timing;
+						@include media("<=mobile") {
+							left: 50%;
+							margin: 0 0 0 -5px;
+						}
+						
+					}
+					
+					li{
+						display: block;
+						width: 100%;
+
+						a {
+							text-transform: none;
+							color: $midgrey;
+							padding: 0 15px;
+							font-weight: normal;
+							font-size: 14px;
+							
+							&:hover{
+								color: $darkgrey;
+							}
+							
+						}
+					}
+				}
+				
+			}
+		}
+		
+	}
 }

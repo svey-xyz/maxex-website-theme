@@ -92,14 +92,13 @@ a {
 
   // TODO move to /links?
   &.text-link {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    font-size: 14px;
+    letter-spacing: 2px;
     margin-left: $gutter-half;
     display: inline-block;
     position: relative;
-    color: $midgrey;
     transition: $timing;
+	font-weight: 900;
       
     // icon
     &:before {

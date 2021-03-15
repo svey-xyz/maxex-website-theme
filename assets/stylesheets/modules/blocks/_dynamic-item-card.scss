@@ -1,0 +1,142 @@
+//
+// Dynamic card block
+//
+
+$card-height: 350px;
+
+.dynamic-item-card {
+	
+	width: 100%;
+	padding: $gutter-half $gutter;
+
+	@include media("<=tablet") {
+		padding: $gutter-mobile $gutter-half;
+	}
+
+	.card {
+		margin: auto;
+		box-shadow: $shadow;
+		position: relative;
+		max-width: $content-width - $gutter;
+		max-height: $card-height;
+
+		@include media("<=tablet") {
+			max-height: none;
+		}
+
+		.column {
+			display: flex;
+			vertical-align: top;
+
+			@include media("<=tablet") {
+				width: 100%;
+				display: block;
+			}
+			
+			&.left {
+				.card-image-section { order: 1; }
+				.card-title-section { order: 2; }
+				.card-description-section { order: 3; }
+			}
+			
+			&.right {
+				.card-image-section { order: 3; }
+				.card-title-section {
+					order: 1;
+					margin: 0 $gutter-half 0 0;
+				}
+				.card-description-section { order: 2; }
+			}
+
+			.card-image-section {
+				display: inline-block;
+				vertical-align: top;
+
+				@include media("<=tablet") {
+					width: 100%;
+					display: block;
+					height: auto;
+				}
+				
+				picture {
+					display: flex;
+					
+					@include media("<=tablet") {
+						display: block;
+						height: auto;
+					}
+					
+					img {
+						// width: 500px;
+						width: $card-height;
+						max-width: $card-height;
+						height: $card-height;
+						object-fit: cover;
+
+						@include media("<=tablet") {
+							height: auto;
+							width: 100%;
+							max-width: none;
+							display: block;
+						} 
+					}
+				}
+			}
+				
+			.card-title-section {
+				padding: $padding $gutter-half;
+				min-width: 25%;
+
+				@include media("<=tablet") {
+					min-width: none;
+					display: block;
+					height: auto;
+					padding: $gutter-mobile;
+				}
+
+				h2 {
+					color: $darkgrey;
+					font-size: 48px;
+					font-family: $serif;
+					font-weight: 800;
+					line-height: $heading-line-height;
+					margin: 0;
+
+					&:last-child { margin-bottom: 0; }
+				}
+
+				a.text-link {
+					vertical-align: bottom;
+					color: $darkgrey;
+					font-weight: 600;
+					text-decoration: none;
+					&:hover { text-decoration: underline; }
+					&:before { background: url('assets/images/icons/arrow-right.svg') no-repeat center center; }
+				}
+			}
+
+			.card-description-section {
+				padding: $padding $gutter-half $padding 0;
+
+				@include media("<=tablet") {
+					display: block;
+					width: auto;
+					height: auto;
+					padding: $gutter-mobile;
+				}
+
+				p {
+					display: block;
+    			overflow: hidden;
+					word-break: break-all;
+					text-overflow: ellipsis;
+					margin: 0;
+					color: $darkgrey;
+					font-size: 18px;
+
+					&:last-child { margin-bottom: 0; }
+				}
+			}
+		}
+	}
+}

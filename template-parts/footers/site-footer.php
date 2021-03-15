@@ -9,10 +9,9 @@
       <?php theme_include_menu(4, 'social') ?>
     </div>
     
-    <div class="column menus">
+    <div class="column sites">
       <?php
-      theme_include_menu(2, 'main', TRUE);
-      theme_include_menu(3, 'main');
+      theme_include_menu(27, 'site-link');
       ?>
     </div>
   </div>
