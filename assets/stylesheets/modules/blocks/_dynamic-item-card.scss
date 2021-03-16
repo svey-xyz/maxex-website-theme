@@ -117,6 +117,7 @@ $card-height: 350px;
 
 			.card-description-section {
 				padding: $padding $gutter-half $padding 0;
+				max-height: $card-height - $padding * 2;
 
 				@include media("<=tablet") {
 					display: block;
@@ -125,11 +126,16 @@ $card-height: 350px;
 					padding: $gutter-mobile;
 				}
 
-				p {
+				p {		
 					display: block;
-    			overflow: hidden;
-					word-break: break-all;
-					text-overflow: ellipsis;
+					
+    				
+  					display: -webkit-box;
+  					-webkit-line-clamp: 10;
+  					-webkit-box-orient: vertical;
+
+					overflow: hidden;
+
 					margin: 0;
 					color: $darkgrey;
 					font-size: 18px;

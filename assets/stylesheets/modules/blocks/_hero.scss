@@ -88,7 +88,7 @@
 			.text-container {
 				padding: 0 $gutter;
 				position: relative;
-				max-width: $content-width;
+				max-width: $content-width - $gutter;
 				margin: auto;
 				text-align: right;
 
