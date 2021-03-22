@@ -1,0 +1,18 @@
+//
+// Max width elements
+//
+
+.full-width-wrapper {
+	width: 100%;
+	padding: 0 $gutter;
+
+	@include media("<=tablet") {
+		padding: 0 $gutter-half;
+	}
+	
+	.max-width-container {
+		margin: 0 auto;
+		position: relative;
+		max-width: $content-width - $gutter;
+	}
+}

@@ -2,22 +2,11 @@
 // Dynamic card block
 //
 
-$card-height: 350px;
-
 .dynamic-item-card {
-	
-	width: 100%;
-	padding: $gutter-half $gutter;
-
-	@include media("<=tablet") {
-		padding: $gutter-mobile $gutter-half;
-	}
+	$card-height: 350px;
 
 	.card {
-		margin: auto;
 		box-shadow: $shadow;
-		position: relative;
-		max-width: $content-width - $gutter;
 		max-height: $card-height;
 
 		@include media("<=tablet") {
@@ -128,7 +117,6 @@ $card-height: 350px;
 
 				p {		
 					display: block;
-					
     				
   					display: -webkit-box;
   					-webkit-line-clamp: 10;

@@ -4,12 +4,18 @@
 
 .block {
 	//
+	padding-bottom: $gutter !important;
+
+	@include media("<=tablet") {
+		padding-bottom: $gutter-mobile !important;
+	}
+
 	* {
-		box-sizing: content-box;
+		// box-sizing: content-box;
 		
 		&:before,
 		&:after {
-			box-sizing: content-box;
+			// box-sizing: content-box;
 		}
 	}
 

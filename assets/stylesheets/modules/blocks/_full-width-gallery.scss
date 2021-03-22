@@ -3,22 +3,20 @@
 //
 
 .full-width-gallery {
-	width: 100%;
-	padding: $gutter-mobile $gutter;
-
-	@include media("<=tablet") {
-		padding: $gutter-mobile $gutter-half;
-	}
-
 	.column {
 		margin: auto;
 		position: relative;
-		max-width: $content-width - $gutter;
+		height: 80vh;
+
+		@include media("<=desktop") {
+			width: 100%;
+			height: auto;
+		}
 
 		.gallery {
 			width: 100%;
 			display: inline-block;
-			height: calc(100vh - 90px);
+			height: 80vh;
 			
 			@include media("<=desktop") {
 				width: 100%;
@@ -26,9 +24,9 @@
 			}
 			
 			.swiper-slide {
-				height: calc(100vh - 90px);
+				height: 80vh;
 				width: auto;
-				
+
 				@include media ("<=desktop") {
 					width: 100%;
 					height: auto;
@@ -37,7 +35,7 @@
 				img {
 					height: 100%;
 					display: block;
-					height: calc(100vh - 90px);
+					height: 80vh;
 					
 					@include media ("<=desktop") {
 						width: 100%;

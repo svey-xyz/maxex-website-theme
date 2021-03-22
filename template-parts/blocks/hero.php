@@ -24,8 +24,8 @@
                         <source srcset="<?php print $image['sizes']['laptop']; ?>" media="(max-width: 1600px)">
                         <img class="swiper-lazy" src="<?php print $image['url']; ?>" alt="<?php print $image['alt']; ?>" />
                     </picture>
-                    <div style="background-color:<?php print $colour; ?>e8" class="card">
-                        <div class="text-container">
+                    <div style="background-color:<?php print $colour; ?>e8" class="card full-width-wrapper">
+                        <div class="text-container max-width-container">
 							<?php print $copy; ?>
 							<?php if($button): ?>
 							<a class="text-link" href="<?php print $link; ?>"><?php print $button; ?></a>

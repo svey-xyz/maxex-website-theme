@@ -5,8 +5,10 @@
 
 $logos = get_field('logos', 'option');
 ?>
-<header id="header" class="header loading">
-  	<div class="columns">
+<div id="header-padding" class="header-padding"></div>
+
+<header id="header" class="header full-width-wrapper">
+  	<div class="columns max-width-container">
 	  	<div class="header-content">
     		<div class="column logo">
       			<a href="<?php echo get_permalink(16) // Home ?>">

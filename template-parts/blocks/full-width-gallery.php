@@ -2,8 +2,8 @@
     $gallery = get_sub_field('full_width_gallery');
     //print print_r($gallery,TRUE);
 ?>
-<section id="<?php echo theme_block_handle() . '-' . get_row_index() ?>" class="block <?php echo theme_block_handle() ?>">
-<div class="column">
+<section id="<?php echo theme_block_handle() . '-' . get_row_index() ?>" class="block full-width-wrapper <?php echo theme_block_handle() ?>">
+<div class="column max-width-container">
    <div class="gallery">
             <!-- Slider main container -->
         <div class="swiper-container">

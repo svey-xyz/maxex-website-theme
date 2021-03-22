@@ -12,8 +12,8 @@
         //print print_r($gallery,TRUE);
     ?>
 
-<section id="<?php echo theme_block_handle() . '-' . get_row_index() ?>" class="block <?php echo theme_block_handle() ?>">
-	<div class="card">
+<section id="<?php echo theme_block_handle() . '-' . get_row_index() ?>" class="block full-width-wrapper <?php echo theme_block_handle() ?>">
+	<div class="card max-width-container">
 		<div class="column <?php print $alignment ?>">
 			<div class="card-image-section">
 				<a href="<?php print $link; ?>">
