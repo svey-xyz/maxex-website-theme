@@ -935,6 +935,20 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/stylesheets\/layouts\/_portal-page.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/layouts\/_portal-page.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/stylesheets\/layouts\/_project-layout.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1767,6 +1781,14 @@
       "oAP" : "\/page-templates\/project.php",
       "oF" : 0
     },
+    "\/page-templates\/site-portal.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/site-portal.php",
+      "oF" : 0
+    },
     "\/screenshot.png" : {
       "ft" : 32768,
       "iS" : 762562,
@@ -1978,6 +2000,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/buttons\/menu-button.php",
+      "oF" : 0
+    },
+    "\/template-parts\/cards\/portal-item-card.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/cards\/portal-item-card.php",
       "oF" : 0
     },
     "\/template-parts\/cards\/project-card.php" : {

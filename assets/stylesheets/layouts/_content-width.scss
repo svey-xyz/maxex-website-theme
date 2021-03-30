@@ -3,16 +3,20 @@
 //
 
 .full-width-wrapper {
+	font-size: 0;
 	width: 100%;
-	padding: 0 $gutter;
+	padding-left: $gutter;
+	padding-right: $gutter;
 
 	@include media("<=tablet") {
-		padding: 0 $gutter-half;
+		padding-left: $gutter-mobile;
+		padding-right: $gutter-mobile;
 	}
 	
 	.max-width-container {
 		margin: 0 auto;
 		position: relative;
-		max-width: $content-width - $gutter;
+		width: 100%;
+		max-width: $content-width;
 	}
 }

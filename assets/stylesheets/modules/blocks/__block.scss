@@ -7,7 +7,7 @@
 	padding-bottom: $gutter !important;
 
 	@include media("<=tablet") {
-		padding-bottom: $gutter-mobile !important;
+		padding-bottom: $gutter-mobile;
 	}
 
 	* {

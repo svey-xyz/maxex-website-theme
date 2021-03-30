@@ -3,11 +3,11 @@
 //
 
 .dynamic-item-card {
-	$card-height: 350px;
+	$card-max-height: calc(max(35vh, 420px));
 
 	.card {
 		box-shadow: $shadow;
-		max-height: $card-height;
+		background: #fff;
 
 		@include media("<=tablet") {
 			max-height: none;
@@ -38,10 +38,13 @@
 			}
 
 			.card-image-section {
-				display: inline-block;
-				vertical-align: top;
+				display: block;
+				// vertical-align: top;
+				width: 60%;
+				max-height: $card-max-height;
 
 				@include media("<=tablet") {
+					max-height: none;
 					width: 100%;
 					display: block;
 					height: auto;
@@ -49,6 +52,9 @@
 				
 				picture {
 					display: flex;
+					overflow: hidden;
+					height: 100%;
+					width: auto;
 					
 					@include media("<=tablet") {
 						display: block;
@@ -57,10 +63,13 @@
 					
 					img {
 						// width: 500px;
-						width: $card-height;
-						max-width: $card-height;
-						height: $card-height;
-						object-fit: cover;
+						max-width: 100%;
+          				max-height: 100%;
+        				//   max-height: 85vh;
+						height: 100%;
+						width: 100%;
+          				object-fit: cover;
+          
 
 						@include media("<=tablet") {
 							height: auto;
@@ -74,10 +83,11 @@
 				
 			.card-title-section {
 				padding: $padding $gutter-half;
-				min-width: 25%;
+				width: 40%;
+				max-height: $card-max-height;
 
 				@include media("<=tablet") {
-					min-width: none;
+					width: 100%;
 					display: block;
 					height: auto;
 					padding: $gutter-mobile;
@@ -91,7 +101,18 @@
 					line-height: $heading-line-height;
 					margin: 0;
 
+					display: -webkit-box;
+  					-webkit-line-clamp: 3;
+  					-webkit-box-orient: vertical;
+
+					overflow: hidden;
+
+					text-decoration: none;
+
 					&:last-child { margin-bottom: 0; }
+					&:hover {
+						text-decoration: underline;
+					}
 				}
 
 				a.text-link {
@@ -102,33 +123,21 @@
 					&:hover { text-decoration: underline; }
 					&:before { background: url('assets/images/icons/arrow-right.svg') no-repeat center center; }
 				}
-			}
 
-			.card-description-section {
-				padding: $padding $gutter-half $padding 0;
-				max-height: $card-height - $padding * 2;
+				p {
+					// padding-top: $padding;
+					line-height: 1.5;
 
-				@include media("<=tablet") {
-					display: block;
-					width: auto;
-					height: auto;
-					padding: $gutter-mobile;
-				}
-
-				p {		
-					display: block;
-    				
-  					display: -webkit-box;
-  					-webkit-line-clamp: 10;
+					display: -webkit-box;
+  					-webkit-line-clamp: 6;
   					-webkit-box-orient: vertical;
 
 					overflow: hidden;
 
-					margin: 0;
-					color: $darkgrey;
-					font-size: 18px;
+					@include media("<=tablet") {
 
-					&:last-child { margin-bottom: 0; }
+						padding-top: 0;
+					}
 				}
 			}
 		}

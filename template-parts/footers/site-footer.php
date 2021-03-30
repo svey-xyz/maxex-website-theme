@@ -3,8 +3,8 @@
 // Site footer
 // 
 ?>
-<footer id="footer" class="footer block">
-  <div class="columns">
+<footer id="footer" class="footer full-width-wrapper block">
+  <div class="columns max-width-container">
     <div class="column social">
       <?php theme_include_menu(4, 'social') ?>
     </div>

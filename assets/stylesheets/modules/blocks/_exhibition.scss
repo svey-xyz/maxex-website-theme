@@ -3,17 +3,9 @@
 //
 
 .exhibition {
-  margin: $gutter-half;
-  font-size: 0;
-
-  @include media("<=mobile") {
-    margin: $gutter-mobile;
-  }
-
   .column {
     display: flex;
     vertical-align: top;
-    width: 100%;
 
     @include media("<=tablet") {
       display: block;
@@ -62,7 +54,7 @@
 
     .image {
       width: 70%;
-      display: inline-block;
+      display: block;
 
       @include media("<=tablet") {
         display: block;
@@ -71,14 +63,18 @@
 
       picture {
         display: flex;
+		overflow: hidden;
+		height: 100%;
+		width: auto;
 
         img {
           max-width: 100%;
-          max-height: 80%;
-          max-height: 85vh;
+        //   max-height: 80%;
+        //   max-height: 85vh;
+			height: 100%;
           object-fit: cover;
-          width: 100%;
-          max-width: 100%;
+          width: auto;
+        //   max-width: 100%;
           
           @include media ("<=tablet") {
             max-height: 40%;

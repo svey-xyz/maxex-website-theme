@@ -3,18 +3,15 @@
 //
 
 #footer {
-    
-  	width: 100%;
-	padding: $gutter-half $gutter;
-
-	@include media("<=tablet") {
-		padding: $gutter-mobile $gutter-half;
-	}
   
+	margin: auto;
+		// position: absolute;
+		position: absolute;
+   	bottom: 0px;
+	   font-size: 0;
+
 	.columns{
-		margin: auto;
-		position: relative;
-		max-width: $content-width - $gutter;
+		
 
 		font-size: 0;
 		.column{

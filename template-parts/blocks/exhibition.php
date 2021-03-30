@@ -8,9 +8,9 @@
         $alignment = get_sub_field('alignment');
     ?>
 
-<section id="<?php echo theme_block_handle() . '-' . get_row_index() ?>" class="block <?php echo theme_block_handle() ?>">
+<section id="<?php echo theme_block_handle() . '-' . get_row_index() ?>" class="block full-width-wrapper <?php echo theme_block_handle() ?>">
 
-<div class="column <?php print $alignment ?>">
+<div class="column max-width-container <?php print $alignment ?>">
     <div style="background-color:<?php print $colour ?>;" class="colour">
         <?php print $copy ?>
          <?php if($button): ?>

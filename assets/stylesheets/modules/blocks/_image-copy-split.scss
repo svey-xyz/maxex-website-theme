@@ -3,7 +3,6 @@
 //
 
 .block.image-copy-split{
-  margin: $gutter-half;
   font-size: 0;
   display: flex;
   
@@ -15,6 +14,9 @@
     margin: $gutter-mobile;
   }
   
+  .max-width-container{
+	  display: flex;
+	  justify-content: space-between;
   &.align-image-left {
 
     .column {
@@ -30,10 +32,11 @@
       &.image { order: 2; }
     }
   }
+
   
   .column {
     display: inline-block;
-    width: 50%;
+    width: 40%;
     vertical-align: top;
     
     @include media("<=tablet") {
@@ -45,8 +48,8 @@
       img {
         width: 100%;
         display: block;
-        margin: 0 auto;
-        max-height: calc(90vh - 90px);
+        // margin: 0 auto;
+        max-height: 80vh;
         object-fit: contain;
       }
     }
@@ -55,19 +58,15 @@
       margin: 0;
         
       &.left {
-        margin: $gutter-half $gutter-half 0 $gutter;
         
-        @include media("<=tablet") {
-          margin: 0;
-        }
+        margin: 0;
+    
       }
         
       &.right {
-        margin: $gutter-half $gutter 0 $gutter-half;
         
-        @include media("<=tablet") {
-          margin: 0;
-        }
+        margin: 0;
+        
       }
         
       h2 {
@@ -134,4 +133,5 @@
       }
     }
   }
+}
 }
