@@ -2,40 +2,30 @@
 // Site header
 //
 
-$header-height: 65px;
-
-#header-padding {
-	position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-	height: $header-height;
-
-	@include media("<=tablet") {
-		height: 0px;
-	}
-}
+$header-height: 75px;
 
 #header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
     font-size: 0;
     background: white;
-	box-shadow: $shadow;
+	padding-bottom: $header-height;
+	// box-shadow: $shadow;
 
     &.menu-open {
         .columns {
 			.column {
 				&.menus {
-					color:rgba(0, 0, 0, 0.3);
-					opacity: 1;
 					pointer-events: auto;
-					position: absolute;
-					width: 100%;
-					left: 0;
+					max-height: 100vh;
+					box-shadow: $shadow-inner;
+
+					transition-timing-function: ease-in-out;
+					transition-duration: 0.8s, 0.2s;
+					transition-property: max-height, box-shadow;
+					transition-delay: 0s, 0s; // no delay on shadow appear
 				}
 			}
         }
@@ -52,9 +42,6 @@ $header-height: 65px;
 				vertical-align: top;
 
 				&.logo {
-
-					// width: 25%;
-
 					a {
 						display: inline-block;
 						transition: 0.6s;
@@ -111,41 +98,34 @@ $header-height: 65px;
 			vertical-align: top;
 
 			&.menus {
-
-				width: 75%;
-				text-align: right;
-
-				position: absolute;
-				top: $header-height;
-				left: 0;
+				position: relative;
+				background-color: white;
 				width: 100%;
-				height: 100%;
-				height: 100vh;
-				text-align: center;
-				background: rgba(0,0,0,0.95);
-				overflow-x: hidden;
-				overflow-y: scroll;
-				z-index: 150;
-				opacity: 0;
-				pointer-events: none;
+				overflow: hidden;
+				max-height: 0;
+				// transition: max-height 0.8s ease-in-out, box-shadow 0.4s ease-out 1s;
 
-				@include media("<=tablet") {
-					top: $header-height - $header-height / 10;
-				}
+				transition-timing-function: ease-in-out;
+				transition-duration: 0.8s, 0.6s;
+				transition-property: max-height, box-shadow;
+				transition-delay: 0s, 0.4s; // delay shadow disappear on close
+
+				box-shadow: none;
+				// transition: box-shadow ;
+
+				text-align: center;
+				pointer-events: none;
 
 				.mainFunctionNav {
 					padding-top: $header-height;
-					padding-bottom: 180px;
+					padding-bottom: $header-height;
 				}
 			
 
 				ul {
 					margin: 0;
 					padding: 0;
-					// display: inline-block;
 					vertical-align: top;
-
-					// display: block;
 					width: 100%;
 				
 					&.images {
@@ -173,10 +153,8 @@ $header-height: 65px;
 					
 
 						a {
-							font-size: 36px;
-							color: white;
-							padding: 0 15px;
-							text-decoration: underline;
+							font-size: 18px;
+							color: $darkgrey;
 							letter-spacing: 3px;
 							line-height: 2;
 							position: relative;

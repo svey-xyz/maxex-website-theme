@@ -85,9 +85,6 @@ $(document).ready(function() {
 	    event.preventDefault();
 		$('#header').toggleClass('menu-open');
 		$(this).toggleClass('active');
-
-		var page = document.getElementsByTagName("body")[0];
-		page.style.overflow = page.style.overflow === 'hidden' ? '' : 'hidden'; // disable scroll on page while popup is open
 	});
     
 });

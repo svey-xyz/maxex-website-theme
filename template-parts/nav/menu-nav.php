@@ -27,7 +27,7 @@
 				
 			?>
 
-			<li class="<?php print trim($classes); ?>">
+			<li class="<?php print trim($classes . '-menu-item'); ?>">
 
 				<?php if ($menu_class == "mainFunctionNav"): ?>
 

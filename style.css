@@ -1,9 +1,9 @@
 /*!
-Theme Name: MaxEx (v0.0.1)
+Theme Name: Function (v1.3.0)
 Author: The New Beat
 Author URI: http://thenewbeat.ca
 Description: Original theme by The New Beat; theme update by Hayden Soule.
-Version: 0.0.1
+Version: 1.3.0
 */
 * {
   box-sizing: border-box; }
@@ -1447,7 +1447,7 @@ a {
       order: 2; }
     .block.image-copy-split .max-width-container .column {
       display: inline-block;
-      width: 40%;
+      width: 50%;
       vertical-align: top; }
       @media (max-width: 1024px) {
         .block.image-copy-split .max-width-container .column {
@@ -1475,8 +1475,16 @@ a {
             .block.image-copy-split .max-width-container .column.copy h2.right {
               margin: 24px 0; } }
         .block.image-copy-split .max-width-container .column.copy p {
-          margin: 0 0 24px 0;
-          font-size: 20px; }
+          margin: 0 0 45px;
+          font-size: 24px; }
+          .block.image-copy-split .max-width-container .column.copy p:last-child {
+            margin-bottom: 0; }
+          @media (max-width: 1440px) {
+            .block.image-copy-split .max-width-container .column.copy p {
+              font-size: 20px; } }
+          @media (max-width: 1024px) {
+            .block.image-copy-split .max-width-container .column.copy p {
+              margin: 45px 0 0; } }
           .block.image-copy-split .max-width-container .column.copy p:last-child {
             margin-bottom: 0; }
           .block.image-copy-split .max-width-container .column.copy p.col-1 {
@@ -2507,105 +2515,6 @@ button.carousel-pagination-bullet {
 .content a:not(.text-link) {
   text-decoration: underline; }
 
-.drawer {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  transform: translateX(-100%);
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  will-change: transform; }
-  .drawer.is-open {
-    transform: translateX(0);
-    transition-duration: .25s; }
-  .drawer .drawer-content {
-    flex: 1; }
-
-.max-ex-25-drawer .drawer-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 24px 16px 32px; }
-
-.max-ex-25-drawer .drawer-content .list-menu.style-primary .menu-items .menu-item {
-  border-top: 1px solid rgba(255, 255, 255, 0.2); }
-  .max-ex-25-drawer .drawer-content .list-menu.style-primary .menu-items .menu-item:last-child {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-  .max-ex-25-drawer .drawer-content .list-menu.style-primary .menu-items .menu-item.current-menu-item a, .max-ex-25-drawer .drawer-content .list-menu.style-primary .menu-items .menu-item.current_page_parent a {
-    -webkit-text-fill-color: white; }
-  .max-ex-25-drawer .drawer-content .list-menu.style-primary .menu-items .menu-item a {
-    display: block;
-    padding: 16px 40px;
-    font-size: 33px;
-    line-height: 1.15;
-    font-weight: 900;
-    font-family: "proxima-nova", sans-serif;
-    text-transform: uppercase;
-    color: white;
-    color: rgba(255, 255, 255, 0.5);
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.5); }
-    .max-ex-25-drawer .drawer-content .list-menu.style-primary .menu-items .menu-item a:hover, .max-ex-25-drawer .drawer-content .list-menu.style-primary .menu-items .menu-item a:active {
-      -webkit-text-fill-color: white; }
-
-.max-ex-25-drawer .drawer-content .list-menu.style-secondary {
-  padding: 32px 40px; }
-  .max-ex-25-drawer .drawer-content .list-menu.style-secondary .menu-items .menu-item.current-menu-item a:after, .max-ex-25-drawer .drawer-content .list-menu.style-secondary .menu-items .menu-item.current_page_parent a:after {
-    background-color: white;
-    opacity: 1;
-    transform: scaleX(1); }
-  .max-ex-25-drawer .drawer-content .list-menu.style-secondary .menu-items .menu-item a {
-    position: relative;
-    font-size: 13px;
-    font-weight: 900;
-    font-family: "proxima-nova", sans-serif;
-    text-transform: uppercase;
-    color: white; }
-    .max-ex-25-drawer .drawer-content .list-menu.style-secondary .menu-items .menu-item a:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: white;
-      opacity: 0;
-      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.15s linear;
-      transform-origin: left center;
-      transform: scaleX(0); }
-    .max-ex-25-drawer .drawer-content .list-menu.style-secondary .menu-items .menu-item a:hover:after {
-      background-color: white;
-      opacity: 1;
-      transform: scaleX(1); }
-
-.max-ex-25-drawer .drawer-footer {
-  padding: 24px 40px 48px; }
-  .max-ex-25-drawer .drawer-footer .function-logo {
-    display: inline-block; }
-
-@media only screen and (max-height: 900px) {
-  .max-ex-25-drawer .drawer-content .list-menu.style-primary .menu-items .menu-item a {
-    font-size: 25px; } }
-
-@media (min-width: 45em) {
-  .max-ex-25-drawer {
-    max-width: 320px; } }
-
-@media (min-width: 64em) {
-  .max-ex-25-drawer {
-    transform: translateX(0); }
-    .max-ex-25-drawer .drawer-header .close-button {
-      display: none; } }
-
 .embed {
   margin-bottom: 24px;
   position: relative;
@@ -2772,31 +2681,22 @@ button.carousel-pagination-bullet {
   @media (min-width: 64em) {
     .project-cards-grid {
       padding: 0 32px 48px; } }
-#header-padding {
+#header {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  height: 65px; }
-  @media (max-width: 1024px) {
-    #header-padding {
-      height: 0px; } }
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
   font-size: 0;
   background: white;
-  box-shadow: 0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 0px 5px -1px rgba(0, 0, 0, 0.06); }
+  padding-bottom: 75px; }
   #header.menu-open .columns .column.menus {
-    color: rgba(0, 0, 0, 0.3);
-    opacity: 1;
     pointer-events: auto;
-    position: absolute;
-    width: 100%;
-    left: 0; }
+    max-height: 100vh;
+    box-shadow: inset 0 0px 6px -1px rgba(0, 0, 0, 0.1), inset 0 0px 5px -1px rgba(0, 0, 0, 0.06);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.8s, 0.2s;
+    transition-property: max-height, box-shadow;
+    transition-delay: 0s, 0s; }
   #header .columns .header-content {
     position: relative;
     max-width: 1200px;
@@ -2809,20 +2709,20 @@ button.carousel-pagination-bullet {
         transition: 0.6s; }
         #header .columns .header-content .column.logo a img {
           display: block;
-          height: 65px;
+          height: 75px;
           padding: 15px 45px 15px 0px;
           transition: 0.4s; }
           @media (max-width: 1024px) {
             #header .columns .header-content .column.logo a img {
               padding: 15px 0px;
-              height: 58.5px; } }
+              height: 67.5px; } }
       #header .columns .header-content .column.logo .menu-toggle {
         position: absolute;
         top: 0px;
         right: 0px;
         padding: 15px 45px 15px 0px;
-        width: 65px;
-        height: 65px;
+        width: 75px;
+        height: 75px;
         display: block;
         cursor: pointer;
         background-image: url("assets/images/icons/menu.svg");
@@ -2832,33 +2732,27 @@ button.carousel-pagination-bullet {
         @media (max-width: 1024px) {
           #header .columns .header-content .column.logo .menu-toggle {
             padding: 15px 0px;
-            height: 58.5px; } }
+            height: 67.5px; } }
         #header .columns .header-content .column.logo .menu-toggle.active {
           background-image: url("assets/images/icons/menu-close.svg"); }
   #header .columns .column {
     vertical-align: top; }
     #header .columns .column.menus {
-      width: 75%;
-      text-align: right;
-      position: absolute;
-      top: 65px;
-      left: 0;
+      position: relative;
+      background-color: white;
       width: 100%;
-      height: 100%;
-      height: 100vh;
+      overflow: hidden;
+      max-height: 0;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.8s, 0.6s;
+      transition-property: max-height, box-shadow;
+      transition-delay: 0s, 0.4s;
+      box-shadow: none;
       text-align: center;
-      background: rgba(0, 0, 0, 0.95);
-      overflow-x: hidden;
-      overflow-y: scroll;
-      z-index: 150;
-      opacity: 0;
       pointer-events: none; }
-      @media (max-width: 1024px) {
-        #header .columns .column.menus {
-          top: 58.5px; } }
       #header .columns .column.menus .mainFunctionNav {
-        padding-top: 65px;
-        padding-bottom: 180px; }
+        padding-top: 75px;
+        padding-bottom: 75px; }
       #header .columns .column.menus ul {
         margin: 0;
         padding: 0;
@@ -2880,10 +2774,8 @@ button.carousel-pagination-bullet {
             position: relative;
             z-index: 50; }
           #header .columns .column.menus ul li a {
-            font-size: 36px;
-            color: white;
-            padding: 0 15px;
-            text-decoration: underline;
+            font-size: 18px;
+            color: #333333;
             letter-spacing: 3px;
             line-height: 2;
             position: relative;
@@ -2895,265 +2787,10 @@ button.carousel-pagination-bullet {
               padding: 0; }
               #header .columns .column.menus ul li a.image img {
                 display: block;
-                max-height: 65px;
+                max-height: 75px;
                 padding: 15px;
                 margin: 0 auto; }
 
-.max-ex-25-launch-header {
-  padding: 32px;
-  background-image: url("http://functionima.com/wp-content/uploads/2020/04/saturn-austin-ambraska-2020-mobile.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .max-ex-25-launch-header .content {
-    text-align: center; }
-    .max-ex-25-launch-header .content .exhibition-title {
-      font-weight: 900;
-      font-family: "proxima-nova", sans-serif;
-      font-size: 36px;
-      line-height: 1.15;
-      color: white;
-      text-transform: uppercase;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: white; }
-    .max-ex-25-launch-header .content .exhibition-description {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 900px;
-      font-weight: bold;
-      font-family: "Cormorant Garamond", serif;
-      font-size: 24px;
-      color: white; }
-  @media (min-width: 45em) {
-    .max-ex-25-launch-header {
-      padding: 80px;
-      background-image: url("http://functionima.com/wp-content/uploads/2020/04/saturn-austin-ambraska-2020.jpg"); }
-      .max-ex-25-launch-header .content {
-        text-align: center; }
-        .max-ex-25-launch-header .content .exhibition-title {
-          font-size: 45px; }
-        .max-ex-25-launch-header .content .exhibition-description {
-          font-size: 30px; } }
-.max-ex-25-local-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100vw; }
-  @media (min-width: 64em) {
-    .max-ex-25-local-header {
-      display: none; } }
-.max-ex-25-page-header {
-  padding: 64px 16px;
-  text-align: center; }
-  .max-ex-25-page-header .exhibition-title {
-    margin: 0 0 4px;
-    font-size: 39px;
-    line-height: 1.15;
-    font-weight: 900;
-    font-family: "proxima-nova", sans-serif;
-    color: rgba(0, 0, 0, 0.5);
-    text-transform: uppercase;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.5); }
-  .max-ex-25-page-header .page-title {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 900;
-    font-family: "proxima-nova", sans-serif;
-    color: black;
-    text-transform: uppercase; }
-  .max-ex-25-page-header .button {
-    margin-top: 28px; }
-
-.max-ex-25-splash-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-  min-height: 100vh; }
-  .max-ex-25-splash-header .area-A {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    pointer-events: none; }
-    .max-ex-25-splash-header .area-A .countdown-timer {
-      position: relative;
-      top: 40px;
-      left: -4px;
-      margin-right: 16px; }
-    .max-ex-25-splash-header .area-A .maximum-exposure-25-logo {
-      display: block;
-      margin: 0;
-      width: 110px;
-      height: 70px;
-      background-image: url("assets/images/logos/max-ex-25.png");
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: contain; }
-  .max-ex-25-splash-header .area-B {
-    position: relative;
-    z-index: 2;
-    flex-grow: 1;
-    margin-top: 48px; }
-    .max-ex-25-splash-header .area-B:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -15px;
-      display: none;
-      width: 2px;
-      height: 100%;
-      background-color: white; }
-    .max-ex-25-splash-header .area-B .content-A {
-      margin-bottom: 30px; }
-      .max-ex-25-splash-header .area-B .content-A .super-heading {
-        margin-bottom: 16px; }
-        .max-ex-25-splash-header .area-B .content-A .super-heading p {
-          margin: 0;
-          font-weight: 900;
-          font-family: "proxima-nova", sans-serif;
-          font-size: 16px;
-          line-height: 1.15;
-          color: black;
-          text-transform: uppercase; }
-      .max-ex-25-splash-header .area-B .content-A .heading {
-        position: relative;
-        display: block;
-        margin: 0;
-        font-weight: 900;
-        font-family: "proxima-nova", sans-serif;
-        font-size: 36px;
-        line-height: 1.15;
-        color: rgba(255, 255, 255, 0.5);
-        text-transform: uppercase;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: rgba(255, 255, 255, 0.5); }
-        .max-ex-25-splash-header .area-B .content-A .heading:after {
-          content: '';
-          position: absolute;
-          z-index: 1;
-          right: -53px;
-          bottom: 0;
-          display: none;
-          width: 40px;
-          height: 40px;
-          background-image: url("assets/images/detail-line-plus.svg");
-          background-position: center center;
-          background-repeat: no-repeat;
-          background-size: contain; }
-    .max-ex-25-splash-header .area-B .content-B .text {
-      position: relative;
-      bottom: -11px;
-      margin: 0;
-      max-width: 600px;
-      font-weight: bold;
-      font-family: "Cormorant Garamond", serif;
-      font-size: 24px;
-      line-height: 1.5;
-      color: white; }
-  .max-ex-25-splash-header .area-C {
-    position: relative;
-    z-index: 2;
-    margin-top: 64px; }
-    .max-ex-25-splash-header .area-C .footer-content p {
-      margin: 0;
-      padding-right: 80px;
-      font-family: "proxima-nova", sans-serif;
-      font-size: 15px;
-      line-height: 1.5;
-      color: white; }
-      .max-ex-25-splash-header .area-C .footer-content p strong {
-        font-weight: 600;
-        letter-spacing: .16em;
-        text-transform: uppercase; }
-      .max-ex-25-splash-header .area-C .footer-content p a {
-        font-weight: 600;
-        font-family: "proxima-nova", sans-serif;
-        font-size: 15px;
-        color: #99cccc; }
-        .max-ex-25-splash-header .area-C .footer-content p a:hover {
-          text-decoration: underline; }
-    .max-ex-25-splash-header .area-C .sponsor-logos {
-      margin-top: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end; }
-      .max-ex-25-splash-header .area-C .sponsor-logos .sponsor-logo {
-        display: block;
-        margin-right: 10px;
-        width: 80px;
-        height: 80px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain; }
-        .max-ex-25-splash-header .area-C .sponsor-logos .sponsor-logo:last-child {
-          margin-right: 0; }
-      .max-ex-25-splash-header .area-C .sponsor-logos .scotiabank-contact-photography-festival-logo {
-        background-image: url("assets/images/logos/scotiabank-contact-photography-festival.png"); }
-      .max-ex-25-splash-header .area-C .sponsor-logos .akasha-logo {
-        background-image: url("assets/images/logos/akasha-art-projects-white.png"); }
-  .max-ex-25-splash-header .area-D {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%; }
-  @media (min-width: 641px) {
-    .max-ex-25-splash-header {
-      padding: 45px; }
-      .max-ex-25-splash-header .area-A {
-        justify-content: flex-end; }
-        .max-ex-25-splash-header .area-A .countdown-timer {
-          top: 10px;
-          left: 0; }
-        .max-ex-25-splash-header .area-A .maximum-exposure-25-logo {
-          width: 200px;
-          height: 125px; }
-      .max-ex-25-splash-header .area-B {
-        display: flex;
-        justify-content: center;
-        max-height: 50vh;
-        margin-top: 0; }
-        .max-ex-25-splash-header .area-B:after {
-          left: 50%;
-          display: block; }
-        .max-ex-25-splash-header .area-B .content-A,
-        .max-ex-25-splash-header .area-B .content-B {
-          flex-basis: 50%; }
-        .max-ex-25-splash-header .area-B .content-A {
-          margin-bottom: 0;
-          padding-right: 32px;
-          align-self: center;
-          text-align: right; }
-          .max-ex-25-splash-header .area-B .content-A .super-heading {
-            margin-bottom: 10px; }
-            .max-ex-25-splash-header .area-B .content-A .super-heading p {
-              font-size: 20px; }
-          .max-ex-25-splash-header .area-B .content-A .heading {
-            padding-bottom: 40px;
-            font-size: 45px; }
-            .max-ex-25-splash-header .area-B .content-A .heading:after {
-              display: block; }
-          .max-ex-25-splash-header .area-B .content-A .text {
-            font-size: 30px; }
-        .max-ex-25-splash-header .area-B .content-B {
-          padding-left: 32px;
-          align-self: flex-end; }
-      .max-ex-25-splash-header .area-C {
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .max-ex-25-splash-header .area-C .footer-content p {
-          padding: 0 80px; }
-        .max-ex-25-splash-header .area-C .sponsor-logos {
-          margin-top: 0;
-          justify-content: flex-start; } }
 .icon {
   display: inline-block;
   vertical-align: middle;
