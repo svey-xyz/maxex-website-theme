@@ -6,7 +6,7 @@ $link_style = $link['link-style'];
 $alignment = get_sub_field('alignment');
 $block_class = $block_class . ' ' . $alignment;    
 ?>
-<section id="<?php echo theme_block_handle() . '-' . get_row_index() ?>" class="block full-width-wrapper <?php echo theme_block_handle() ?>">
+<section id="<?php echo theme_block_handle() . '-' . get_row_index() ?>" class="block full-width-wrapper <?php print $alignment?> <?php echo theme_block_handle() ?>">
 	<div class="max-width-container">
 		<div class="column headline">
 			<div class="box">

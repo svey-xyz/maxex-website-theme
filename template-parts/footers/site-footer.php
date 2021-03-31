@@ -6,7 +6,7 @@
 <footer id="footer" class="footer full-width-wrapper block">
   <div class="columns max-width-container">
     <div class="column social">
-      <?php theme_include_menu(4, 'social') ?>
+      <?php theme_include_menu(29, 'logos') ?>
     </div>
     
     <div class="column sites">

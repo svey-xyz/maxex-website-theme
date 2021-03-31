@@ -17,9 +17,26 @@
   }
   
   &.left {
+	text-align: left;
     .column {
       &.headline { order: 1; }
       &.text { order: 2; }
+    }
+  }
+
+  &.center {
+    .column {
+		width: 100%;
+		
+      	&.headline {
+		  	text-align: center;
+		  	order: 1;
+			padding-bottom: 12px;
+		}
+      	&.text {
+			text-align: center;
+			order: 2;
+		}
     }
   }
   
@@ -28,7 +45,7 @@
       &.headline {
         order: 2;
         
-        h2 { margin: 0 0 0 $gutter; }
+        // h2 { margin: 0 0 0 $gutter; }
       }
       
       &.text { order: 1; }
