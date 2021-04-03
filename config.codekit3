@@ -7,7 +7,7 @@
       "uuidString" : "1483E305-AC4F-4925-BBFB-BC75A70C27EE"
     }
   ],
-  "creatorBuild" : "34081",
+  "creatorBuild" : "34127",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -405,6 +405,17 @@
       "sC" : 0,
       "tS" : 0
     },
+    "\/assets\/scripts\/app\/blocks\/masonry-grid.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scripts\/app\/blocks\/masonry-grid-min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/assets\/scripts\/app\/blocks\/square-image-gallery.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -500,6 +511,17 @@
       "mi" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/scripts\/app\/globals\/resize-min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/assets\/scripts\/app\/masonry.pkgd.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scripts\/app\/masonry.pkgd.min-min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
@@ -1695,6 +1717,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-templates\/site-portal.php",
+      "oF" : 0
+    },
+    "\/page-templates\/thesis-projects.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/thesis-projects.php",
       "oF" : 0
     },
     "\/screenshot.png" : {
@@ -4103,6 +4133,9 @@
       "removeVariables" : 0,
       "safelistEntries" : [
 
+      ],
+      "skippedEntries" : [
+        "node_modules\/**"
       ]
     },
     "rollupContext" : "",
@@ -4137,6 +4170,7 @@
     "tsNoImplicitThis" : 0,
     "tsNoImplicitUseStrict" : 0,
     "tsNoLib" : 0,
+    "tsNoPropertyAccessFromIndexSignature" : 0,
     "tsNoResolve" : 0,
     "tsNoStrictGenericChecks" : 0,
     "tsNoUncheckedIndexAccess" : 0,

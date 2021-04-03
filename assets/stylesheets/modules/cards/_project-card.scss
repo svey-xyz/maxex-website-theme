@@ -2,23 +2,48 @@
 // Project card
 // 
 
+$grid-spacing: 1%;
+
 .project-card {
+	position: relative;
+	width: 32%;
+	margin-bottom: $padding;
+
+	@include media("<=tablet") {
+		width: 49%;
+	}
+
+	@include media("<=mobile") {
+		width: 100%;
+	}
 
   .card-content {
-   padding-top: 6px;
+	  width: 100%;
+		.card-image {
 
-    p {
-      margin: 0;
-      font-family: $proxima-nova;
-      font-size: 12px;
-      line-height: $heading-line-height;
-      color: black;
-      text-transform: uppercase;
+			&,
+			img {
+				position: relative;
+				width: 100%;
+				height: auto;
+			}
+		}
 
-      &.student-name {
-        font-weight: 900;
-        font-size: 14px;
-      }
-    }
-  }
+		p {
+			margin: 0;
+			// font-family: $proxima-nova;
+			font-size: 12px;
+			line-height: $heading-line-height;
+			color: black;
+			text-transform: uppercase;
+
+			&.student-name {
+				padding-top: 6px;
+				font-weight: 900;
+				font-size: 14px;
+			}
+		}
+	}
+
+	
 }

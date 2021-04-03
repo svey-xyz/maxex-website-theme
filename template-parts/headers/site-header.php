@@ -11,7 +11,7 @@ $logos = get_field('logos', 'option');
 		<div class="full-width-wrapper">
 			<div class="header-content max-width-container">
 				<div class="column logo">
-					<a href="<?php echo get_permalink(16) // Home ?>">
+					<a href="/">
 						<img id="logo" src="<?php print $logos['max_ex_logo_white'] ?>">
 					</a>
 					<span class="menu-toggle">&nbsp;</span>
