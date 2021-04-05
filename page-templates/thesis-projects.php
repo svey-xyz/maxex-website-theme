@@ -10,8 +10,12 @@
 
 <article class="full-width-wrapper ">
 	<div class="max-width-container">
-		<section class="cards-grid">
+		<div class="grid-title-section">
+			<h2><?php echo get_the_title() ?></h2>
+		</div>
+		<section class="thesis-projects-grid">
 		<!-- <ul class="grid-items"> -->
+			<div class="grid-sizer">
 
 			<?php
 				$thesisProjectsQuery = new WP_Query(array(

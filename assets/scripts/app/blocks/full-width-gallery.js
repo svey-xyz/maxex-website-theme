@@ -1,6 +1,8 @@
-$(document).ready(function() {
+$(window).on('load', function () {
+	console.log('swiper init');
 
-    $(".block.full-width-gallery").each(function(index, element) {
+    $(".full-width-gallery").each(function(index, element) {
+		console.log('found one');
 
         var block_id = $(this).attr('id');
         var block_element = '#' + block_id;
@@ -13,6 +15,8 @@ $(document).ready(function() {
             slidesPerView: 'auto',
             spaceBetween: 45
         });
+
+		block_swiper.activeIndex = 3;
 
     });
 });

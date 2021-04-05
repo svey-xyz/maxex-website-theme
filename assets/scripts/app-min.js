@@ -112,9 +112,11 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() {
+$(window).on('load', function () {
+	console.log('swiper init');
 
-    $(".block.full-width-gallery").each(function(index, element) {
+    $(".full-width-gallery").each(function(index, element) {
+		console.log('found one');
 
         var block_id = $(this).attr('id');
         var block_element = '#' + block_id;
@@ -127,6 +129,8 @@ $(document).ready(function() {
             slidesPerView: 'auto',
             spaceBetween: 45
         });
+
+		block_swiper.activeIndex = 3;
 
     });
 });
@@ -203,12 +207,20 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function () {
-	console.log('masonry loaded')
-
-	$('.cards-grid').masonry({
+$(window).on('load', function () {
+	$('.thesis-projects-grid').masonry({
 		columnWidth: '.project-card',
 		itemSelector: '.project-card',
+		gutter: '.grid-sizer',
+		// fitWidth: true,
+		transitionDuration: 0
+	});
+
+	
+
+	$('.thesis-gallery-grid').masonry({
+		columnWidth: '.project-gallery-image',
+		itemSelector: '.project-gallery-image',
 		gutter: '.grid-sizer',
 		// fitWidth: true,
 		transitionDuration: 0

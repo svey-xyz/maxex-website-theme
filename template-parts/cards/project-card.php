@@ -12,15 +12,19 @@ $image = get_field('thumbnail');
 <div class="project-card">
 	<a class="card-link" href="<?php echo get_permalink() ?>" title="<?php echo esc_attr(get_the_title()) ?>">
     	<div class="card-content">
+			
+			<div class="card-cover">
+				<h3><?php echo the_title(); ?><br></h3>
+				<p><?php echo $student; ?></p>
+			</div>
+
 			<?php if ($image) : ?>
 				<picture class="card-image">
 					<img srcset="<?php echo esc_url($image['url']) ?>" alt="<?php echo esc_attr($image['alt']) ?>">
 				</picture>
 			<?php endif ?>
 
-      		<p class="student-name"><?php echo $student ?></p>
+      		<p class="student-name"><?php echo $student; ?></p>
     	</div>
   	</a>
 </div>
-
-<div class="grid-sizer">

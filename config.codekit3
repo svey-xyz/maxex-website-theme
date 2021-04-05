@@ -985,6 +985,20 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/stylesheets\/layouts\/_thesis-project-layout.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/layouts\/_thesis-project-layout.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/stylesheets\/layouts\/pages\/_project-page.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1204,6 +1218,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_paragraph-multi-column.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/stylesheets\/modules\/blocks\/_popup-gallery.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_popup-gallery.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1748,6 +1776,14 @@
       "oAP" : "\/single-project.php",
       "oF" : 0
     },
+    "\/single-thesis_projects.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/single-thesis_projects.php",
+      "oF" : 0
+    },
     "\/style-admin.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1884,6 +1920,14 @@
       "oAP" : "\/template-parts\/blocks\/paragraph-multi-column.php",
       "oF" : 0
     },
+    "\/template-parts\/blocks\/popup-swiper-gallery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/popup-swiper-gallery.php",
+      "oF" : 0
+    },
     "\/template-parts\/blocks\/section-header.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1906,6 +1950,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/blocks\/square-image-gallery.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/swiper-gallery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/swiper-gallery.php",
       "oF" : 0
     },
     "\/template-parts\/blocks\/video-vimeo.php" : {
