@@ -4,8 +4,8 @@
 		<!-- Additional required wrapper -->
 		<div class="swiper-wrapper">
 			<!-- Slides -->
-			<?php foreach( $gallery as $image ): ?>
-			<div class="swiper-slide">
+			<?php $i = 0; foreach( $gallery as $image ): ?>
+			<div key="<?php echo $i ?>" class="swiper-slide">
 				<?php //print print_r($image['sizes'],TRUE); ?>
 				<picture>
 					<source srcset="<?php print $image['sizes']['medium_large']; ?>" media="(max-width: 640px)">
@@ -14,7 +14,7 @@
 					<img class="swiper-lazy" src="<?php print $image['url']; ?>" alt="<?php print $image['alt']; ?>" />
 				</picture>
 			</div>
-			<?php endforeach; ?>
+			<?php $i++; endforeach; ?>
 		</div>
 		<!-- If we need navigation buttons -->
 		<div class="swiper-button-prev"></div>

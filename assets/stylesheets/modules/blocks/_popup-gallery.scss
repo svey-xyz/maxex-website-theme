@@ -13,4 +13,13 @@
 	background-color: rgba(0,0,0,0.9);
 
 	align-items: center;
+
+	.popup-gallery-close {
+		font-size: 22px;
+		font-weight: 700;
+		color: #fff;
+		float: right;
+		margin-top: -25px;
+		cursor: pointer;
+	}
 }
