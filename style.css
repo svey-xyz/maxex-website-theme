@@ -1244,7 +1244,7 @@ a {
     height: 100%; }
     .full-width-gallery .swiper-container .swiper-slide {
       width: 100%;
-      height: auto;
+      height: 100%;
       display: -webkit-flex;
       display: flex;
       -webkit-align-items: center;

@@ -13,9 +13,8 @@ $(window).on('load', function () {
 		swipers[gallery_num] = new Swiper(block_element + ' .swiper-container', {
 			loop: false,
 			slidesPerView: 1,
-			centeredSlides: true,
-			cssMode: true,
 			spaceBetween: 0,
+			noSwipingClass: 'swiper-no-swiping',
 			navigation: {
 				nextEl: block_element + ' .swiper-button-next',
 				prevEl: block_element + ' .swiper-button-prev',

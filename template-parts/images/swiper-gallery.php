@@ -14,7 +14,7 @@
 			<?php endforeach; ?>
 		</div>
 		<!-- If we need navigation buttons -->
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev swiper-no-swiping"></div>
+		<div class="swiper-button-next swiper-no-swiping"></div>
 	</div>
 </div>
