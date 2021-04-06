@@ -7,13 +7,6 @@ $(document).ready(function() {
 		}
 	});
 	
-	
-	// $(document).on('click', '#header .sub-menu-toggle', function(event) {
-		
-	//     event.preventDefault();
-	//     $(this).parent().toggleClass('active');
-	//     $(this).parent().blur();
-	// });
 	$(document).on('click', '#header .menu-toggle', function(event) {
 	    event.preventDefault();
 		$('#header').toggleClass('menu-open');

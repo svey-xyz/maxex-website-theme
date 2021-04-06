@@ -1238,24 +1238,27 @@ a {
 .full-width-gallery {
   display: inline-block;
   width: 100%;
-  height: auto; }
-  .full-width-gallery .swiper-slide {
+  height: 100%; }
+  .full-width-gallery .swiper-container {
     width: 100%;
-    height: auto;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-            align-items: center;
-    -webkit-justify-content: center;
-            justify-content: center; }
-    .full-width-gallery .swiper-slide img {
-      margin: auto;
-      display: block;
+    height: 100%; }
+    .full-width-gallery .swiper-container .swiper-slide {
       width: 100%;
       height: auto;
-      -o-object-fit: contain;
-         object-fit: contain;
-      max-height: 80vh; }
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: center;
+              justify-content: center; }
+      .full-width-gallery .swiper-container .swiper-slide img {
+        margin: auto;
+        display: block;
+        width: 100%;
+        height: auto;
+        -o-object-fit: contain;
+           object-fit: contain;
+        max-height: 80vh; }
 
 .full-width-image {
   margin: 45px;
@@ -1655,9 +1658,11 @@ a {
       font-weight: 700;
       font-size: 20px; }
 
-.popup-gallery {
+.popup-swiper-gallery {
   display: -webkit-flex;
   display: flex;
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -1667,7 +1672,7 @@ a {
   background-color: rgba(0, 0, 0, 0.9);
   -webkit-align-items: center;
           align-items: center; }
-  .popup-gallery .popup-gallery-close {
+  .popup-swiper-gallery .popup-gallery-close {
     font-size: 22px;
     font-weight: 700;
     color: #fff;
@@ -3539,7 +3544,16 @@ main {
   font-weight: 500;
   text-transform: uppercase; }
 
+.thesis-project-layout .project-statement {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65%; }
+  @media (max-width: 1024px) {
+    .thesis-project-layout .project-statement {
+      max-width: 100%; } }
 .thesis-project-layout .project-content .thesis-gallery-grid .project-gallery-image {
+  cursor: pointer;
   position: relative;
   width: 32%;
   margin-bottom: 32px; }

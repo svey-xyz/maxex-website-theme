@@ -13,6 +13,7 @@ $(window).on('load', function () {
 		columnWidth: '.project-gallery-image',
 		itemSelector: '.project-gallery-image',
 		gutter: '.grid-sizer',
+		horizontalOrder: true,
 		// fitWidth: true,
 		transitionDuration: 0
 	});

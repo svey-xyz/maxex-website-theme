@@ -3,6 +3,9 @@
 // 
 
 .thesis-project-layout {
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
 	.project-title {
 		h2 {
 			font-size: 2rem;
@@ -21,6 +24,15 @@
 	}
 
 	.project-statement {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 65%;
+
+		@include media("<=tablet") {
+			max-width: 100%;
+		}
+
 		p {
 			
 		}
@@ -29,6 +41,7 @@
 	.project-content {
 		.thesis-gallery-grid {
 			.project-gallery-image {
+				cursor: pointer;
 				position: relative;
 				width: 32%;
 				margin-bottom: $padding;

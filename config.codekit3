@@ -405,13 +405,13 @@
       "sC" : 0,
       "tS" : 0
     },
-    "\/assets\/scripts\/app\/blocks\/masonry-grid.js" : {
+    "\/assets\/scripts\/app\/blocks\/masonry-gallery.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/scripts\/app\/blocks\/masonry-grid-min.js",
+      "oAP" : "\/assets\/scripts\/app\/blocks\/masonry-gallery-min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
@@ -1223,7 +1223,7 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/assets\/stylesheets\/modules\/blocks\/_popup-gallery.scss" : {
+    "\/assets\/stylesheets\/modules\/blocks\/_popup-swiper-gallery.scss" : {
       "aP" : 1,
       "bl" : 0,
       "dP" : 10,
@@ -1231,7 +1231,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_popup-gallery.css",
+      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_popup-swiper-gallery.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1912,20 +1912,20 @@
       "oAP" : "\/template-parts\/blocks\/image-copy-split.php",
       "oF" : 0
     },
+    "\/template-parts\/blocks\/masonry-gallery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/masonry-gallery.php",
+      "oF" : 0
+    },
     "\/template-parts\/blocks\/paragraph-multi-column.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/blocks\/paragraph-multi-column.php",
-      "oF" : 0
-    },
-    "\/template-parts\/blocks\/popup-swiper-gallery.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/blocks\/popup-swiper-gallery.php",
       "oF" : 0
     },
     "\/template-parts\/blocks\/section-header.php" : {
@@ -1950,14 +1950,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/blocks\/square-image-gallery.php",
-      "oF" : 0
-    },
-    "\/template-parts\/blocks\/swiper-gallery.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/blocks\/swiper-gallery.php",
       "oF" : 0
     },
     "\/template-parts\/blocks\/video-vimeo.php" : {
@@ -2064,6 +2056,22 @@
       "oAP" : "\/template-parts\/images\/linked-image.php",
       "oF" : 0
     },
+    "\/template-parts\/images\/popup-swiper-gallery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/images\/popup-swiper-gallery.php",
+      "oF" : 0
+    },
+    "\/template-parts\/images\/swiper-gallery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/images\/swiper-gallery.php",
+      "oF" : 0
+    },
     "\/template-parts\/links\/button-link.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2110,6 +2118,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/sections\/project-sections.php",
+      "oF" : 0
+    },
+    "\/template-parts\/thesis-blocks\/gallery-layout.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/thesis-blocks\/gallery-layout.php",
       "oF" : 0
     },
     "\/template-parts\/tiles\/tile.php" : {

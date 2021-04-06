@@ -7,7 +7,7 @@
 // @codekit-append "app/blocks/hero.js";
 // @codekit-append "app/blocks/square-image-gallery.js";
 // @codekit-append "app/blocks/video.js";
-// @codekit-append "app/blocks/masonry-grid.js";
+// @codekit-append "app/blocks/masonry-gallery.js";
 
 // @codekit-append "app/progress-bar.js";
 
