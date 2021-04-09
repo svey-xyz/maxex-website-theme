@@ -1,7 +1,4 @@
 <?php
-//
-// Template Name: Thesis Projects (grid)
-//
 	get_header();
 	get_template_part('template-parts/headers/site-header');
 	get_template_part('template-parts/blocks/blocks');
@@ -21,7 +18,7 @@
 			<p><?php echo $statement ?></p>
 		</div>
 		<div class='project-content'>
-			<!-- Deal with flexible content -->
+			<!-- Handle flexible content -->
 			<?php
 			if (have_rows('project-media')) :
 				while (have_rows('project-media')) :

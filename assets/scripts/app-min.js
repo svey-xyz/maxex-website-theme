@@ -136,10 +136,11 @@ $(".popup-gallery-close").on('click', function () {
 	page.style.overflow = ''; // enable scroll on page while popup is closed
 });
 
-$(".project-gallery-image").on('click', function () {
-	var popup_id = $(this).parent().attr('id') + '-popup-swiper';
-	var gallery_num = $(this).parent().attr('gallerynum');
-	var gallery_index = parseInt($(this).attr('galleryindex'));
+$(".masonry-popup-click").on('click', function () {
+	var gallery_item = $(this).parent();
+	var popup_id = gallery_item.parent().attr('id') + '-popup-swiper';
+	var gallery_num = gallery_item.parent().attr('gallerynum');
+	var gallery_index = parseInt(gallery_item.attr('galleryindex'));
 	var popup_element = '#' + popup_id;
 
 	swipers[gallery_num].slideTo(gallery_index, 0);
@@ -229,15 +230,19 @@ $(window).on('load', function () {
 		transitionDuration: 0
 	});
 
-	
 
-	$('.thesis-gallery-grid').masonry({
-		columnWidth: '.project-gallery-image',
-		itemSelector: '.project-gallery-image',
-		gutter: '.grid-sizer',
-		horizontalOrder: true,
-		// fitWidth: true,
-		transitionDuration: 0
+	$(".masonry-gallery").each(function (index, element) {
+		
+		var horizontalOrder = $(this).attr('maintainorder') == 1 ? true : false;
+
+		$(this).masonry({
+			columnWidth: '.masonry-item',
+			itemSelector: '.masonry-item',
+			gutter: '.grid-sizer',
+			horizontalOrder: horizontalOrder,
+			transitionDuration: 0
+		});
+
 	});
 });
 

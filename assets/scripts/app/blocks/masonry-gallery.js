@@ -7,14 +7,18 @@ $(window).on('load', function () {
 		transitionDuration: 0
 	});
 
-	
 
-	$('.thesis-gallery-grid').masonry({
-		columnWidth: '.project-gallery-image',
-		itemSelector: '.project-gallery-image',
-		gutter: '.grid-sizer',
-		horizontalOrder: true,
-		// fitWidth: true,
-		transitionDuration: 0
+	$(".masonry-gallery").each(function (index, element) {
+		
+		var horizontalOrder = $(this).attr('maintainorder') == 1 ? true : false;
+
+		$(this).masonry({
+			columnWidth: '.masonry-item',
+			itemSelector: '.masonry-item',
+			gutter: '.grid-sizer',
+			horizontalOrder: horizontalOrder,
+			transitionDuration: 0
+		});
+
 	});
 });

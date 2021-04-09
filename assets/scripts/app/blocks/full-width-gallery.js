@@ -29,10 +29,11 @@ $(".popup-gallery-close").on('click', function () {
 	page.style.overflow = ''; // enable scroll on page while popup is closed
 });
 
-$(".project-gallery-image").on('click', function () {
-	var popup_id = $(this).parent().attr('id') + '-popup-swiper';
-	var gallery_num = $(this).parent().attr('gallerynum');
-	var gallery_index = parseInt($(this).attr('galleryindex'));
+$(".masonry-popup-click").on('click', function () {
+	var gallery_item = $(this).parent();
+	var popup_id = gallery_item.parent().attr('id') + '-popup-swiper';
+	var gallery_num = gallery_item.parent().attr('gallerynum');
+	var gallery_index = parseInt(gallery_item.attr('galleryindex'));
 	var popup_element = '#' + popup_id;
 
 	swipers[gallery_num].slideTo(gallery_index, 0);

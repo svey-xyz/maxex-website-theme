@@ -1209,6 +1209,20 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/stylesheets\/modules\/blocks\/_masonry-gallery.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_masonry-gallery.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/stylesheets\/modules\/blocks\/_paragraph-multi-column.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1747,12 +1761,12 @@
       "oAP" : "\/page-templates\/site-portal.php",
       "oF" : 0
     },
-    "\/page-templates\/thesis-projects.php" : {
+    "\/page-templates\/thesis-layout.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/page-templates\/thesis-projects.php",
+      "oAP" : "\/page-templates\/thesis-layout.php",
       "oF" : 0
     },
     "\/screenshot.png" : {
@@ -2118,14 +2132,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/sections\/project-sections.php",
-      "oF" : 0
-    },
-    "\/template-parts\/thesis-blocks\/gallery-layout.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/thesis-blocks\/gallery-layout.php",
       "oF" : 0
     },
     "\/template-parts\/tiles\/tile.php" : {

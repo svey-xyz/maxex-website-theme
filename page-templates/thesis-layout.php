@@ -1,6 +1,6 @@
 <?php
 //
-// Template Name: Thesis Projects (grid)
+// Template Name: Thesis Layout (grid)
 //
 	get_header();
 	get_template_part('template-parts/headers/site-header');
@@ -11,7 +11,7 @@
 <article class="full-width-wrapper ">
 	<div class="max-width-container">
 		<div class="grid-title-section">
-			<h2><?php echo get_the_title() ?></h2>
+			<h2 class="test-class"><?php echo get_the_title() ?></h2>
 		</div>
 		<section class="thesis-projects-grid">
 		<!-- <ul class="grid-items"> -->
