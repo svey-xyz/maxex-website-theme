@@ -120,7 +120,7 @@ $(window).on('load', function () {
 		swipers[gallery_num] = new Swiper(block_element + ' .swiper-container', {
 			loop: false,
 			slidesPerView: 1,
-			spaceBetween: 0,
+			spaceBetween: 25,
 			noSwipingClass: 'swiper-no-swiping',
 			navigation: {
 				nextEl: block_element + ' .swiper-button-next',
@@ -134,19 +134,6 @@ $(window).on('load', function () {
 $(".popup-gallery-close").on('click', function () {
 	$(".popup-swiper-gallery").css({'opacity': '0', 'pointer-events': 'none'});
 	page.style.overflow = ''; // enable scroll on page while popup is closed
-});
-
-$(".masonry-popup-click").on('click', function () {
-	var gallery_item = $(this).parent();
-	var popup_id = gallery_item.parent().attr('id') + '-popup-swiper';
-	var gallery_num = gallery_item.parent().attr('gallerynum');
-	var gallery_index = parseInt(gallery_item.attr('galleryindex'));
-	var popup_element = '#' + popup_id;
-
-	swipers[gallery_num].slideTo(gallery_index, 0);
-	$(popup_element).css({ 'opacity': '1', 'pointer-events': 'auto' });
-
-	page.style.overflow = 'hidden'; // disable scroll on page while popup is open
 });
 
 
@@ -221,18 +208,28 @@ $(document).ready(function() {
 });
 
 
-$(window).on('load', function () {
-	$('.thesis-projects-grid').masonry({
-		columnWidth: '.project-card',
-		itemSelector: '.project-card',
-		gutter: '.grid-sizer',
-		// fitWidth: true,
-		transitionDuration: 0
+
+document.addEventListener("DOMContentLoaded", function () {
+	lazy();
+});
+
+function lazy() {
+	let images = document.querySelectorAll(".lazyload");
+	let lazy = new lazyload(images, {
+		root: null,
+		rootMargin: "0px",
+		threshold: 0
 	});
+}
 
+$('.lazyload').on('load', function () {
+	$(this).parents('.masonry-item').css({'height': 'auto'});
+	$(window).trigger("load"); // trigger masonry tiling on image load
+});
 
+$(window).on('load', function () {
 	$(".masonry-gallery").each(function (index, element) {
-		
+
 		var horizontalOrder = $(this).attr('maintainorder') == 1 ? true : false;
 
 		$(this).masonry({
@@ -244,6 +241,19 @@ $(window).on('load', function () {
 		});
 
 	});
+});
+
+$(".masonry-item").on('click', function () {
+	var gallery_item = $(this);
+	var popup_id = gallery_item.parent().attr('id') + '-popup-swiper';
+	var gallery_num = gallery_item.parent().attr('gallerynum');
+	var gallery_index = parseInt(gallery_item.attr('galleryindex'));
+	var popup_element = '#' + popup_id;
+
+	swipers[gallery_num].slideTo(gallery_index, 0);
+	$(popup_element).css({ 'opacity': '1', 'pointer-events': 'auto' });
+
+	page.style.overflow = 'hidden'; // disable scroll on page while popup is open
 });
 
 //

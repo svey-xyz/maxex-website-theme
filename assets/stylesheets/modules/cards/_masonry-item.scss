@@ -1,13 +1,15 @@
 // 
-// Project card
+// Masonry Item
 // 
 
 $grid-spacing: 1%;
+$default-height: 800px;
 
-.project-card {
+.masonry-item {
 	position: relative;
 	width: 32%;
 	margin-bottom: $padding;
+	height: $default-height;
 
 	@include media("<=tablet") {
 		width: 49%;
@@ -17,8 +19,13 @@ $grid-spacing: 1%;
 		width: 100%;
 	}
 
-  .card-content {
-	  width: 100%;
+	&.pop-up {
+		cursor: pointer;
+
+	}
+
+  	.card-content {
+	  	width: 100%;
 
 		@include media(">=tablet") {
 			&:hover .card-cover  {
@@ -35,21 +42,27 @@ $grid-spacing: 1%;
 			height: 100%;
 			background-color: rgba(0,0,0,0.8);
 			z-index: 10;
+			padding: $padding;
 
 			justify-content: center;
   			align-items: center;
 			flex-flow: column wrap;
 
+			overflow: hidden;
+   			text-overflow: ellipsis;
+
 			h3 {
+				font-size: 28px;
 				color: white;
 				font-family: $sans-serif;
 				font-weight: 600;
 				text-align: center;
-				margin-bottom: 5px;
+				margin-bottom: 8px;
 				text-transform: uppercase;
 			}
 
 			p {
+				font-size: 18px;
 				display: inline;
 				color: white;
 				text-align: center;
@@ -58,12 +71,18 @@ $grid-spacing: 1%;
 		}
 
 		.card-image {
+			position: relative;
+			width: 100%;
+			height: auto;
 
-			&,
 			img {
 				position: relative;
 				width: 100%;
-				height: auto;
+				height: $default-height;
+
+				&.loaded {
+					height: auto;
+				}
 			}
 		}
 

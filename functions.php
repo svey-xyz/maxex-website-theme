@@ -213,6 +213,8 @@ function theme_cc_mime_types($mimes) {
 add_action('init', 'theme_custom_post_types', 0);
 function theme_custom_post_types() {
 
+    global $wp; 
+    $wp->add_query_var('thesis-year'); 
 	//
   // Projects
 	//
@@ -266,16 +268,17 @@ function theme_custom_post_types() {
 		'capability_type'       => 'post'
 	);
 	
-	register_post_type('project', $args);
+	// register_post_type('project', $args);
 
 	//
   	// Project Types
 	//
 	global $project_types;
-	$project_types = ['thesis_project', 'third_year_project'];
+	$project_types = ['thesis_project', 'third_year_project', 'general_submission'];
 
 	foreach ($project_types as $project_type) {
 		$project_name = ucwords(str_replace('_', ' ', $project_type));
+		$project_url = str_replace('_', '-', $project_type) . 's';
 
 		$labels = array(
 			'name'                  => $project_name . 's',
@@ -304,7 +307,7 @@ function theme_custom_post_types() {
 			'uploaded_to_this_item' => 'Uploaded to this ' . $project_name,
 			'items_list'            => $project_name . 's list',
 			'items_list_navigation' => $project_name . 's list navigation',
-			'filter_items_list'     => 'Filter' . $project_name . 's list',
+			'filter_items_list'     => 'Filter' . $project_name . 's list'
 		);
 		
 		$args = array(
@@ -323,7 +326,10 @@ function theme_custom_post_types() {
 			'has_archive'           => true,
 			'exclude_from_search'   => false,
 			'publicly_queryable'    => true,
-			'capability_type'       => 'post'
+			'capability_type'       => 'post',
+			'rewrite' 				=> array(
+    			'slug' => $project_url,
+			)
 		);
 		
 		register_post_type($project_type, $args);
@@ -336,12 +342,32 @@ function theme_custom_post_types() {
             'hierarchical' => true,  
             'label' => 'Project Year',  //Display name
             'query_var' => true,
+			'show_ui' => true,
+    		'show_in_quick_edit' => false,
+    		'meta_box_cb' => false,
             'rewrite' => array(
                 'slug' => 'project_year', // This controls the base slug that will display before each term
                 'with_front' => false // Don't display the category base before 
             )
         )  
-    );  
+    );
+
+	register_taxonomy(  
+        'general_submission_theme',  //The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces). 
+        'general_submission',        //post type name
+        array(  
+            'hierarchical' => true,  
+            'label' => 'Submission Theme',  //Display name
+            'query_var' => true,
+			'show_ui' => true,
+    		'show_in_quick_edit' => false,
+    		'meta_box_cb' => false,
+            'rewrite' => array(
+                'slug' => 'general_submission_theme', // This controls the base slug that will display before each term
+                'with_front' => false // Don't display the category base before 
+            )
+        )  
+    );
 }
 
 // menu utility
@@ -419,5 +445,17 @@ function wp332896_folder_menu() {
 		} 
     }
  }
-
 add_action('admin_menu', 'wp332896_folder_menu');
+
+// Project type redirect for slug rewrite to point to correct template
+function project_types_redirect() {
+    global $post;
+	global $project_types;
+	foreach($project_types as $project_type) {
+		if (get_post_type($post) == $project_type && is_single()) {
+			include( get_template_directory() . '/page-templates/projects/singles/single-' . $project_type . '.php' );
+			exit;
+		}
+	}
+}
+add_action( 'template_redirect', 'project_types_redirect' );

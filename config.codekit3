@@ -17,6 +17,14 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
+    "\/archive-thesis_project.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/archive-thesis_project.php",
+      "oF" : 0
+    },
     "\/assets\/images\/detail-line-plus.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -1013,6 +1021,20 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/stylesheets\/layouts\/pages\/_thesis-layout-grid.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_thesis-layout-grid.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/stylesheets\/layouts\/pages\/max-ex-25\/_max-ex-25-page.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1092,6 +1114,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/stylesheets\/modules\/blocks\/__block.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/stylesheets\/modules\/blocks\/_embed.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_embed.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1204,20 +1240,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_image-copy-split.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/stylesheets\/modules\/blocks\/_masonry-gallery.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_masonry-gallery.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1349,7 +1371,7 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/assets\/stylesheets\/modules\/cards\/_project-card.scss" : {
+    "\/assets\/stylesheets\/modules\/cards\/_masonry-item.scss" : {
       "aP" : 1,
       "bl" : 0,
       "dP" : 10,
@@ -1357,7 +1379,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/modules\/cards\/_project-card.css",
+      "oAP" : "\/assets\/stylesheets\/modules\/cards\/_masonry-item.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1689,6 +1711,14 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
+    "\/page-templates\/general-submissions-layout.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/general-submissions-layout.php",
+      "oF" : 0
+    },
     "\/page-templates\/max-ex-25-custom.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1753,6 +1783,22 @@
       "oAP" : "\/page-templates\/project.php",
       "oF" : 0
     },
+    "\/page-templates\/projects\/archives\/archive-thesis_project.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/projects\/archives\/archive-thesis_project.php",
+      "oF" : 0
+    },
+    "\/page-templates\/projects\/singles\/single-thesis_project.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/projects\/singles\/single-thesis_project.php",
+      "oF" : 0
+    },
     "\/page-templates\/site-portal.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1788,14 +1834,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/single-project.php",
-      "oF" : 0
-    },
-    "\/single-thesis_projects.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/single-thesis_projects.php",
       "oF" : 0
     },
     "\/style-admin.css" : {
@@ -1852,6 +1890,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/blocks\/dynamic-item-card.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/embed.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/embed.php",
       "oF" : 0
     },
     "\/template-parts\/blocks\/event-listing.php" : {
@@ -1998,20 +2044,20 @@
       "oAP" : "\/template-parts\/buttons\/menu-button.php",
       "oF" : 0
     },
+    "\/template-parts\/cards\/masonry-item.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/cards\/masonry-item.php",
+      "oF" : 0
+    },
     "\/template-parts\/cards\/portal-item-card.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/cards\/portal-item-card.php",
-      "oF" : 0
-    },
-    "\/template-parts\/cards\/project-card.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/cards\/project-card.php",
       "oF" : 0
     },
     "\/template-parts\/carousels\/tiles-carousel.php" : {
@@ -2046,6 +2092,14 @@
       "oAP" : "\/template-parts\/footers\/site-footer.php",
       "oF" : 0
     },
+    "\/template-parts\/functions\/get-project-year.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/functions\/get-project-year.php",
+      "oF" : 0
+    },
     "\/template-parts\/grids\/project-cards-grid.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2068,6 +2122,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/images\/linked-image.php",
+      "oF" : 0
+    },
+    "\/template-parts\/images\/masonry-grid.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/images\/masonry-grid.php",
       "oF" : 0
     },
     "\/template-parts\/images\/popup-swiper-gallery.php" : {

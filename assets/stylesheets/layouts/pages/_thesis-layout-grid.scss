@@ -1,0 +1,42 @@
+// 
+// Cards grid
+// 
+
+.grid-sizer {
+	width: 2%;
+}
+
+.grid-title-section {
+	padding-bottom: $gutter-mobile;
+
+	h2 {
+		font-size: 3rem;
+		text-align: center;
+		font-family: $sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+
+.thesis-years {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+
+	span {
+		padding: $padding;
+		text-align: center;
+		font-size: 18px;
+		font-weight: 500;
+		cursor: pointer;
+
+		&:hover {
+			font-weight: 800;
+		}
+	}
+
+	.active-year {
+		font-weight: 800;
+	}
+}

@@ -4,10 +4,10 @@
 
 .block {
 	//
-	padding-bottom: $gutter !important;
+	padding-top: $gutter !important;
 
 	@include media("<=tablet") {
-		padding-bottom: $gutter-mobile;
+		padding-top: $gutter-mobile;
 	}
 
 	* {

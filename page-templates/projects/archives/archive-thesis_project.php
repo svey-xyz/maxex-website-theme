@@ -1,7 +1,4 @@
 <?php
-//
-// Template Name: Thesis Layout (grid)
-//
 	get_header();
 	get_template_part('template-parts/headers/site-header');
 
@@ -12,12 +9,14 @@
 <article class="full-width-wrapper">
 	<div class="max-width-container">
 		<div class="grid-title-section block">
-			<h2><?php echo get_the_title() ?></h2>
+			<h2><?php echo 'Thesis Projects' ?></h2>
 		</div>
 		<div class="thesis-years">
 			<?php
 			foreach ($years as $year):
-				$query_url = add_query_arg('thesis-year', $year->name, get_permalink());
+				global $wp;
+				$current_url = home_url( add_query_arg( array(), $wp->request ) );
+				$query_url = add_query_arg('thesis-year', $year->name, $current_url);
 				$class = '';
 				if ($year_term->name == $year->name):
 					$class = 'active-year';

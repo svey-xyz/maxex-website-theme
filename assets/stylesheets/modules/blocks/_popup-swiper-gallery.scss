@@ -16,12 +16,20 @@
 
 	align-items: center;
 
+	.full-width-gallery {
+		.swiper-button-prev, .swiper-container-rtl .swiper-button-next, .swiper-button-next, .swiper-container-rtl .swiper-button-prev  {
+			background-image: url('assets/images/icons/arrow-right-white.svg');
+		}
+	}
+
 	.popup-gallery-close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: -$padding;
 		font-size: 22px;
 		font-weight: 700;
 		color: #fff;
-		float: right;
-		margin-top: -25px;
 		cursor: pointer;
 	}
 }
