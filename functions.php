@@ -103,8 +103,8 @@ add_action('wp_enqueue_scripts', 'theme_stylesheets');
 function theme_stylesheets() {
 
   // Load webfont stylesheets
-  wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,700,700i|Roboto:300,300i,700,700i', false);
-  wp_enqueue_style('typekit', 'https://use.typekit.net/mck7mpz.css', false); // ~ Proxima Nova
+//   wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,700,700i|Roboto:300,300i,700,700i', false);
+//   wp_enqueue_style('typekit', 'https://use.typekit.net/mck7mpz.css', false); // ~ Proxima Nova
 
   // Add theme stylesheet
   wp_enqueue_style('style', get_stylesheet_uri());
@@ -214,7 +214,8 @@ add_action('init', 'theme_custom_post_types', 0);
 function theme_custom_post_types() {
 
     global $wp; 
-    $wp->add_query_var('thesis-year'); 
+    $wp->add_query_var('project-year'); 
+	$wp->add_query_var('theme'); 
 	//
   // Projects
 	//
@@ -363,7 +364,7 @@ function theme_custom_post_types() {
     		'show_in_quick_edit' => false,
     		'meta_box_cb' => false,
             'rewrite' => array(
-                'slug' => 'general_submission_theme', // This controls the base slug that will display before each term
+                'slug' => 'general-submission-theme', // This controls the base slug that will display before each term
                 'with_front' => false // Don't display the category base before 
             )
         )  

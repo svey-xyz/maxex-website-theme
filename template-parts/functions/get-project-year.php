@@ -4,9 +4,9 @@
 		'hide_empty' => false,
 	));
 
-	$year_query = get_query_var('thesis-year');
+	$year_query = get_query_var('project-year');
 	if ($year_query ) {
-		$year_query = get_query_var('thesis-year');
+		$year_query = get_query_var('project-year');
 	} else {
 		$recent_year = 0;
 		foreach ($years as $year) {

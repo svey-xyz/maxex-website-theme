@@ -16,7 +16,7 @@
 			foreach ($years as $year):
 				global $wp;
 				$current_url = home_url( add_query_arg( array(), $wp->request ) );
-				$query_url = add_query_arg('thesis-year', $year->name, $current_url);
+				$query_url = add_query_arg('project-year', $year->name, $current_url);
 				$class = '';
 				if ($year_term->name == $year->name):
 					$class = 'active-year';

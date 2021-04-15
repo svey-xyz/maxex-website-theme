@@ -17,6 +17,14 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
+    "\/archive-general_submission.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/archive-general_submission.php",
+      "oF" : 0
+    },
     "\/archive-thesis_project.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1385,6 +1393,20 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/stylesheets\/modules\/cards\/_theme-card.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/cards\/_theme-card.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/stylesheets\/modules\/carousels\/__carousel.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1711,14 +1733,6 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
-    "\/page-templates\/general-submissions-layout.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-templates\/general-submissions-layout.php",
-      "oF" : 0
-    },
     "\/page-templates\/max-ex-25-custom.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1783,12 +1797,28 @@
       "oAP" : "\/page-templates\/project.php",
       "oF" : 0
     },
+    "\/page-templates\/projects\/archives\/archive-general_submission.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/projects\/archives\/archive-general_submission.php",
+      "oF" : 0
+    },
     "\/page-templates\/projects\/archives\/archive-thesis_project.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-templates\/projects\/archives\/archive-thesis_project.php",
+      "oF" : 0
+    },
+    "\/page-templates\/projects\/singles\/single-general_submission.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/projects\/singles\/single-general_submission.php",
       "oF" : 0
     },
     "\/page-templates\/projects\/singles\/single-thesis_project.php" : {
@@ -2058,6 +2088,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/cards\/portal-item-card.php",
+      "oF" : 0
+    },
+    "\/template-parts\/cards\/theme-card.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/cards\/theme-card.php",
       "oF" : 0
     },
     "\/template-parts\/carousels\/tiles-carousel.php" : {
