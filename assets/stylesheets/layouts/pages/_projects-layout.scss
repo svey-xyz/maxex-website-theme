@@ -9,11 +9,15 @@
 .project-title-section {
 	h2 {
 		margin: 0;
-		font-size: 3rem;
 		text-align: center;
 		font-family: $sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
+		word-break: break-all;
+		-webkit-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+
 	}
 	h3 {
 		padding-top: $padding;
@@ -22,6 +26,7 @@
 		font-family: $sans-serif;
 		font-weight: 500;
 		text-transform: uppercase;
+		word-break: break-all;
 	}
 }
 

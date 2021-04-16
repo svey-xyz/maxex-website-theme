@@ -2149,8 +2149,20 @@ a {
   @media (max-width: 640px) {
     .masonry-item {
       width: 100%; } }
-  .masonry-item.pop-up {
-    cursor: pointer; }
+  .masonry-item .pop-up-click {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 99;
+    pointer-events: auto; }
+    @media (max-width: 1024px) {
+      .masonry-item .pop-up-click {
+        display: none;
+        cursor: default; } }
   .masonry-item .card-content {
     width: 100%; }
     @media (min-width: 1024px) {
@@ -3305,11 +3317,14 @@ button.carousel-pagination-bullet {
 
 .project-title-section h2 {
   margin: 0;
-  font-size: 3rem;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
 
 .project-title-section h3 {
   padding-top: 32px;
@@ -3317,7 +3332,8 @@ button.carousel-pagination-bullet {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  word-break: break-all; }
 
 .project-years {
   margin-top: 32px;

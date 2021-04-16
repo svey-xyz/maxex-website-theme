@@ -1,9 +1,11 @@
-<div class="masonry-item <?php if($overlay_enabled) { echo 'pop-up'; } ?>" galleryIndex=<?php echo $index ?>>
+<div class="masonry-item" galleryIndex=<?php echo $index ?>>
 	<?php if ($link_enabled): ?>
 		<a class="card-link" href="<?php echo $item['link'] ?>" title="<?php echo $item['title'] ?>">
 	<?php endif; ?>
-
-    	<div class="card-content">
+		
+	<?php if($overlay_enabled): ?> <div class="pop-up-click"></div> <?php endif; ?>
+    	
+		<div class="card-content">
 			
 			<?php if($cover_enabled): ?>
 				<div class="card-cover">

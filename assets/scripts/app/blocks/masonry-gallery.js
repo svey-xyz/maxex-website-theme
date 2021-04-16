@@ -46,8 +46,9 @@ function masonryLayout() {
 
 
 
-$(".masonry-item").on('click', function () {
-	var gallery_item = $(this);
+$(".pop-up-click ").on('click', function () {
+	console.log('click')
+	var gallery_item = $(this).parents('.masonry-item');
 	var popup_id = gallery_item.parent().attr('id') + '-popup-swiper';
 	var gallery_num = gallery_item.parent().attr('gallerynum');
 	var gallery_index = parseInt(gallery_item.attr('galleryindex'));
