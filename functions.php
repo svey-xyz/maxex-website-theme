@@ -122,7 +122,7 @@ function theme_scripts() {
 
     // Load jQuery from Google CDN
     wp_deregister_script('jquery');
-    wp_register_script('jquery', ('//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'), false, '2.2.4', false);
+    wp_register_script('jquery', ('//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'), false, '3.6.0', false);
     wp_enqueue_script('jquery');
 
     // Add theme scripts

@@ -8,10 +8,10 @@
 
 <article class="full-width-wrapper">
 	<div class="max-width-container">
-		<div class="grid-title-section block">
+		<div class="project-title-section block">
 			<h2><?php echo 'Thesis Projects' ?></h2>
 		</div>
-		<div class="thesis-years">
+		<div class="project-years">
 			<?php
 			foreach ($years as $year):
 				global $wp;
@@ -42,9 +42,10 @@
 			// setup for masonry block
 			$masonry_items = array();
 			$id = 'masonry_gallery';
-			$overlayEnabled = false;
+			$overlay_enabled = false;
 			$handle = 'masonry-gallery';
 			$cover_enabled = true;
+			$link_enabled = true;
 			
 			foreach ($thesisProjectsQuery as $project) {
 				$item = array();

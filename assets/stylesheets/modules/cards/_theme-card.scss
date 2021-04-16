@@ -12,8 +12,12 @@
 
 	.theme-item {
 		position: relative;
-		margin-bottom: $padding;
+		margin-bottom: $padding * 2;
 		width: 45%;
+
+		@include media("<=tablet") {
+			width: 100%;
+		}
 
 		.card-image {
 			position: relative;
@@ -32,6 +36,18 @@
 				height: 100%;
 				object-fit: cover;
 			}
+		}
+
+		.theme-title {
+			margin: 0;
+			padding-top: $padding / 2;
+			font-size: 32px;
+			font-weight: 700;
+		}
+		.theme-description {
+			margin: 0;
+			padding-top: $padding / 2;
+			font-size: 18px;
 		}
 	}
 }

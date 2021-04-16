@@ -6,13 +6,12 @@
 	$student = get_field('student_name');
 	$statement = get_field('artist_statement');
 	$project_year = get_term_by( 'id', get_field('project_year'), 'project_year' );
-	$is_thesis_project = true;
 
 ?>
 
 <article class="thesis-project-layout full-width-wrapper ">
 	<div class="max-width-container">
-		<div class='project-title block'>
+		<div class="project-title-section block">
 			<h2><?php echo get_the_title() ?></h2>
 			<h3><?php echo $student ?></h3>
 		</div>

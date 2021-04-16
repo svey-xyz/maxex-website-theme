@@ -2225,8 +2225,11 @@ a {
   height: 100%; }
   .theme-grid .theme-item {
     position: relative;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
     width: 45%; }
+    @media (max-width: 1024px) {
+      .theme-grid .theme-item {
+        width: 100%; } }
     .theme-grid .theme-item .card-image {
       position: relative;
       width: 100%;
@@ -2241,6 +2244,15 @@ a {
         height: 100%;
         -o-object-fit: cover;
            object-fit: cover; }
+    .theme-grid .theme-item .theme-title {
+      margin: 0;
+      padding-top: 16px;
+      font-size: 32px;
+      font-weight: 700; }
+    .theme-grid .theme-item .theme-description {
+      margin: 0;
+      padding-top: 16px;
+      font-size: 18px; }
 
 .carousel {
   background-color: white; }
@@ -3288,24 +3300,27 @@ button.carousel-pagination-bullet {
     .countdown-timer .label-text {
       margin-top: 4px;
       font-size: 11px; } }
-.project-page {
-  position: relative; }
-  @media (min-width: 64em) {
-    .project-page {
-      margin-left: 320px; } }
 .grid-sizer {
   width: 2%; }
 
-.grid-title-section {
-  padding-bottom: 30px; }
-  .grid-title-section h2 {
-    font-size: 3rem;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase; }
+.project-title-section h2 {
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; }
 
-.thesis-years {
+.project-title-section h3 {
+  padding-top: 32px;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+.project-years {
+  margin-top: 32px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
@@ -3314,49 +3329,43 @@ button.carousel-pagination-bullet {
           align-items: center;
   -webkit-justify-content: center;
           justify-content: center; }
-  .thesis-years span {
+  .project-years span {
     padding: 32px;
     text-align: center;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer; }
-    .thesis-years span:hover {
+    .project-years span:hover {
       font-weight: 800; }
-  .thesis-years .active-year {
+  .project-years .active-year {
     font-weight: 800; }
 
-.max-ex-25-page .hero .column .gallery .swiper-slide .year p {
-  display: none; }
-
-.max-ex-25-page .sponsors {
-  margin: 0;
-  padding: 16px;
-  background-color: #f2f2f2; }
-  .max-ex-25-page .sponsors p {
-    margin-top: 0;
-    font-weight: 900;
-    font-family: "proxima-nova", sans-serif;
-    color: black; }
-  .max-ex-25-page .sponsors ul li {
-    margin: 13px;
-    width: 12%; }
-
-.max-ex-25-page p.font-proxima-nova {
-  font-weight: 900;
-  font-family: "proxima-nova", sans-serif; }
-
-@media (min-width: 45em) {
-  .max-ex-25-page .sponsors {
-    padding: 30px; }
-    .max-ex-25-page .sponsors ul li {
-      margin: 30px; } }
-
-@media (min-width: 64em) {
-  .max-ex-25-page {
-    margin-left: 320px; } }
-
-.page-template-max-ex-25-page {
-  margin-top: 0; }
+.project-statement {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65%; }
+  @media (max-width: 1024px) {
+    .project-statement {
+      max-width: 100%; } }
+.thesis-project-layout .project-title {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65%; }
+  .thesis-project-layout .project-title h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 32px; }
+  .thesis-project-layout .project-title h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase; }
 
 body {
   margin: 0;
@@ -3504,118 +3513,3 @@ main {
           white-space: wrap;
           display: none;
           font-weight: 500; }
-
-.project-layout {
-  position: relative;
-  padding-top: 80px; }
-  .project-layout.layout-simple .project-content {
-    padding: 32px 24px; }
-    .project-layout.layout-simple .project-content .project-content-header {
-      margin-bottom: 0;
-      text-align: right; }
-      .project-layout.layout-simple .project-content .project-content-header .student-name,
-      .project-layout.layout-simple .project-content .project-content-header .project-title {
-        font-size: 13px;
-        font-weight: bold; }
-      .project-layout.layout-simple .project-content .project-content-header .student-name {
-        margin-bottom: 1px;
-        color: black;
-        -webkit-text-fill-color: inherit;
-        -webkit-text-stroke-width: 0; }
-      .project-layout.layout-simple .project-content .project-content-header .project-title {
-        margin: 0;
-        font-style: normal;
-        font-family: sans-serif;
-        text-transform: uppercase; }
-  .project-layout .project-content {
-    padding: 24px; }
-    .project-layout .project-content .project-content-header {
-      margin-bottom: 28px; }
-      .project-layout .project-content .project-content-header .student-name {
-        margin: 0 0 12px;
-        font-size: 27px;
-        line-height: 1.15;
-        font-weight: 900;
-        font-family: "proxima-nova", sans-serif;
-        color: rgba(0, 0, 0, 0.5);
-        text-transform: uppercase;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(0, 0, 0, 0.5); }
-      .project-layout .project-content .project-content-header .project-title {
-        margin: 0;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 1.15;
-        font-family: "Cormorant Garamond", serif; }
-    .project-layout .project-content p {
-      margin: 0 0 24px;
-      font-size: 14px;
-      font-family: "Roboto", sans-serif;
-      line-height: 1.5; }
-      .project-layout .project-content p:last-child {
-        margin-bottom: 0; }
-  .project-layout .project-media {
-    padding: 0 24px 24px; }
-  .project-layout .back-button {
-    position: absolute;
-    top: 20px;
-    right: 20px; }
-  @media (min-width: 45em) {
-    .project-layout {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-align-items: center;
-              align-items: center;
-      height: 100vh; }
-      .project-layout.height-auto {
-        height: auto; }
-      .project-layout .project-content,
-      .project-layout .project-media {
-        max-height: 100vh;
-        overflow-y: auto; }
-      .project-layout .project-media {
-        padding: 24px; }
-      .project-layout.layout-columns .project-content {
-        -webkit-flex-basis: 33.33333%;
-                flex-basis: 33.33333%;
-        padding: 32px; }
-      .project-layout.layout-columns .project-media {
-        -webkit-flex-basis: 66.66666%;
-                flex-basis: 66.66666%; }
-      .project-layout.layout-simple .project-content {
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding-right: 80px; }
-      .project-layout.layout-simple .project-media {
-        padding: 80px;
-        width: 100%; } }
-.thesis-project-layout .project-title {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 65%; }
-  .thesis-project-layout .project-title h2 {
-    font-size: 2rem;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 32px; }
-  .thesis-project-layout .project-title h3 {
-    font-size: 1.2rem;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase; }
-
-.thesis-project-layout .project-statement {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 65%; }
-  @media (max-width: 1024px) {
-    .thesis-project-layout .project-statement {
-      max-width: 100%; } }

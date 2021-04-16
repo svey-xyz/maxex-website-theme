@@ -987,7 +987,7 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/assets\/stylesheets\/layouts\/_project-layout.scss" : {
+    "\/assets\/stylesheets\/layouts\/pages\/_projects-layout.scss" : {
       "aP" : 1,
       "bl" : 0,
       "dP" : 10,
@@ -995,13 +995,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/layouts\/_project-layout.css",
+      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_projects-layout.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
     },
-    "\/assets\/stylesheets\/layouts\/_thesis-project-layout.scss" : {
+    "\/assets\/stylesheets\/layouts\/pages\/_single-thesis_project.scss" : {
       "aP" : 1,
       "bl" : 0,
       "dP" : 10,
@@ -1009,63 +1009,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/layouts\/_thesis-project-layout.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/stylesheets\/layouts\/pages\/_project-page.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_project-page.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/stylesheets\/layouts\/pages\/_thesis-layout-grid.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_thesis-layout-grid.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/stylesheets\/layouts\/pages\/max-ex-25\/_max-ex-25-page.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/max-ex-25\/_max-ex-25-page.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/stylesheets\/layouts\/pages\/max-ex-25\/_max-ex-25-splash-page.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/max-ex-25\/_max-ex-25-splash-page.css",
+      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_single-thesis_project.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1813,12 +1757,20 @@
       "oAP" : "\/page-templates\/projects\/archives\/archive-thesis_project.php",
       "oF" : 0
     },
-    "\/page-templates\/projects\/singles\/single-general_submission.php" : {
+    "\/page-templates\/projects\/archives\/general-submissions-years.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/page-templates\/projects\/singles\/single-general_submission.php",
+      "oAP" : "\/page-templates\/projects\/archives\/general-submissions-years.php",
+      "oF" : 0
+    },
+    "\/page-templates\/projects\/singles\/single-general_submission_theme.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/projects\/singles\/single-general_submission_theme.php",
       "oF" : 0
     },
     "\/page-templates\/projects\/singles\/single-thesis_project.php" : {
@@ -2224,14 +2176,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/nav\/menu-nav.php",
-      "oF" : 0
-    },
-    "\/template-parts\/sections\/project-sections.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/sections\/project-sections.php",
       "oF" : 0
     },
     "\/template-parts\/tiles\/tile.php" : {

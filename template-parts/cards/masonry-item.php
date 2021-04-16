@@ -1,5 +1,5 @@
 <div class="masonry-item <?php if($overlay_enabled) { echo 'pop-up'; } ?>" galleryIndex=<?php echo $index ?>>
-	<?php if ($cover_enabled): ?>
+	<?php if ($link_enabled): ?>
 		<a class="card-link" href="<?php echo $item['link'] ?>" title="<?php echo $item['title'] ?>">
 	<?php endif; ?>
 
