@@ -17,6 +17,14 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
+    "\/archive-award_winner.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/archive-award_winner.php",
+      "oF" : 0
+    },
     "\/archive-general_submission.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1309,6 +1317,20 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/stylesheets\/modules\/cards\/_award-winner-card.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/cards\/_award-winner-card.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/stylesheets\/modules\/cards\/_dynamic-item-card.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1741,6 +1763,14 @@
       "oAP" : "\/page-templates\/project.php",
       "oF" : 0
     },
+    "\/page-templates\/projects\/archives\/archive-award_winner.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/projects\/archives\/archive-award_winner.php",
+      "oF" : 0
+    },
     "\/page-templates\/projects\/archives\/archive-general_submission.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2024,6 +2054,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/buttons\/menu-button.php",
+      "oF" : 0
+    },
+    "\/template-parts\/cards\/award-winner-card.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/cards\/award-winner-card.php",
       "oF" : 0
     },
     "\/template-parts\/cards\/masonry-item.php" : {
