@@ -7,9 +7,21 @@
 	font-size: 0;
 
 	.column {
-		display: inline-block;
+		display: block;
 		width: 100%;
-		vertical-align: top;
+
+		&.constrain {
+			margin: auto;
+			width: 45%;
+
+			@include media("<=tablet") {
+				width: 65%;
+			}
+
+			@include media("<=mobile") {
+				width: 85%;
+			}
+		}
 
 		.copy {
 			column-gap: $gutter;

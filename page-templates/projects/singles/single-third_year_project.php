@@ -7,11 +7,13 @@
 
 ?>
 
-<article class="thesis-project-layout full-width-wrapper ">
-	<div class="max-width-container">
-		<div class="project-title-section block">
-			<h2><?php echo get_the_title() ?></h2>
-			<h3><?php echo $student ?></h3>
+<article class="thesis-project-layout">
+	<div class="full-width-wrapper">
+		<div class="max-width-container">
+			<div class="project-title-section block">
+				<h2><?php echo get_the_title() ?></h2>
+				<h3><?php echo $student ?></h3>
+			</div>
 		</div>
 	</div>
 

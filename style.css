@@ -1,5 +1,5 @@
 /*!
-Theme Name: MaxEx 2021
+Theme Name: Function (v1.3.0)
 Author: The New Beat
 Author URI: http://thenewbeat.ca
 Description: Original theme by The New Beat; theme update by Hayden Soule.
@@ -1267,12 +1267,8 @@ a {
           text-align: center; }
 
 .full-width-image {
-  margin: 45px;
   font-size: 0;
   text-align: center; }
-  @media (max-width: 640px) {
-    .full-width-image {
-      margin: 30px; } }
   .full-width-image .column {
     display: inline-block;
     vertical-align: top; }
@@ -1280,13 +1276,15 @@ a {
       .full-width-image .column {
         width: 100%; } }
     .full-width-image .column.image img {
-      max-width: 100%;
-      max-height: 100vh;
+      max-height: 80vh;
       display: block;
       margin: 0 auto; }
-      @media (max-width: 640px) {
-        .full-width-image .column.image img {
-          margin: 45px 0 0 0; } }
+    .full-width-image .column.gapless img {
+      max-height: none;
+      width: 100vw;
+      max-width: 100vw;
+      display: block; }
+
 .hero-inner {
   margin: 0;
   font-size: 0;
@@ -1622,9 +1620,17 @@ a {
   margin: 0;
   font-size: 0; }
   .paragraph-multi-column .column {
-    display: inline-block;
-    width: 100%;
-    vertical-align: top; }
+    display: block;
+    width: 100%; }
+    .paragraph-multi-column .column.constrain {
+      margin: auto;
+      width: 45%; }
+      @media (max-width: 1024px) {
+        .paragraph-multi-column .column.constrain {
+          width: 65%; } }
+      @media (max-width: 640px) {
+        .paragraph-multi-column .column.constrain {
+          width: 85%; } }
     .paragraph-multi-column .column .copy {
       -webkit-column-gap: 90px;
          -moz-column-gap: 90px;
