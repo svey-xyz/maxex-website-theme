@@ -17,22 +17,6 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
-    "\/archive-general_submission.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/archive-general_submission.php",
-      "oF" : 0
-    },
-    "\/archive-thesis_project.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/archive-thesis_project.php",
-      "oF" : 0
-    },
     "\/assets\/images\/detail-line-plus.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -1677,52 +1661,12 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
-    "\/page-templates\/max-ex-25-custom.php" : {
+    "\/page-templates\/archive-template.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/page-templates\/max-ex-25-custom.php",
-      "oF" : 0
-    },
-    "\/page-templates\/max-ex-25-grid.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-templates\/max-ex-25-grid.php",
-      "oF" : 0
-    },
-    "\/page-templates\/max-ex-25-launch.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-templates\/max-ex-25-launch.php",
-      "oF" : 0
-    },
-    "\/page-templates\/max-ex-25-list.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-templates\/max-ex-25-list.php",
-      "oF" : 0
-    },
-    "\/page-templates\/max-ex-25-side.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-templates\/max-ex-25-side.php",
-      "oF" : 0
-    },
-    "\/page-templates\/max-ex-25-splash.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-templates\/max-ex-25-splash.php",
+      "oAP" : "\/page-templates\/archive-template.php",
       "oF" : 0
     },
     "\/page-templates\/page.php" : {
@@ -1731,14 +1675,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-templates\/page.php",
-      "oF" : 0
-    },
-    "\/page-templates\/project.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-templates\/project.php",
       "oF" : 0
     },
     "\/page-templates\/projects\/archives\/archive-general_submission.php" : {
@@ -1755,6 +1691,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-templates\/projects\/archives\/archive-thesis_project.php",
+      "oF" : 0
+    },
+    "\/page-templates\/projects\/archives\/archive-third_year_project.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/projects\/archives\/archive-third_year_project.php",
       "oF" : 0
     },
     "\/page-templates\/projects\/archives\/general-submissions-years.php" : {
@@ -1781,20 +1725,20 @@
       "oAP" : "\/page-templates\/projects\/singles\/single-thesis_project.php",
       "oF" : 0
     },
+    "\/page-templates\/projects\/singles\/single-third_year_project.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/projects\/singles\/single-third_year_project.php",
+      "oF" : 0
+    },
     "\/page-templates\/site-portal.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-templates\/site-portal.php",
-      "oF" : 0
-    },
-    "\/page-templates\/thesis-layout.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-templates\/thesis-layout.php",
       "oF" : 0
     },
     "\/screenshot.png" : {
@@ -2080,14 +2024,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/footers\/site-footer.php",
-      "oF" : 0
-    },
-    "\/template-parts\/functions\/get-project-year.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/functions\/get-project-year.php",
       "oF" : 0
     },
     "\/template-parts\/grids\/project-cards-grid.php" : {

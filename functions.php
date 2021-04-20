@@ -214,62 +214,7 @@ add_action('init', 'theme_custom_post_types', 0);
 function theme_custom_post_types() {
 
     global $wp; 
-    $wp->add_query_var('project-year'); 
 	$wp->add_query_var('theme'); 
-	//
-  // Projects
-	//
-
-	$labels = array(
-		'name'                  => 'Projects',
-		'singular_name'         => 'Project',
-		'menu_name'             => 'Projects',
-		'name_admin_bar'        => 'Project',
-		'archives'              => 'Project Archives',
-		'attributes'            => 'Project Attributes',
-		'parent_item_colon'     => 'Parent Project:',
-		'all_items'             => 'All Projects',
-		'add_new_item'          => 'Add New Project',
-		'add_new'               => 'Add New',
-		'new_item'              => 'New Project',
-		'edit_item'             => 'Edit Project',
-		'update_item'           => 'Update Project',
-		'view_item'             => 'View Project',
-		'view_items'            => 'View Projects',
-		'search_items'          => 'Search Project',
-		'not_found'             => 'Not found',
-		'not_found_in_trash'    => 'Not found in Trash',
-		'featured_image'        => 'Featured Image',
-		'set_featured_image'    => 'Set featured image',
-		'remove_featured_image' => 'Remove featured image',
-		'use_featured_image'    => 'Use as featured image',
-		'insert_into_item'      => 'Insert into Project',
-		'uploaded_to_this_item' => 'Uploaded to this Project',
-		'items_list'            => 'Projects list',
-		'items_list_navigation' => 'Projects list navigation',
-		'filter_items_list'     => 'Filter Projects list',
-	);
-	
-	$args = array(
-		'label'                 => 'Project',
-		'labels'                => $labels,
-		'supports'              => array('title', 'editor', 'revisions', 'custom-fields'),
-		'hierarchical'          => false,
-		'public'                => true,
-		'show_ui'               => true,
-		'show_in_menu'          => true,
-		'menu_position'         => 20,
-		'menu_icon'             => 'dashicons-star-filled',
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'post'
-	);
-	
-	// register_post_type('project', $args);
 
 	//
   	// Project Types
@@ -337,23 +282,6 @@ function theme_custom_post_types() {
 	}
 
 	register_taxonomy(  
-        'project_year',  //The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces). 
-        $project_types,        //post type name
-        array(  
-            'hierarchical' => true,  
-            'label' => 'Project Year',  //Display name
-            'query_var' => true,
-			'show_ui' => true,
-    		'show_in_quick_edit' => false,
-    		'meta_box_cb' => false,
-            'rewrite' => array(
-                'slug' => 'project_year', // This controls the base slug that will display before each term
-                'with_front' => false // Don't display the category base before 
-            )
-        )  
-    );
-
-	register_taxonomy(  
         'general_submission_theme',  //The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces). 
         'general_submission',        //post type name
         array(  
@@ -397,56 +325,6 @@ add_filter('excerpt_more', 'theme_excerpt_more');
 function theme_excerpt_more($more) {
   return '&hellip;';
 }
-
-
-/**
- * Filter posts by taxonomy in admin
- * @author  Mike Hemberger
- * @link http://thestizmedia.com/custom-post-type-filter-admin-custom-taxonomy/
- */
-add_filter('parse_query', 'tsm_convert_id_to_term_in_query');
-function tsm_convert_id_to_term_in_query($query) {
-	global $pagenow;
-	global $submenu_file;
-	global $project_types;
-
-	$taxonomy = 'project_year';
-	$q_vars = &$query->query_vars;
-
-	foreach($project_types as $post_type ) {
-		
-		if ( $pagenow == 'edit.php' && isset($q_vars['post_type']) && $q_vars['post_type'] == $post_type && isset($q_vars[$taxonomy]) && is_numeric($q_vars[$taxonomy]) && $q_vars[$taxonomy] != 0 ) {
-			$submenu_file = 'edit.php?post_type='.$post_type.'&project_year='.$q_vars[$taxonomy];
-			
-			$term = get_term_by('id', $q_vars[$taxonomy], $taxonomy);
-			$q_vars[$taxonomy] = $term->slug;	
-		}
-	}
-}
-
-// Add sub menus for years to every project type
-function wp332896_folder_menu() {
-	global $project_types;
-
-    foreach($project_types as $project_type) {
-		$post_type = get_post_type_object($project_type);
-		$menu_slug = $post_type->name;
-		$menu_name = $post_type->labels->name;
-
-		$years = get_terms(array(
-			'taxonomy' => 'project_year',
-			'hide_empty' => false,
-		));
-
-		if  ($years) {
-			foreach ($years  as $year ) {
-				$project_submenu_slug = 'edit.php?post_type='.$menu_slug.'&project_year='.$year->term_id;
-				add_submenu_page('edit.php?post_type='.$menu_slug, $year->name, $year->name, 'edit_posts', $project_submenu_slug);
-			}
-		} 
-    }
- }
-add_action('admin_menu', 'wp332896_folder_menu');
 
 // Project type redirect for slug rewrite to point to correct template
 function project_types_redirect() {

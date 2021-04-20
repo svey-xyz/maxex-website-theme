@@ -1,5 +1,5 @@
 /*!
-Theme Name: Function (v1.3.0)
+Theme Name: MaxEx (v0.0.1)
 Author: The New Beat
 Author URI: http://thenewbeat.ca
 Description: Original theme by The New Beat; theme update by Hayden Soule.
@@ -3321,7 +3321,7 @@ button.carousel-pagination-bullet {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  word-break: break-all;
+  word-break: break-word;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto; }
