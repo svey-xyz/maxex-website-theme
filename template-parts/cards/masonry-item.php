@@ -22,7 +22,7 @@
 
       		<p class="student-name"><?php echo $item['sub']; ?></p>
     	</div>
-  	<?php if ($cover_enabled): ?>
+  	<?php if ($link_enabled): ?>
 	  	</a>
 	<?php endif; ?>
 </div>

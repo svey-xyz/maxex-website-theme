@@ -1,6 +1,7 @@
 <?php
 	$heading = get_sub_field('heading');
 	$button_text = get_sub_field('button') ? get_sub_field('button_text') : null;
+	$button_link = get_sub_field('button') ? get_sub_field('button_link') : null;
 	$gallery = get_sub_field('gallery');
 ?>
 
@@ -18,10 +19,17 @@
 					</div>
 					<?php if ($button_text): ?>
 						<div class="overlay-button">
-							<p><?php echo $button_text; ?></p>
+							<a href="<?php echo $button_link; ?>"><p><?php echo $button_text; ?></p></a>
 						</div>
 					<?php endif; ?>
-					<div class="overlay-arrow"></div>
+
+					<?php if ($button_link): ?>
+						<a href="<?php echo $button_link; ?>">
+					<?php endif; ?>
+							<div class="overlay-arrow"></div>
+					<?php if ($button_link): ?>
+						</a>
+					<?php endif; ?>
 
 		</div>
        	<div class="gallery">

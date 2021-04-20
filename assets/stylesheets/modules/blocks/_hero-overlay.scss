@@ -33,6 +33,10 @@
 			padding-top: $gutter;
 			padding-bottom: $padding;
 
+			@include media("<=tablet") {
+				padding-top: $padding;
+			}
+
 			.overlay-heading {
 				position: relative;
 
@@ -42,7 +46,11 @@
 					color: #fff;
 					text-shadow: $text-shadow-strong;
 					font-size: 1.5rem;
-					line-height: 3rem;
+					line-height: 2;
+
+					@include media("<=tablet") {
+						font-size: 1rem;
+					}
 				}
 			}
 
@@ -62,6 +70,25 @@
 					text-align: center;
 					color: #fff;
 					text-shadow: $text-shadow-strong;
+
+					transition: all 0.5s;
+
+					&:hover {
+						transform: scale(1.02);
+						// font-weight: 700;
+					}
+
+					@include media("<=tablet") {
+						font-size: 0.8rem;
+					}
+				}
+
+				a:hover {
+					text-decoration-color: white;
+				}
+
+				@include media("<=tablet") {
+					margin-bottom: $gutter-mobile;
 				}
 			}
 
@@ -78,6 +105,12 @@
 				background-position: center;
 				// box-shadow: $shadow;
 				background-size: contain;
+
+				transition: all 0.5s;
+
+				&:hover {
+					transform: scale(1.2);
+				}
 			}
 		}
 
