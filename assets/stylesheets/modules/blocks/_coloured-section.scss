@@ -1,0 +1,51 @@
+//
+// Coloured section block
+//
+
+.coloured-section {
+	font-size: 0;
+	text-align: center;
+
+	.colour-block {
+		padding-top: $padding * 2;
+		padding-bottom: $padding * 2;
+
+		h3 {
+			font-family: $sans-serif;
+			font-weight: 700;
+		}
+
+		p {
+			width: 60%;
+			margin: auto;
+			display: block;
+			padding-top: $padding * 2;
+			font-size: 2rem;
+			font-family: $sans-serif;
+			font-weight: 500;
+
+			@include media("<=tablet") {
+				font-size: 1.5rem;
+				width: 100%;
+			}
+		}
+	
+		.column {
+			display: inline-block;    
+			vertical-align: top;
+			
+			@include media("<=tablet") {
+				width: 100%;
+			}
+			
+			&.image {
+			
+				img {
+					max-height: 80vh;
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}

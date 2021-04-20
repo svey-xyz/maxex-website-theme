@@ -27,6 +27,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/images\/frames\/frame-1x1-black.jpg" : {
+      "ft" : 16384,
+      "iS" : 35832,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/frames\/frame-1x1-black.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/frames\/frame-1x1-white.jpg" : {
       "ft" : 16384,
       "iS" : 30236,
@@ -40,12 +53,90 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/images\/frames\/frame-1x1-wood.jpg" : {
+      "ft" : 16384,
+      "iS" : 76576,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/frames\/frame-1x1-wood.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/frames\/frame-2x3-black.jpg" : {
+      "ft" : 16384,
+      "iS" : 35200,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/frames\/frame-2x3-black.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/frames\/frame-2x3-white.jpg" : {
       "ft" : 16384,
       "iS" : 29776,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/images\/frames\/frame-2x3-white.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/frames\/frame-2x3-wood.jpg" : {
+      "ft" : 16384,
+      "iS" : 76989,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/frames\/frame-2x3-wood.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/frames\/frame-4x5-black.jpg" : {
+      "ft" : 16384,
+      "iS" : 43437,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/frames\/frame-4x5-black.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/frames\/frame-4x5-white.jpg" : {
+      "ft" : 16384,
+      "iS" : 38747,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/frames\/frame-4x5-white.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/frames\/frame-4x5-wood.jpg" : {
+      "ft" : 16384,
+      "iS" : 92855,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/frames\/frame-4x5-wood.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -233,6 +324,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/images\/logos\/max-ex-25.png" : {
+      "ft" : 32768,
+      "iS" : 44951,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/logos\/max-ex-25.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/logos\/scotiabank-contact-photography-festival.png" : {
       "ft" : 32768,
       "iS" : 20087,
@@ -245,6 +349,17 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/assets\/scripts\/app-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/scripts\/app-min-min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
     },
     "\/assets\/scripts\/app.js" : {
       "bF" : 0,
@@ -444,6 +559,17 @@
       "sC" : 0,
       "tS" : 0
     },
+    "\/assets\/scripts\/plugins-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/scripts\/plugins-min-min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/assets\/scripts\/plugins.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -528,6 +654,17 @@
       "mi" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/scripts\/vendor\/smoothscroll-min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/assets\/scripts\/vendor\/swiper.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scripts\/vendor\/swiper-min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
@@ -913,6 +1050,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/stylesheets\/modules\/blocks\/__block.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/stylesheets\/modules\/blocks\/_coloured-section.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_coloured-section.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1338,6 +1489,20 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/stylesheets\/modules\/headers\/_third-year-header.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/headers\/_third-year-header.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/stylesheets\/modules\/icons\/_icon.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1602,6 +1767,22 @@
       "oAP" : "\/page-templates\/projects\/singles\/single-general_submission_theme.php",
       "oF" : 0
     },
+    "\/page-templates\/projects\/singles\/single-thesis_project.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/projects\/singles\/single-thesis_project.php",
+      "oF" : 0
+    },
+    "\/page-templates\/projects\/singles\/single-third_year_project.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/projects\/singles\/single-third_year_project.php",
+      "oF" : 0
+    },
     "\/page-templates\/site-portal.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1609,6 +1790,19 @@
       "oA" : 0,
       "oAP" : "\/page-templates\/site-portal.php",
       "oF" : 0
+    },
+    "\/screenshot.png" : {
+      "ft" : 32768,
+      "iS" : 322109,
+      "oA" : 0,
+      "oAP" : "\/screenshot.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/single-project.php" : {
       "cB" : 0,
@@ -1627,6 +1821,18 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/style-admin-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/style.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/style-min.css",
       "oF" : 0,
       "pg" : 0
     },
@@ -1652,6 +1858,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/blocks\/category-listing.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/coloured-section.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/coloured-section.php",
       "oF" : 0
     },
     "\/template-parts\/blocks\/dynamic-item-card.php" : {
@@ -1708,6 +1922,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/blocks\/full-width-gallery.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/full-width-image.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/full-width-image.php",
       "oF" : 0
     },
     "\/template-parts\/blocks\/hero-inner.php" : {
@@ -1884,6 +2106,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/headers\/site-header.php",
+      "oF" : 0
+    },
+    "\/template-parts\/headers\/third-year-header.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/headers\/third-year-header.php",
       "oF" : 0
     },
     "\/template-parts\/images\/linked-image.php" : {

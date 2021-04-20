@@ -1,6 +1,7 @@
 <?php
 	get_header();
 	get_template_part('template-parts/headers/site-header');
+	get_template_part('template-parts/headers/third-year-header');
 
 	$student = get_field('student_name');
 	$statement = get_field('artist_statement');

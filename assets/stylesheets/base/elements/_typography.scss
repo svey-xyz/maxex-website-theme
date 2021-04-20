@@ -46,7 +46,7 @@ h3 {
 		font-size: 30px;
 	}
 	
-	@include media (">laptop") {
+	@include media (">tablet") {
 		font-size: 48px;
 	}
 }
