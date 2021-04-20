@@ -7,15 +7,15 @@
 	font-size: 0;
 	padding: 0;
 
-	margin-top: -$gutter !important;
+	// margin-top: -$gutter !important;
 
-	@include media("<=tablet") {
-		margin-top: -$gutter-mobile;
-	}
+	// @include media("<=tablet") {
+	// 	margin-top: -$gutter-mobile;
+	// }
 	
-	@include media("<=mobile") {
-		height: auto;
-	}
+	// @include media("<=mobile") {
+	// 	height: auto;
+	// }
 	
 	.column {
 		display: inline-block;

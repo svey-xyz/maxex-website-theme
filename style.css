@@ -1019,7 +1019,7 @@ a {
     height: 56px; }
 
 .block {
-  padding-top: 90px !important;
+  padding-top: 90px;
   /*
 	transition: opacity $timing;
 	opacity: 0;
@@ -1436,17 +1436,95 @@ a {
             .hero-inner .column .gallery .swiper-slide .card a.text-link:before {
               background: url("assets/images/icons/arrow-right-white.svg") no-repeat center center; }
 
+.hero-overlay {
+  margin: 0;
+  font-size: 0; }
+  .hero-overlay .column {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    position: relative; }
+    @media (max-width: 1024px) {
+      .hero-overlay .column {
+        width: 100%; } }
+    .hero-overlay .column .gallery-overlay {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      position: absolute;
+      z-index: 10;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+      -webkit-align-items: center;
+              align-items: center;
+      height: 100%;
+      padding-top: 90px;
+      padding-bottom: 32px; }
+      .hero-overlay .column .gallery-overlay .overlay-heading {
+        position: relative; }
+        .hero-overlay .column .gallery-overlay .overlay-heading h3 {
+          font-family: "Roboto", sans-serif;
+          text-align: center;
+          color: #fff;
+          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 2px 2px 6px rgba(0, 0, 0, 0.1);
+          font-size: 1.5rem;
+          line-height: 3rem; }
+      .hero-overlay .column .gallery-overlay .overlay-button {
+        margin-top: auto;
+        margin-bottom: 90px;
+        border: 2px solid #fff;
+        box-shadow: 0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 0px 5px -1px rgba(0, 0, 0, 0.06); }
+        .hero-overlay .column .gallery-overlay .overlay-button p {
+          margin: 0;
+          padding-left: 32px;
+          padding-right: 32px;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          font-family: "Roboto", sans-serif;
+          text-align: center;
+          color: #fff;
+          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 2px 2px 6px rgba(0, 0, 0, 0.1); }
+      .hero-overlay .column .gallery-overlay .overlay-arrow {
+        position: relative;
+        background-image: url("assets/images/icons/chevron.svg");
+        background-repeat: no-repeat;
+        border-radius: 100%;
+        height: 50px;
+        width: 50px;
+        background-size: 100%;
+        background-position: center;
+        background-size: contain; }
+    .hero-overlay .column .gallery {
+      width: 100%;
+      display: inline-block;
+      height: 100%; }
+      @media (max-width: 1260px) {
+        .hero-overlay .column .gallery {
+          width: 100%; } }
+      .hero-overlay .column .gallery .swiper-slide {
+        height: 100%;
+        height: 85vh;
+        width: 100%;
+        padding: 0 0; }
+        .hero-overlay .column .gallery .swiper-slide picture {
+          width: 100%;
+          height: 100%;
+          display: -webkit-flex;
+          display: flex; }
+          .hero-overlay .column .gallery .swiper-slide picture img {
+            width: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+            height: auto; }
+
 .hero {
   margin: 0;
   font-size: 0;
-  padding: 0;
-  margin-top: -90px !important; }
-  @media (max-width: 1024px) {
-    .hero {
-      margin-top: -30px; } }
-  @media (max-width: 640px) {
-    .hero {
-      height: auto; } }
+  padding: 0; }
   .hero .column {
     display: inline-block;
     vertical-align: top;
@@ -3125,6 +3203,16 @@ button.carousel-pagination-bullet {
                 padding: 15px;
                 margin: 0 auto; }
 
+.third-year-header {
+  padding-top: 32px; }
+  .third-year-header h2 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    font-weight: 500; }
+    @media (max-width: 1024px) {
+      .third-year-header h2 {
+        font-size: 1rem; } }
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -3402,6 +3490,25 @@ button.carousel-pagination-bullet {
     .countdown-timer .label-text {
       margin-top: 4px;
       font-size: 11px; } }
+.thesis-project-layout .project-title {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65%; }
+  .thesis-project-layout .project-title h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 32px; }
+  .thesis-project-layout .project-title h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase; }
+
 .grid-sizer {
   width: 2%; }
 
@@ -3426,28 +3533,7 @@ button.carousel-pagination-bullet {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  word-break: break-all; }
-
-.project-years {
-  margin-top: 32px;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-justify-content: center;
-          justify-content: center; }
-  .project-years span {
-    padding: 32px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer; }
-    .project-years span:hover {
-      font-weight: 800; }
-  .project-years .active-year {
-    font-weight: 800; }
+  word-break: break-word; }
 
 .project-statement {
   position: relative;
@@ -3457,25 +3543,54 @@ button.carousel-pagination-bullet {
   @media (max-width: 1024px) {
     .project-statement {
       max-width: 100%; } }
-.thesis-project-layout .project-title {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 65%; }
-  .thesis-project-layout .project-title h2 {
-    font-size: 2rem;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 32px; }
-  .thesis-project-layout .project-title h3 {
-    font-size: 1.2rem;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase; }
+.third-year-project-layout .project-content {
+  position: relative; }
 
+.third-year-project-layout .project-heading-section .header-image {
+  max-height: 80vh;
+  overflow: hidden; }
+  .third-year-project-layout .project-heading-section .header-image picture {
+    display: -webkit-flex;
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    width: auto; }
+    @media (max-width: 1024px) {
+      .third-year-project-layout .project-heading-section .header-image picture {
+        display: block;
+        height: auto; } }
+    .third-year-project-layout .project-heading-section .header-image picture img {
+      max-width: 100%;
+      max-height: 100%;
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: center;
+         object-position: center; }
+
+.third-year-project-layout .project-heading-section h2 {
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
+
+.third-year-project-layout .project-heading-section h3 {
+  padding-top: 90px;
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-break: break-word; }
+  @media (max-width: 1024px) {
+    .third-year-project-layout .project-heading-section h3 {
+      padding-top: 30px; } }
 body {
   margin: 0;
   padding: 0;

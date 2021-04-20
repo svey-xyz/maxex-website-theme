@@ -4,15 +4,24 @@
 	get_template_part('template-parts/headers/third-year-header');
 
 	$student = get_field('student_name');
-	$statement = get_field('artist_statement');
+	$image = get_field('thumbnail');
 
 ?>
 
-<article class="thesis-project-layout">
-	<div class="full-width-wrapper">
-		<div class="max-width-container">
-			<div class="project-title-section block">
-				<h2><?php echo get_the_title() ?></h2>
+<article class="third-year-project-layout">
+	
+	<div class="project-heading-section block">
+		<div class="header-image">
+			<picture>
+				<source srcset="<?php print $image['sizes']['medium_large']; ?>" media="(max-width: 640px)">
+				<source srcset="<?php print $image['sizes']['large']; ?>" media="(max-width: 1024px)">
+				<source srcset="<?php print $image['sizes']['laptop']; ?>" media="(min-width: 1400px)">
+				<img src="<?php print $image['url']; ?>"  alt="<?php print $image['alt']; ?>" />
+			</picture>
+		</div>
+
+		<div class="full-width-wrapper">
+			<div class="max-width-container">
 				<h3><?php echo $student ?></h3>
 			</div>
 		</div>
