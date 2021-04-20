@@ -3,17 +3,17 @@
 //
 
 .section-header{
-  padding: $gutter-half $gutter;
+//   padding: $gutter-half $gutter;
   font-size: 0;
   display: flex;
   
   @include media("<=tablet") {
     display: inline-block;
-    padding: $gutter-half $gutter;
+    // padding: $gutter-half $gutter;
   }
   
   @include media("<=mobile") {
-    padding: $gutter-mobile;
+    // padding: $gutter-mobile;
   }
   
   &.left {
