@@ -1992,6 +1992,14 @@
       "oAP" : "\/template-parts\/buttons\/menu-button.php",
       "oF" : 0
     },
+    "\/template-parts\/cards\/award-winner-card.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/cards\/award-winner-card.php",
+      "oF" : 0
+    },
     "\/template-parts\/cards\/masonry-item.php" : {
       "cB" : 0,
       "ft" : 8192,

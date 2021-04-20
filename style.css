@@ -1,5 +1,5 @@
 /*!
-Theme Name: MaxEx (v0.0.1)
+Theme Name: Function (v1.3.0)
 Author: The New Beat
 Author URI: http://thenewbeat.ca
 Description: Original theme by The New Beat; theme update by Hayden Soule.
@@ -2027,6 +2027,58 @@ a {
   .icon-button.theme-white {
     background-color: white;
     color: black; }
+
+.awards-grid {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+  .awards-grid .award-item {
+    position: relative;
+    margin-bottom: 64px;
+    width: 45%; }
+    @media (max-width: 1024px) {
+      .awards-grid .award-item {
+        width: 100%; } }
+    .awards-grid .award-item .award-image {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-bottom: 16px; }
+      .awards-grid .award-item .award-image::after {
+        content: "";
+        display: block;
+        padding-bottom: 100%; }
+      .awards-grid .award-item .award-image img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .awards-grid .award-item .student-name {
+      display: inline;
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700; }
+    .awards-grid .award-item .project-title {
+      display: inline;
+      margin: 0;
+      font-size: 32px;
+      font-weight: 500; }
+    .awards-grid .award-item .award-title {
+      margin: 0;
+      padding-top: 16px;
+      font-size: 24px;
+      font-weight: 500;
+      font-family: sans-serif; }
+    .awards-grid .award-item .award-description {
+      margin: 0;
+      padding-top: 16px;
+      font-size: 18px; }
 
 .dynamic-item-card .card {
   box-shadow: 0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 0px 5px -1px rgba(0, 0, 0, 0.06);
