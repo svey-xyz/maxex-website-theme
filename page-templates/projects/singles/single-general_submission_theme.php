@@ -23,21 +23,24 @@
 	$handle = 'masonry-gallery';
 	$cover_enabled = true;
 
+	$i = 0;
+
 	foreach ($general_submissions_query as $submission) {
 		$sub = get_field('submission', $submission);
-		$item = array();
-
-		$item['title'] = $sub['image_title'];
-		$item['sub'] = $sub['student_name'];
 		
-		$item['link'] = '';
-		$item['image'] = $sub['image'];
-		$item['image']['caption'] = $item['title'] . ', ' . $item['sub'] . ', ' . $sub['student_year'];
+		$image = $sub['image'];
+		$image['alt'] = $sub['image_title'] . ', ' . $sub['student_name'] . ', ' . $sub['student_year'];
 
-		$masonry_items[] = $item;
+		$id = 'full-width-image-' . $i;
+		$gapless = false;
+		
+		include( locate_template('template-parts/images/full-width.php', false, false )); 
+
+		$i++;
+
 	}
 
-	include( locate_template('template-parts/images/masonry-grid.php', false, false )); 
+	// include( locate_template('template-parts/images/masonry-grid.php', false, false )); 
 
 	wp_reset_query();
 ?>

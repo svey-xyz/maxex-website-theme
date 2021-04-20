@@ -1316,6 +1316,9 @@ a {
       width: 100vw;
       max-width: 100vw;
       display: block; }
+    .full-width-image .column .caption {
+      font-family: "Roboto", sans-serif;
+      text-align: center; }
 
 .hero-inner {
   margin: 0;

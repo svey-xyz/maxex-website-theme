@@ -8,7 +8,7 @@
 		foreach ($general_submissions_theme_query as $theme) {
 			include(locate_template('template-parts/cards/theme-card.php', false, false )); 
 		}
-
+		
 		wp_reset_query();
 	?>
 </div>

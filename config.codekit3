@@ -2152,6 +2152,14 @@
       "oAP" : "\/template-parts\/headers\/third-year-header.php",
       "oF" : 0
     },
+    "\/template-parts\/images\/full-width.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/images\/full-width.php",
+      "oF" : 0
+    },
     "\/template-parts\/images\/linked-image.php" : {
       "cB" : 0,
       "ft" : 8192,
