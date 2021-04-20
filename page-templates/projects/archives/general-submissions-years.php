@@ -1,25 +1,8 @@
-<div class="project-years">
-	<?php
-	foreach ($years as $year):
-		global $wp;
-		$current_url = home_url( add_query_arg( array(), $wp->request ) );
-		$query_url = add_query_arg('project-year', $year->name, $current_url);
-		$class = '';
-		if ($year_term->name == $year->name):
-			$class = 'active-year';
-		endif;
-	?>
-		<a href="<?php echo $query_url ?>"><span class=<?php echo $class ?>><?php echo $year->name; ?></span></a>
-	<?php endforeach;?>
-</div>
-
 <div class="theme-grid block">
 	<?php
 		$general_submissions_theme_query = get_terms(array(
 					'taxonomy'   => 'general_submission_theme',
-					'hide_empty' => false,
-					'meta_key'  => 'submission_year',
-					'meta_value' => $year_term->term_id
+					'hide_empty' => false
 		));
 		
 		foreach ($general_submissions_theme_query as $theme) {

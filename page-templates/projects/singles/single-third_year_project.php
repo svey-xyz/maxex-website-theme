@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="thesis-project-layout full-width-wrapper ">
+<article class="thesis-project-layout full-width-wrapper ">
 	<div class="max-width-container">
 		<div class="project-title-section block">
 			<h2><?php echo get_the_title() ?></h2>
@@ -19,14 +19,8 @@
 		<!-- Handle flexible content -->
 		<?php get_template_part('template-parts/blocks/blocks'); ?>
 	</div>
-
-	<div class="max-width-container">		
-		<div class='project-statement block'>
-			<p><?php echo $statement ?></p>
-		</div>
-	</div>
 	
-</div>
+</article>
 
 <?php
 

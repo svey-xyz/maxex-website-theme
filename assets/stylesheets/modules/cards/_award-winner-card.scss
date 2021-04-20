@@ -23,6 +23,7 @@
 			position: relative;
 			width: 100%;
 			height: auto;
+			margin-bottom: $padding / 2;
 
 			&::after {
 				content: "";
@@ -38,12 +39,28 @@
 			}
 		}
 
-		.award-title {
+		.student-name {
+			display: inline;
 			margin: 0;
-			padding-top: $padding / 2;
 			font-size: 32px;
 			font-weight: 700;
 		}
+
+		.project-title {
+			display: inline;
+			margin: 0;
+			font-size: 32px;
+			font-weight: 500;
+		}
+
+		.award-title {
+			margin: 0;
+			padding-top: $padding / 2;
+			font-size: 24px;
+			font-weight: 500;
+			font-family: sans-serif;
+		}
+
 		.award-description {
 			margin: 0;
 			padding-top: $padding / 2;

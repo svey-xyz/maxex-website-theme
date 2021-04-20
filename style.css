@@ -1,5 +1,5 @@
 /*!
-Theme Name: Function (v1.3.0)
+Theme Name: MaxEx 2021
 Author: The New Beat
 Author URI: http://thenewbeat.ca
 Description: Original theme by The New Beat; theme update by Hayden Soule.
@@ -2047,7 +2047,8 @@ a {
     .awards-grid .award-item .award-image {
       position: relative;
       width: 100%;
-      height: auto; }
+      height: auto;
+      margin-bottom: 16px; }
       .awards-grid .award-item .award-image::after {
         content: "";
         display: block;
@@ -2058,11 +2059,22 @@ a {
         height: 100%;
         -o-object-fit: cover;
            object-fit: cover; }
+    .awards-grid .award-item .student-name {
+      display: inline;
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700; }
+    .awards-grid .award-item .project-title {
+      display: inline;
+      margin: 0;
+      font-size: 32px;
+      font-weight: 500; }
     .awards-grid .award-item .award-title {
       margin: 0;
       padding-top: 16px;
-      font-size: 32px;
-      font-weight: 700; }
+      font-size: 24px;
+      font-weight: 500;
+      font-family: sans-serif; }
     .awards-grid .award-item .award-description {
       margin: 0;
       padding-top: 16px;
@@ -3354,6 +3366,9 @@ button.carousel-pagination-bullet {
       font-size: 11px; } }
 .grid-sizer {
   width: 2%; }
+
+.project-content {
+  position: relative; }
 
 .project-title-section h2 {
   margin: 0;

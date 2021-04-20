@@ -2,7 +2,7 @@
 	get_header();
 	get_template_part('template-parts/headers/site-header');
 
-	include( locate_template('template-parts/functions/get-project-year.php', false, false ));
+	// include( locate_template('template-parts/functions/get-project-year.php', false, false ));
 	$theme = get_term_by('slug', get_query_var('theme'), 'general_submission_theme');
 
 	$theme_loaded = !empty($theme) ? true : false;
