@@ -10,6 +10,7 @@
 // @codekit-append "app/blocks/masonry-gallery.js";
 
 // @codekit-append "app/progress-bar.js";
+// @codekit-append "app/form-verify.js";
 
 // @codekit-append "app/carousels.js";
 // @codekit-append "app/countdown-timer.js";
@@ -222,6 +223,7 @@ $(document).ready(function() {
 
     $(".block.video").fitVids();
     $(".project-media").fitVids();
+	$(".column.video").fitVids();
     
 });
 
@@ -334,6 +336,11 @@ $(function() {
   
   // 
   $.fn.animateProgressBar(8000);
+});
+
+$(document).ready(function () {
+	$("#contactForm").validate();
+	console.log('loaded verif');
 });
 
 //

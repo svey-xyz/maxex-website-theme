@@ -482,6 +482,17 @@
       "sC" : 0,
       "tS" : 0
     },
+    "\/assets\/scripts\/app\/form-verify.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scripts\/app\/form-verify-min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/assets\/scripts\/app\/globals\/fx.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -966,6 +977,34 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/stylesheets\/layouts\/_portal-page.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/stylesheets\/layouts\/pages\/_contact-layout.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_contact-layout.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/stylesheets\/layouts\/pages\/_rougher-films-layout.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_rougher-films-layout.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1753,6 +1792,14 @@
       "oAP" : "\/page-templates\/archive-template.php",
       "oF" : 0
     },
+    "\/page-templates\/contact-template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/contact-template.php",
+      "oF" : 0
+    },
     "\/page-templates\/page.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1775,6 +1822,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-templates\/projects\/archives\/archive-general_submission.php",
+      "oF" : 0
+    },
+    "\/page-templates\/projects\/archives\/archive-rougher_film.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/projects\/archives\/archive-rougher_film.php",
       "oF" : 0
     },
     "\/page-templates\/projects\/archives\/archive-thesis_project.php" : {

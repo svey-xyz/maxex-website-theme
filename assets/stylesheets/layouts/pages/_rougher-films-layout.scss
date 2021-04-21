@@ -1,0 +1,40 @@
+// 
+// Rougher films layout
+// 
+.rougher-films-layout {
+	.film-item {
+		display: flex;
+		flex-flow: row nowrap;
+		width: 100%;
+		position: relative;
+		align-items: center;
+
+
+		@include media("<=tablet") {
+			flex-flow: column nowrap;
+		}
+
+		.column {
+			width: 75%;
+		}
+
+		.film-attribution {
+			padding-right: $padding;
+			text-align: center;
+
+			@include media("<=tablet") {
+				padding-right: 0;
+				padding-bottom: $padding;
+			}
+
+			.student {
+				font-family: $serif;
+				font-weight: 700;
+			}
+
+			.film-title {
+
+			}
+		}
+	}
+}

@@ -1,0 +1,111 @@
+//
+// Contact Page Layout
+//
+
+$text_width: 150px;
+
+.contact-form-layout {
+	.entry-content {
+		position: relative;
+
+		.submit-error {
+			display: block;
+			font-size: 18px;
+			font-family: $sans-serif;
+			font-weight: 500;
+			color: red;
+			padding-top: $padding / 2;
+			margin-left: $text_width + $padding;
+
+			@include media("<=tablet") {
+				text-align: left;
+				display: block;
+				width: 100%;
+
+				padding-bottom: $padding / 2;
+				margin-left: 0;
+			}
+		}
+
+		ul {
+			li {
+
+				padding-bottom: $padding;
+		
+				label {
+					display: inline-block;
+					width: $text_width;
+					font-size: 24px;
+					font-family: $sans-serif;
+					font-weight: 300;
+
+					text-align: right;
+
+					@include media("<=tablet") {
+						text-align: left;
+						display: block;
+						width: 100%;
+
+						padding-bottom: $padding / 2;
+					}
+
+					&.error {
+						display: block;
+						font-size: 18px;
+						font-family: $sans-serif;
+						font-weight: 500;
+						color: red;
+						padding-top: $padding / 2;
+						margin-left: $text_width + $padding;
+						text-align: left;
+						width: 50%;
+
+						@include media("<=tablet") {
+							text-align: left;
+							display: block;
+							width: 100%;
+
+							padding-bottom: $padding / 2;
+							margin-left: 0;
+						}
+					}
+				}
+
+				input, textarea, button {
+					display: inline-block;
+					
+					margin-left: $padding;
+					
+					font-size: 18px;
+					border-style: solid;
+					border-color: $darkgrey;
+					border-width: 1px;
+					border-radius: 0px;	
+					padding: 8px;
+
+					@include media("<=tablet") {
+						margin-left: 0 !important;
+						display: block;
+						width: 100% !important;
+					}
+
+					&.error {
+						color: red;
+					}
+				}
+
+				input {
+					width: 40%;
+				}
+
+				textarea {
+					width: 50%;
+				}
+
+				button {
+					margin-left: $text_width + $padding;
+				}
+			}
+		}
+	}
+}

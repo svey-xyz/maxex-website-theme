@@ -220,7 +220,7 @@ function theme_custom_post_types() {
   	// Project Types
 	//
 	global $project_types;
-	$project_types = ['thesis_project', 'third_year_project', 'general_submission', 'award_winner'];
+	$project_types = ['thesis_project', 'third_year_project', 'general_submission', 'award_winner', 'rougher_film'];
 
 	foreach ($project_types as $project_type) {
 		$project_name = ucwords(str_replace('_', ' ', $project_type));

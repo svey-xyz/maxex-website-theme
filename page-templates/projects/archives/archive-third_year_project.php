@@ -2,10 +2,9 @@
 	get_header();
 	get_template_part('template-parts/headers/site-header');
 	get_template_part('template-parts/headers/third-year-header');
+	get_template_part('template-parts/blocks/blocks');
 	
 ?>
-
-<?php get_template_part('template-parts/blocks/blocks'); ?>
 
 <div class="full-width-wrapper">
 	<div class="max-width-container">

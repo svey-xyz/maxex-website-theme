@@ -10,6 +10,7 @@
 // @codekit-append "app/blocks/masonry-gallery.js";
 
 // @codekit-append "app/progress-bar.js";
+// @codekit-append "app/form-verify.js";
 
 // @codekit-append "app/carousels.js";
 // @codekit-append "app/countdown-timer.js";
