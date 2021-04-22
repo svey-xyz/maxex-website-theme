@@ -16,7 +16,7 @@
 
 <header id="header" class="header">
   	<div class="columns">
-		<div class="full-width-wrapper">
+		<div class="header-wrapper full-width-wrapper">
 			<div class="header-content max-width-container">
 				<div class="column logo">
 					<a href="/">
@@ -27,11 +27,15 @@
 			</div>
 		</div>
 
-		<div class="column menus">
-			<?php
-			theme_include_menu(28, 'mainFunctionNav', TRUE);
-			// theme_include_menu(3, 'images');
-			?>
+		<div class="menu-wrapper full-width-wrapper">
+			<div class="max-width-container">
+				<div class="column menus">
+					<?php
+					theme_include_menu(28, 'mainFunctionNav', TRUE);
+					// theme_include_menu(3, 'images');
+					?>
+				</div>
+			</div>
 		</div>
 	</div>
 	

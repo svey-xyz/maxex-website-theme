@@ -20,18 +20,26 @@ $header-height: 75px;
 				&.menus {
 					pointer-events: auto;
 					max-height: 100vh;
-					box-shadow: $shadow-inner;
+					// box-shadow: $shadow-inner;
+					box-shadow: $shadow;
 
-					transition-timing-function: ease-in-out;
-					transition-duration: 0.8s, 0.2s;
-					transition-property: max-height, box-shadow;
-					transition-delay: 0s, 0s; // no delay on shadow appear
+					// transition-timing-function: ease-in-out;
+					// transition-duration: 0.8s, 0.2s;
+
+					// transition-property: max-height, box-shadow;
+					// transition-delay: 0s, 0s; // no delay on shadow appear
 				}
 			}
         }
     }
 
     .columns {
+		.header-wrapper {
+			background-color: white;
+			position: relative;
+			z-index: 1000;
+			box-shadow: $shadow;
+		}
 		.header-content {
 			position: relative;
 			max-width: $content-width;
@@ -93,32 +101,45 @@ $header-height: 75px;
 			}
 		}
 
+
+		.menu-wrapper.full-width-wrapper {
+			@include media("<=tablet") {
+				padding: 0 !important;
+			}
+		}
+
 		.column {
-			// display: inline-block;
 			vertical-align: top;
 
+			// to change back to push down follow comments
 			&.menus {
-				position: relative;
-				background-color: white;
-				width: 100%;
+				position: absolute; // change to relative
+				background-color: #fff; // change to white
+				width: auto; // change to 100%
+				right: 0; // remove
 				overflow: hidden;
 				max-height: 0;
-				// transition: max-height 0.8s ease-in-out, box-shadow 0.4s ease-out 1s;
 
-				transition-timing-function: ease-in-out;
-				transition-duration: 0.8s, 0.6s;
-				transition-property: max-height, box-shadow;
-				transition-delay: 0s, 0.4s; // delay shadow disappear on close
+				// transition-timing-function: ease-in-out;
+				// transition-duration: 0.8s, 0.6s;
+				// transition-property: max-height, box-shadow;
+				// transition-delay: 0s, 0.4s;
 
 				box-shadow: none;
-				// transition: box-shadow ;
 
 				text-align: center;
 				pointer-events: none;
+				z-index: 100;
+
+				@include media("<=tablet") {
+					width: 100%;
+					height: 100vh;
+				}
 
 				.mainFunctionNav {
-					padding-top: $header-height;
-					padding-bottom: $header-height;
+					padding: $padding; // remove
+					// padding-top: $header-height;
+					// padding-bottom: $header-height;
 				}
 			
 
@@ -162,7 +183,7 @@ $header-height: 75px;
 							z-index: 50;
 
 							&:hover {
-								font-weight: 800;
+								// font-weight: 800;
 							}
 
 							&.image {

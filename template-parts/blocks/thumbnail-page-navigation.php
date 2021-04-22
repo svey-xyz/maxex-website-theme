@@ -7,7 +7,8 @@
 
 <section id="<?php echo theme_block_handle() . '-' . get_row_index() ?>" class="full-width-wrapper block <?php echo theme_block_handle() ?>">
 	<div class="max-width-container">
-		<?php
+		<div class="thumbnail-group-wrapper">
+			<?php
 			if (have_rows('thumbnail_items')):
 				while (have_rows('thumbnail_items')): the_row();
 
@@ -29,6 +30,7 @@
 					</a>
 				<?php endwhile;
 			endif;
-		?>
+			?>
+		</div>
 	</div>
 </section>
