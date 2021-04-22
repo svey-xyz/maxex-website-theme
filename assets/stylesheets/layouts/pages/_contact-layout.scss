@@ -12,6 +12,15 @@ $text_width: 150px;
 		}
 	}
 
+	.logo-wrapper {
+		position: relative;
+		margin-left: $text_width + $padding;
+
+		@include media("<=tablet") {
+			margin-left: 0;
+		}
+	}
+
 	.entry-content {
 		position: relative;
 

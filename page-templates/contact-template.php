@@ -53,7 +53,7 @@
 		if(!isset($hasError)) {
 			$subject = '[MaxEx Contact Form] From: '.$name;
 			$body = "Name: $name \n\nPhone: $phone \n\nEmail: $email \n\nMessage: $message";
-			$headers = 'From: '.$name. "\r\n" . 'Reply-To: ' . $email;
+			$headers = 'From: '.$name.' <'.$email_addresses[0].'>' . "\r\n" . 'Reply-To: ' . $email;
 
 			wp_mail($email_addresses, $subject, $body, $headers);
 			$emailSent = true;
@@ -107,6 +107,10 @@
 				<input type="hidden" name="submitted" id="submitted" value="true" />
 			</form>
 		</div><!-- .entry-content -->
+
+		<!-- <div class="logo-wrapper block">
+			<?php get_template_part('template-parts/nav/logos'); ?>
+		</div> -->
 	</div>
 </div>
 

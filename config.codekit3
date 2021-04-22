@@ -1654,6 +1654,20 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/stylesheets\/modules\/logos\/_logos.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/logos\/_logos.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/stylesheets\/modules\/logos\/_max-ex-25-logo.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -2299,6 +2313,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/lists\/projects-list.php",
+      "oF" : 0
+    },
+    "\/template-parts\/nav\/logos.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/nav\/logos.php",
       "oF" : 0
     },
     "\/template-parts\/nav\/menu-nav.php" : {

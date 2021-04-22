@@ -1,0 +1,15 @@
+// 
+// Logo Nav block
+// 
+
+.logo-nav {
+	text-align: left;
+	display: block;
+	width: 100%;
+
+	margin-right: -$padding;
+
+	img {
+		margin-right: $padding;
+	}
+}

@@ -18,8 +18,25 @@
 			display: inline-block;
 			vertical-align: top;
 			
-			&.social{
-				width: 15%;
+			&.logos{
+				width: 50%;
+
+				.logo-nav {
+					display: flex;
+
+					img {
+						transition: $timing;
+						
+						&:hover{
+							transform: scale(1.05);
+						}
+					}
+
+					@include media("<tablet") {
+						justify-content: center;
+						align-items: center;
+					}
+				}
 				
 				@include media("<tablet") {
 					display: block;
@@ -29,7 +46,7 @@
 				
 			}
 			&.sites{
-				width: 85%;
+				width: 50%;
 				
 				@include media("<tablet") {
 					display: block;
@@ -52,33 +69,7 @@
 				font-size: 14;
 				text-transform: uppercase;
 			}
-		}
-
-		&.social {
-			li {
-				display: inline-block;
-				a{
-					display: block;
-					padding: 13px 10px;
-					transition: $timing;
-					
-					
-					@include media("<tablet") {
-						padding: 20px;
-					}
-					
-					&:hover{
-						transform: scale(1.2);
-					}
-					img{
-						display: block;
-						width: 20px;
-						height: 20px;
-					}
-				}
-			}
-		}
-		
+		}	
 		
 		&.site-link{
 			text-align: right;
@@ -91,10 +82,10 @@
 			@include media(">=tablet") {
 			
 				&:nth-child(1){
-					width: 80%;
+					// width: 80%;
 				}
 				&:nth-child(2){
-					width: 20%;
+					// width: 20%;
 					text-align: right;
 					li{
 						width: 50%;
@@ -112,7 +103,7 @@
 			li{
 				display: inline-block;
 				vertical-align: top;
-				width: 25%;
+				// width: 25%;
 				@include media("<=mobile") {
 					width: 50%;
 				}

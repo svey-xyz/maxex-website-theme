@@ -3,9 +3,9 @@
 // Site header
 // 
 
-// $logos = get_field('logos', 'option');
+	$logo_size = get_field('logos', 'option')['logo_size'] . 'px';
 
-	 if( have_rows('logos', 'option') ) {
+	if( have_rows('logos', 'option') ) {
 		while( have_rows('logos', 'option') ) {
 			the_row();
 
@@ -19,10 +19,10 @@
 		<div class="header-wrapper full-width-wrapper">
 			<div class="header-content max-width-container">
 				<div class="column logo">
-					<a href="/">
-						<img id="logo" src="<?php print $max_ex_logos['max_ex_logo_black'] ?>">
+					<a href=<?php echo $max_ex_logos['max_ex_logo_link']; ?>>
+						<img style="height:<?php echo $logo_size; ?>;" id="logo" src="<?php print $max_ex_logos['max_ex_logo_colour'] ?>">
 					</a>
-					<span class="menu-toggle">&nbsp;</span>
+					<span style="height:<?php echo $logo_size; ?>;" class="menu-toggle">&nbsp;</span>
 				</div>
 			</div>
 		</div>
