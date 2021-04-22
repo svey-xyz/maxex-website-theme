@@ -6,15 +6,10 @@
 	$theme = get_term_by('slug', get_query_var('theme'), 'general_submission_theme');
 
 	$theme_loaded = !empty($theme) ? true : false;
-	$title = $theme_loaded ? $theme->name : 'General Submissions';
-
 ?>
 
 <article class="full-width-wrapper">
 	<div class="max-width-container">
-		<div class="project-title-section block">
-			<h2><?php echo $title ?></h2>
-		</div>
 
 		<?php if (!$theme_loaded) {
 			include(locate_template('page-templates/projects/archives/general-submissions-years.php', false, false )); 

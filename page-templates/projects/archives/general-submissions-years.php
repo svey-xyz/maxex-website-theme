@@ -1,3 +1,5 @@
+<?php get_template_part('template-parts/blocks/blocks'); ?>
+
 <div class="theme-grid block">
 	<?php
 		$general_submissions_theme_query = get_terms(array(

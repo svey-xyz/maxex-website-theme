@@ -3,7 +3,15 @@
 // Site header
 // 
 
-$logos = get_field('logos', 'option');
+// $logos = get_field('logos', 'option');
+
+	 if( have_rows('logos', 'option') ) {
+		while( have_rows('logos', 'option') ) {
+			the_row();
+
+			$max_ex_logos = get_sub_field('max_ex_logos');
+		}
+	 }
 ?>
 
 <header id="header" class="header">
@@ -12,7 +20,7 @@ $logos = get_field('logos', 'option');
 			<div class="header-content max-width-container">
 				<div class="column logo">
 					<a href="/">
-						<img id="logo" src="<?php print $logos['max_ex_logo_white'] ?>">
+						<img id="logo" src="<?php print $max_ex_logos['max_ex_logo_black'] ?>">
 					</a>
 					<span class="menu-toggle">&nbsp;</span>
 				</div>

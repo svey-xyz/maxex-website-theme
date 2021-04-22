@@ -1,5 +1,5 @@
 /*!
-Theme Name: Function (v1.3.0)
+Theme Name: MaxEx 2021
 Author: The New Beat
 Author URI: http://thenewbeat.ca
 Description: Original theme by The New Beat; theme update by Hayden Soule.
@@ -840,15 +840,17 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.15; }
+  line-height: 1.15;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
 
 h2 {
-  font-size: 38px;
   font-family: "Cormorant Garamond", serif;
+  font-size: 38px;
   margin: 0;
-  padding: 0;
-  font-weight: 100;
-  color: black; }
+  padding: 0; }
   @media (min-width: 641px) {
     h2 {
       font-size: 40px; } }
@@ -857,11 +859,12 @@ h2 {
       font-size: 55px; } }
 h3 {
   font-size: 32px;
-  font-family: "Cormorant Garamond", serif;
-  margin: 0 0 45px;
+  margin: 0;
   padding: 0;
-  font-weight: 100;
-  color: black; }
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase; }
   @media (min-width: 641px) {
     h3 {
       font-size: 30px; } }
@@ -1854,10 +1857,11 @@ a {
   .section-header.center .column {
     width: 100%; }
     .section-header.center .column.headline {
-      text-align: center;
       -webkit-order: 1;
               order: 1;
       padding-bottom: 12px; }
+      .section-header.center .column.headline h2 {
+        text-align: center; }
     .section-header.center .column.text {
       text-align: center;
       -webkit-order: 2;
@@ -1876,7 +1880,7 @@ a {
       .section-header .column {
         width: 100%; } }
     .section-header .column h2 {
-      margin: 0 90px 24px 0; }
+      text-align: left; }
       .section-header .column h2:last-child {
         margin-bottom: 0; }
       @media (max-width: 1024px) {
@@ -3297,7 +3301,8 @@ button.carousel-pagination-bullet {
     font-family: "Roboto", sans-serif;
     letter-spacing: 5px;
     font-size: 1.5rem;
-    font-weight: 500; }
+    font-weight: 500;
+    text-align: left; }
     @media (max-width: 1024px) {
       .third-year-header h2 {
         font-size: 1rem; } }
@@ -3578,6 +3583,9 @@ button.carousel-pagination-bullet {
     .countdown-timer .label-text {
       margin-top: 4px;
       font-size: 11px; } }
+.contact-form-layout .title-section h2 {
+  text-align: center; }
+
 .contact-form-layout .entry-content {
   position: relative; }
   .contact-form-layout .entry-content .submit-error {
@@ -3682,18 +3690,7 @@ button.carousel-pagination-bullet {
   margin-right: auto;
   max-width: 65%; }
   .thesis-project-layout .project-title h2 {
-    font-size: 2rem;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 32px; }
-  .thesis-project-layout .project-title h3 {
-    font-size: 1.2rem;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase; }
 
 .grid-sizer {
   width: 2%; }
@@ -3702,24 +3699,10 @@ button.carousel-pagination-bullet {
   position: relative; }
 
 .project-title-section h2 {
-  margin: 0;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto; }
+  text-align: center; }
 
 .project-title-section h3 {
-  padding-top: 32px;
-  font-size: 1.2rem;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  word-break: break-word; }
+  text-align: center; }
 
 .project-statement {
   position: relative;
@@ -3755,25 +3738,8 @@ button.carousel-pagination-bullet {
       -o-object-position: center;
          object-position: center; }
 
-.third-year-project-layout .project-heading-section h2 {
-  margin: 0;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto; }
-
 .third-year-project-layout .project-heading-section h3 {
-  padding-top: 90px;
-  margin: 0;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  word-break: break-word; }
+  padding-top: 90px; }
   @media (max-width: 1024px) {
     .third-year-project-layout .project-heading-section h3 {
       padding-top: 30px; } }

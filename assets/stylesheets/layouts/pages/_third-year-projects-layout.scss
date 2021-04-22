@@ -35,26 +35,26 @@
 		}
 
 		h2 {
-			margin: 0;
-			text-align: center;
-			font-family: $sans-serif;
-			font-weight: 700;
-			text-transform: uppercase;
-			word-break: break-word;
-			-webkit-hyphens: auto;
-			-ms-hyphens: auto;
-			hyphens: auto;
+			// margin: 0;
+			// text-align: center;
+			// font-family: $sans-serif;
+			// font-weight: 700;
+			// text-transform: uppercase;
+			// word-break: break-word;
+			// -webkit-hyphens: auto;
+			// -ms-hyphens: auto;
+			// hyphens: auto;
 
 		}
 		h3 {
 			padding-top: $gutter;
-			margin: 0;
-			// font-size: 1.2rem;
-			text-align: center;
-			font-family: $sans-serif;
-			font-weight: 500;
-			text-transform: uppercase;
-			word-break: break-word;
+			// margin: 0;
+			// // font-size: 1.2rem;
+			// text-align: center;
+			// font-family: $sans-serif;
+			// font-weight: 500;
+			// text-transform: uppercase;
+			// word-break: break-word;
 
 			@include media("<=tablet") {
 				padding-top: $gutter-mobile;

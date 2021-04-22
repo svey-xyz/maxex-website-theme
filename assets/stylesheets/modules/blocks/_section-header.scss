@@ -29,7 +29,9 @@
 		width: 100%;
 		
       	&.headline {
-		  	text-align: center;
+			h2 {
+		  		text-align: center;
+			}
 		  	order: 1;
 			padding-bottom: 12px;
 		}
@@ -62,7 +64,8 @@
     }
     
     h2 {
-      margin: 0 $gutter 24px 0;
+    //   margin: 0 $gutter 24px 0;
+		text-align: left;
       
       &:last-child { margin-bottom: 0; }
 

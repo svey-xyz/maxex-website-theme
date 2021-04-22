@@ -14,16 +14,28 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	line-height: $heading-line-height;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }
 
 	// headings
 h2 {
-	font-size: 38px;
+	// font-size: 38px;
 	font-family: $serif;
+	// margin: 0;
+	// padding: 0;
+	// font-weight: 100;
+	// color: black;
+
+	font-size: 38px;
+	// text-align: center;
+	// font-family: $sans-serif;
+	// font-weight: 700;
+	// text-transform: uppercase;
 	margin: 0;
 	padding: 0;
-	font-weight: 100;
-	color: black;
 	
 	@include media (">mobile") {
 		font-size: 40px;
@@ -36,11 +48,17 @@ h2 {
 
 h3 {
 	font-size: 32px;
-	font-family: $serif;
-	margin: 0 0 $gutter-half;
+	// margin: 0 0 $gutter-half;
+	margin: 0;
 	padding: 0;
-	font-weight: 100;
+	// font-weight: 100;
 	color: black;
+
+	// text-align: center;
+	font-family: $sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	
 	
 	@include media (">mobile") {
 		font-size: 30px;

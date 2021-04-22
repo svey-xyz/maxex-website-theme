@@ -1,3 +1,9 @@
+<?php $title = $theme_loaded ? $theme->name : 'General Submissions'; ?>
+
+<div class="project-title-section block">
+	<h2><?php echo $title ?></h2>
+</div>
+
 <div class="project-statement block">
 	<p><?php echo $theme->description;?></p>
 </div>

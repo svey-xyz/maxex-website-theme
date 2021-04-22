@@ -1,14 +1,13 @@
 <?php
 	get_header();
 	get_template_part('template-parts/headers/site-header');
+	get_template_part('template-parts/blocks/blocks');
 	
 ?>
 
 <article class="full-width-wrapper">
 	<div class="max-width-container">
-		<div class="project-title-section block">
-			<h2><?php echo 'Thesis Projects' ?></h2>
-		</div>
+
 		<?php
 			$thesisProjectsQuery = get_posts(array(
 				'post_type' => 'thesis_project',
