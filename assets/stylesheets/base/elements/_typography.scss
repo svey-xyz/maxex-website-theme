@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
+	
 }
 
 	// headings
@@ -52,7 +53,6 @@ h3 {
 	margin: 0;
 	padding: 0;
 	// font-weight: 100;
-	color: black;
 
 	// text-align: center;
 	font-family: $sans-serif;
@@ -76,7 +76,6 @@ p {
 	margin-bottom: 24px;
 	padding: 0;
 	font-weight: 300;
-	color: $darkgrey;
 
 	&:last-child { margin-bottom: 0; }
 	
@@ -88,7 +87,7 @@ p {
 		font-size: 16px;
 		font-family: $serif;
 		font-style: italic;
-		color: $midgrey;
+		// color: $midgrey;
 		text-align: right;
 		margin: 5px 0 0 0;
 	}
@@ -99,7 +98,7 @@ p {
 a {
 	font-family: $sansserif;
 	// text-decoration: none;
-	color: black;
+	// color: black;
 	margin: 0;
 	padding: 0;
 	transition: opacity $timing;
@@ -137,7 +136,7 @@ a {
 		
 		// ~
 		&:hover {
-			color: black;
+			// color: black;
 			margin-left: 50px;
 				
 			&:before { transform: translateX(5px); }
@@ -148,7 +147,7 @@ a {
 .copy {
 	a:not(.text-link) {
 		font-size: inherit !important;
-		color: inherit;
+		// color: inherit;
 		text-decoration: underline;
 	}
 }

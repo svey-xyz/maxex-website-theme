@@ -2,6 +2,7 @@
 	get_header();
 	get_template_part('template-parts/headers/site-header');
 
+	global $student;
 	$student = get_field('student_name');
 	$statement = get_field('artist_statement');
 

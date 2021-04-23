@@ -3,19 +3,14 @@
 //
 
 .sponsors {
-  margin: $gutter $gutter-half;
   
-  @include media("<=tablet") {
-    margin: $gutter-mobile;
-  }
-  
-  p {
+  h3 {
+	font-family: $sans-serif;
+	font-weight: 800;
     text-align: center;
     margin-top: $gutter-half;
     letter-spacing: 3px;
-    font-size: 16px;
     text-transform: uppercase;
-    color: $darkgrey;
   }
   
   ul {

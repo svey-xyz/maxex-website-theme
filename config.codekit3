@@ -1963,14 +1963,6 @@
       "oAP" : "\/template-parts\/blocks\/blocks.php",
       "oF" : 0
     },
-    "\/template-parts\/blocks\/category-listing.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/blocks\/category-listing.php",
-      "oF" : 0
-    },
     "\/template-parts\/blocks\/coloured-section.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1995,38 +1987,6 @@
       "oAP" : "\/template-parts\/blocks\/embed.php",
       "oF" : 0
     },
-    "\/template-parts\/blocks\/event-listing.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/blocks\/event-listing.php",
-      "oF" : 0
-    },
-    "\/template-parts\/blocks\/exhibition.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/blocks\/exhibition.php",
-      "oF" : 0
-    },
-    "\/template-parts\/blocks\/facebook-block.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/blocks\/facebook-block.php",
-      "oF" : 0
-    },
-    "\/template-parts\/blocks\/featured-post.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/blocks\/featured-post.php",
-      "oF" : 0
-    },
     "\/template-parts\/blocks\/full-width-gallery.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2041,14 +2001,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/blocks\/full-width-image.php",
-      "oF" : 0
-    },
-    "\/template-parts\/blocks\/hero-inner.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/blocks\/hero-inner.php",
       "oF" : 0
     },
     "\/template-parts\/blocks\/hero-overlay.php" : {
@@ -2083,6 +2035,62 @@
       "oAP" : "\/template-parts\/blocks\/masonry-gallery.php",
       "oF" : 0
     },
+    "\/template-parts\/blocks\/old\/category-listing.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/old\/category-listing.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/old\/event-listing.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/old\/event-listing.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/old\/exhibition.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/old\/exhibition.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/old\/facebook-block.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/old\/facebook-block.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/old\/featured-post.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/old\/featured-post.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/old\/hero-inner.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/old\/hero-inner.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/old\/square-image-gallery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/blocks\/old\/square-image-gallery.php",
+      "oF" : 0
+    },
     "\/template-parts\/blocks\/paragraph-multi-column.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2105,14 +2113,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/blocks\/sponsors.php",
-      "oF" : 0
-    },
-    "\/template-parts\/blocks\/square-image-gallery.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/blocks\/square-image-gallery.php",
       "oF" : 0
     },
     "\/template-parts\/blocks\/thumbnail-page-navigation.php" : {

@@ -11,5 +11,10 @@
 
 	img {
 		margin-right: $padding;
+		transition: $timing;
+						
+		&:hover{
+			transform: scale(1.05);
+		}
 	}
 }

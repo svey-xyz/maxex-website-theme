@@ -30,7 +30,7 @@
 			<li class="<?php print trim($classes . '-menu-item'); ?>">
 
 				<?php if ($menu_class == "mainFunctionNav"): ?>
-
+						
 					<?php if($depth == true): ?>
 						<?php
 						$has_sub_menu = false;
@@ -60,7 +60,7 @@
 							?>
 							</ul>
 						<?php else: ?>
-							<a href="<?php print $url; ?>" <?php if($target){ print $target; }; ?>><?php print $title; ?></a>
+							<a style="color:<?php echo $text_colour; ?>" href="<?php print $url; ?>" <?php if($target){ print $target; }; ?>><?php print $title; ?></a>
 						<?php endif; ?>
 					<?php endif; ?>
 

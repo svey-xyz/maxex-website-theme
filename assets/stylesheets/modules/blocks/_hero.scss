@@ -6,6 +6,7 @@
 	margin: 0;
 	font-size: 0;
 	padding: 0;
+	// margin-top: -$gutter / 2; 
 
 	// margin-top: -$gutter !important;
 
@@ -70,7 +71,7 @@
 				.year p {
 					position: absolute;
 					left: 0px;
-					bottom: 180px;
+					bottom: 60px;
 					transform: rotate(90deg);
 					vertical-align: bottom;
 					display: block;

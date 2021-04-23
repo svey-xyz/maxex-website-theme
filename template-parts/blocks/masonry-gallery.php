@@ -7,6 +7,8 @@
 
 	$masonry_items = array();
 
+	global $student;
+
 	foreach ($images as $gal_img) {
 		$item = array();
 
@@ -16,7 +18,7 @@
 		$item['link'] = '';
 		$item['image'] = $gal_img;
 
-		$caption = $student . ', ' . $project_year->name;
+		$caption = $student;
 		$item['image']['caption'] = $gal_img['caption'] !== '' ? $caption . ', ' . $gal_img['caption'] : $caption;
 
 		$masonry_items[] = $item;

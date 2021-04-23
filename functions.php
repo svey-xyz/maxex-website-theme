@@ -300,7 +300,7 @@ function theme_custom_post_types() {
 }
 
 // menu utility
-function theme_include_menu($menu_id, $menu_class, $depth = null) {
+function theme_include_menu($menu_id, $menu_class, $depth = null, $text_colour = '') {
   include(locate_template('template-parts/nav/menu-nav.php', false, false ));
 }
 

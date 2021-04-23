@@ -24,14 +24,6 @@
 				.logo-nav {
 					display: flex;
 
-					img {
-						transition: $timing;
-						
-						&:hover{
-							transform: scale(1.05);
-						}
-					}
-
 					@include media("<tablet") {
 						justify-content: center;
 						align-items: center;
@@ -109,15 +101,17 @@
 				}
 				
 				a{
-					color: $darkgrey;
+					// color: $darkgrey;
 					font-weight: bold;
 					padding: 15px;
+					padding-right: 0;
+					padding-left: $padding;
 					display: block;
 					font-size: 12px;
 					transition: $timing;
 					
 					&:hover{
-						color: $midgrey;
+						// color: $midgrey;
 					}
 				}
 				
@@ -134,7 +128,7 @@
 						margin: 0;
 						width: 10px;
 						height: 2px;
-						background-color: #000;
+						// background-color: #000;
 						transition: $timing;
 						@include media("<=mobile") {
 							left: 50%;
@@ -149,13 +143,13 @@
 
 						a {
 							text-transform: none;
-							color: $midgrey;
+							// color: $midgrey;
 							padding: 0 15px;
 							font-weight: normal;
 							font-size: 14px;
 							
 							&:hover{
-								color: $darkgrey;
+								// color: $darkgrey;
 							}
 							
 						}

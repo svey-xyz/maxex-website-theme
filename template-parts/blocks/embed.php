@@ -6,7 +6,8 @@
 ?>
 
 
-<section id="<?php echo $id ?>" class="block full-width-wrapper <?php echo $handle ?>">
+<section id="<?php echo $id ?>" class="block  <?php echo $handle ?>">
+<div class="full-width-wrapper">
 	<div class="max-width-container">
 		<div class="embed-container">
 			<?php
@@ -36,5 +37,6 @@
 			?>
 		</div>
 	</div>
+			</div>
 </section>
 

@@ -76,35 +76,38 @@
 			<form action="<?php the_permalink(); ?>" id="contactForm" method="post">
 				<ul>
 					<li>
-						<label for="contactName">Name</label>
-						<input type="text" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="required requiredField" />
+						<label for="contactName">Name<span class="required-marker">*</span></label>
+						<input type="text" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" class="required requiredField accent-colour" />
 						<?php if($nameError != '') { ?>
 							<span class="submit-error"><?=$nameError;?></span>
 						<?php } ?>
 					</li>
 					<li>
 						<label for="phone">Phone</label>
-						<input type="text" name="phone" id="phone" value="" />
+						<input type="text" name="phone" id="phone" value="<?php if(isset($_POST['phone'])) echo $_POST['phone'];?>" class="accent-colour" />
 					</li>
 					<li>
-						<label for="email">Email</label>
-						<input type="text" name="email" id="email" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="required requiredField email" />
+						<label for="email">Email<span class="required-marker">*</span></label>
+						<input type="text" name="email" id="email" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" class="required requiredField email accent-colour" />
 						<?php if($emailError != '') { ?>
 							<span class="submit-error"><?=$emailError;?></span>
 						<?php } ?>
 					</li>
 					<li>
-						<label for="messageText">Message</label>
-						<textarea name="message" id="messageText" rows="20" cols="30" class="required requiredField"><?php if(isset($_POST['message'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['message']); } else { echo $_POST['message']; } } ?></textarea>
+						<label for="messageText">Message<span class="required-marker">*</span></label>
+						<textarea name="message" id="messageText" rows="20" cols="30" class="required requiredField accent-colour"><?php if(isset($_POST['message'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['message']); } else { echo $_POST['message']; } } ?></textarea>
 						<?php if($messageError != '') { ?>
 							<span class="submit-error"><?=$messageError;?></span>
 						<?php } ?>
 					</li>
 					<li>
-						<button type="submit">Send email</button>
+						<button type="submit" class="accent-colour">Send email</button>
 					</li>
 				</ul>
 				<input type="hidden" name="submitted" id="submitted" value="true" />
+				<?php if($emailSent == true): ?>
+					<span class="submit-success">Message sent!</span>
+				<?php endif; ?>
 			</form>
 		</div><!-- .entry-content -->
 

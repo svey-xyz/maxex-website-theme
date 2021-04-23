@@ -17,7 +17,7 @@
                 ?>
                 <?php //print print_r($image,TRUE) ?>
                 <div class="swiper-slide">
-                    <div class="year"><p>FUNCTION <?php print date('Y'); ?></p></div>
+                    <!-- <div class="year"><p>MAXEX <?php print date('Y'); ?></p></div> -->
                     
                     <picture>
                         <source srcset="<?php print $image['sizes']['medium_large']; ?>" media="(max-width: 640px)">

@@ -12,19 +12,19 @@ $text_width: 150px;
 		}
 	}
 
-	.logo-wrapper {
-		position: relative;
-		margin-left: $text_width + $padding;
+	// .logo-wrapper {
+	// 	position: relative;
+	// 	margin-left: $text_width + $padding;
 
-		@include media("<=tablet") {
-			margin-left: 0;
-		}
-	}
+	// 	@include media("<=tablet") {
+	// 		margin-left: 0;
+	// 	}
+	// }
 
 	.entry-content {
 		position: relative;
 
-		.submit-error {
+		.submit-error, .submit-success {
 			display: block;
 			font-size: 18px;
 			font-family: $sans-serif;
@@ -41,6 +41,10 @@ $text_width: 150px;
 				padding-bottom: $padding / 2;
 				margin-left: 0;
 			}
+		}
+
+		.submit-success {
+			color: black;
 		}
 
 		ul {
@@ -84,6 +88,10 @@ $text_width: 150px;
 							padding-bottom: $padding / 2;
 							margin-left: 0;
 						}
+					}
+
+					.required-marker {
+						color: red;
 					}
 				}
 

@@ -8,9 +8,9 @@
 		<div class="card-content">
 			
 			<?php if($cover_enabled): ?>
-				<div class="card-cover">
-					<h3><?php echo $item['title']; ?><br></h3>
-					<p><?php echo $item['sub']; ?></p>
+				<div class="card-cover accent-colour">
+					<h3 class="accent-text"><?php echo $item['title']; ?><br></h3>
+					<p class="accent-text"><?php echo $item['sub']; ?></p>
 				</div>
 			<?php endif; ?>
 
