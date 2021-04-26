@@ -3,24 +3,25 @@
 // 
 .rougher-films-layout {
 	.film-item {
-		display: flex;
-		flex-flow: row nowrap;
+		// display: flex;
+		// flex-flow: row nowrap;
 		width: 100%;
 		position: relative;
-		align-items: center;
 
 
 		@include media("<=tablet") {
 			flex-flow: column nowrap;
 		}
 
-		.column {
-			width: 75%;
-		}
-
 		.film-attribution {
-			padding-right: $padding;
+			padding-top: $padding;
 			text-align: center;
+			width: 100%;
+
+			p {
+				margin: 0;
+			}
+			
 
 			@include media("<=tablet") {
 				padding-right: 0;
@@ -33,7 +34,7 @@
 			}
 
 			.film-title {
-
+				padding-top: $padding / 2;
 			}
 		}
 	}

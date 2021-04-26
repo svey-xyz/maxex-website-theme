@@ -4,10 +4,11 @@ $copy = get_sub_field('copy');
 $link = get_sub_field('link');
 $link_style = $link['link-style'];
 $alignment = get_sub_field('alignment');
+// if ($copy == '') { $alignment = 'full'; }
 $block_class = $block_class . ' ' . $alignment;    
 ?>
-<section id="<?php echo theme_block_handle() . '-' . get_row_index() ?>" class="block full-width-wrapper <?php print $alignment?> <?php echo theme_block_handle() ?>">
-	<div class="max-width-container">
+<section id="<?php echo theme_block_handle() . '-' . get_row_index() ?>" class="block full-width-wrapper <?php echo theme_block_handle() ?>">
+	<div class="max-width-container <?php echo $alignment; ?>">
 		<div class="column headline">
 			<div class="box">
 			<h2><?php print $headline; ?></h2>

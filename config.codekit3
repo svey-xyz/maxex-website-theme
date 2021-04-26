@@ -996,6 +996,20 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/stylesheets\/layouts\/pages\/_projects-layout.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_projects-layout.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/stylesheets\/layouts\/pages\/_rougher-films-layout.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1019,20 +1033,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_single-thesis_project.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/stylesheets\/layouts\/pages\/_thesis-projects-layout.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_thesis-projects-layout.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -2241,14 +2241,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/headers\/third-year-header.php",
-      "oF" : 0
-    },
-    "\/template-parts\/images\/full-width.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/images\/full-width.php",
       "oF" : 0
     },
     "\/template-parts\/images\/linked-image.php" : {

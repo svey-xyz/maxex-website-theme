@@ -17,24 +17,24 @@
 			
 			$i = 0;
 
-			foreach ($rougher_film_query as $film):
-				$video_source = get_field('video_source', $film);
-				$video = get_field('video', $film);
-				$film_title = get_field('film_title', $film);
-				$student_name = get_field('student_name', $film);
-				$student_year = get_field('student_year', $film);
+			foreach ($rougher_film_query as $submission):
+				$video_source = get_field('video_source', $submission);
+				$video = get_field('video', $submission);
+				$film_title = get_field('film_title', $submission);
+				$student_name = get_field('student_name', $submission);
+				$student_year = get_field('student_year', $submission);
 		?>
 			<div class="film-item block">
-				<div style="order:<?php echo $i % 2; ?>" class="film-attribution">
+				<?php if (have_rows('submission', $submission)) {
+					while (have_rows('submission', $submission)) {
+						the_row();
+						get_template_part('template-parts/blocks/' . theme_block_handle());
+					}
+				} ?>
+
+				<div class="film-attribution">
 					<p class="student"><em><?php echo $student_name . "</em>, " . $student_year; ?></p>
 					<p class="film-title"><?php echo $film_title; ?> </p>
-				</div>
-				<div style="order:<?php echo abs($i % 2); ?>" class="column video">
-					<?php if($video_source == 'youtube'): ?>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/<?php print $video; ?>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<?php elseif($video_source == 'vimeo'): ?>
-						<iframe src="https://player.vimeo.com/video/<?php print $video; ?>" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-					<?php endif; ?>
 				</div>
 			</div>
 

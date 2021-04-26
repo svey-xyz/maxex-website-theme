@@ -8,15 +8,12 @@
 	$theme_loaded = !empty($theme) ? true : false;
 ?>
 
-<article class="full-width-wrapper">
-	<div class="max-width-container">
-
-		<?php if (!$theme_loaded) {
-			include(locate_template('page-templates/projects/archives/general-submissions-years.php', false, false )); 
-		} else {
-			include(locate_template('page-templates/projects/singles/single-general_submission_theme.php', false, false )); 
-		} ?>
-	</div>
+<article>
+	<?php if (!$theme_loaded) {
+		include(locate_template('page-templates/projects/archives/general-submissions-years.php', false, false )); 
+	} else {
+		include(locate_template('page-templates/projects/singles/single-general_submission_theme.php', false, false )); 
+	} ?>
 </article>
 
 <?php

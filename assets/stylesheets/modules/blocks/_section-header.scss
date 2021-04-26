@@ -3,90 +3,105 @@
 //
 
 .section-header{
-//   padding: $gutter-half $gutter;
-  font-size: 0;
-  display: flex;
-  
-  @include media("<=tablet") {
-    display: inline-block;
-    // padding: $gutter-half $gutter;
-  }
-  
-  @include media("<=mobile") {
-    // padding: $gutter-mobile;
-  }
-  
-  &.left {
-	text-align: left;
-    .column {
-      &.headline { order: 1; }
-      &.text { order: 2; }
-    }
-  }
+	font-size: 0;
+	display: flex;
+	
+	.max-width-container {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row nowrap;
 
-  &.center {
-    .column {
-		width: 100%;
+		font-size: 0;
 		
-      	&.headline {
-			h2 {
-		  		text-align: center;
+		&.left {
+			.column {
+				&.headline {
+					order: 1;
+					padding-right: $gutter / 2;
+				}
+				&.text {
+					order: 1;
+					padding-left: $gutter / 2;
+				}
 			}
-		  	order: 1;
-			padding-bottom: 12px;
 		}
-      	&.text {
-			text-align: center;
-			order: 2;
+		
+		&.right {
+			.column {
+				&.headline {
+					order: 2;
+					padding-left: $gutter / 2;
+				}
+			
+				&.text {
+					order: 1;
+					padding-right: $gutter / 2;
+				}
+			}
 		}
-    }
-  }
-  
-  &.right {
-    .column {
-      &.headline {
-        order: 2;
-        
-        // h2 { margin: 0 0 0 $gutter; }
-      }
-      
-      &.text { order: 1; }
-    }
-  }
 
-  .column {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-    
-    @include media("<=tablet") {
-      width: 100%;
-    }
-    
-    h2 {
-    //   margin: 0 $gutter 24px 0;
-		text-align: left;
-      
-      &:last-child { margin-bottom: 0; }
+		&.center {
+			flex-flow: column nowrap;
 
-      @include media("<=tablet") {
-        margin: 0;
-      }
-    }
-    
-    p {
-      margin: 0 0 $gutter-half;
-      font-size: 24px;
+			.column {
+				width: 100%;
 
-      &:last-child { margin-bottom: 0; }
-      
-      @include media("<=laptop") {
-        font-size: 20px;
-      }
-      
-      @include media("<=tablet") {
-        margin:$gutter-half 0 0;
-      }
-    }
-  }
+				&.headline {
+					margin-left: auto;
+					margin-right: auto;
+					width: $text-width;
+					order: 1;
+
+					.box {
+					h2 {
+						text-align: center;
+					}
+				}
+				}
+			
+				&.text {
+					margin-left: auto;
+					margin-right: auto;
+					width: $text-width;
+					order: 2;
+					text-align: center;
+				}
+			}
+		}
+
+		&.full {
+			.column {
+				&.headline {
+					order: 1;
+					padding: 0;
+					width: 100%;
+				}
+				&.text {
+					order: 2;
+					padding: 0;
+					width: 0;
+				}
+			}
+		}
+
+		.column {
+			display: inline-block;
+			width: 50%;
+			vertical-align: top;
+			
+			@include media("<=tablet") {
+				width: 100%;
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+			
+			h2 {
+				&:last-child { margin-bottom: 0; }
+			}
+			
+			p {
+				&:last-child { margin-bottom: 0; }
+			}
+		}
+	}
 }

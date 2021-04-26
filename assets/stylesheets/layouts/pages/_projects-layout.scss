@@ -34,6 +34,19 @@
 	}
 }
 
+.general-theme-submissions {
+	p {
+		padding-top: $padding;
+		margin: auto;
+		max-width: 65%;
+		text-align: center;
+
+		@include media("<=tablet") {
+			max-width: 100%;
+		}
+	}
+}
+
 .project-statement {
 	position: relative;
 	margin-left: auto;

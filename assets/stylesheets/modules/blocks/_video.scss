@@ -3,4 +3,9 @@
 //
 
 .block.video {
+	.column.video {
+		margin: auto;
+		max-width: 1000px;
+	}
+	// max-width: $content-width;
 }
