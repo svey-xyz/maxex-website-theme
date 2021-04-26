@@ -7,6 +7,7 @@
 // @codekit-append "app/blocks/hero.js";
 // @codekit-append "app/blocks/square-image-gallery.js";
 // @codekit-append "app/blocks/video.js";
+// @codekit-append "app/blocks/readmore.js";
 // @codekit-append "app/blocks/masonry-gallery.js";
 
 // @codekit-append "app/progress-bar.js";
@@ -78,7 +79,6 @@ $(document).ready(function() {
 	});
 
 	$(document).on('click', function (event) {
-		console.log('clicked', $(this));
 
 		if ($('#header').hasClass('menu-open')) {
 			$('#header').removeClass('menu-open');
@@ -233,6 +233,23 @@ $(document).ready(function() {
     
 });
 
+
+
+$(document).on('click', '.read-more', function (event) {
+	var $tar = $(event.target);
+	var parentID = $tar.attr('block-parent');
+
+	if ($tar.hasClass('open')) {
+		$('#' + parentID + '-moreText').removeClass('open');
+		$tar.removeClass('open');
+		$tar.html('Read More...')
+
+	} else {	
+		$('#' + parentID + '-moreText').addClass('open');
+		$tar.addClass('open');
+		$tar.html('Show Less...')
+	}
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {

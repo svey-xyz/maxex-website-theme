@@ -1,8 +1,7 @@
 //
 // Paragraph multi-column block
 //
-
-	.paragraph-multi-column {
+.paragraph-multi-column {
 	margin: 0;
 	font-size: 0;
 
@@ -47,6 +46,20 @@
 
 				@include media("<tablet") {
 					column-count: 1;
+				}
+			}
+
+			.read-more {
+				cursor: pointer;
+				text-align: center;
+			}
+
+			.collapsible-content {
+				max-height: 0px;
+				overflow: hidden;
+
+				&.open {
+					max-height: 100%;
 				}
 			}
 		}

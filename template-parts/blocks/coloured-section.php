@@ -24,7 +24,7 @@
 					</picture>
 				</div>
 
-				<p style="color:<?php echo $copy_colour?>;"><?php echo $copy; ?></p>
+				<h4 style="color:<?php echo $copy_colour?>;"><?php echo $copy; ?></h4>
 			</div>
 		</div>
 	</div>

@@ -8,6 +8,14 @@
 
 ?>
 
+<style type = "text/css"> 
+	.paragraph-multi-column {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+</style>
+
 <article class="third-year-project-layout">
 	
 	<div class="project-heading-section block">
@@ -21,7 +29,7 @@
 		</div>
 
 		<div class="full-width-wrapper">
-			<div class="max-width-container">
+			<div class="max-width-container block">
 				<h3><?php echo $student ?></h3>
 			</div>
 		</div>

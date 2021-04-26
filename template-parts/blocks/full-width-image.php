@@ -19,7 +19,7 @@
 						<img src="<?php print $image['url']; ?>"  alt="<?php print $image['alt']; ?>" />
 					</picture>
 					
-					<p class="caption"><?php print $image['caption']; ?></p>
+					<?php if ($image['caption']): ?> <p class="caption"><?php echo $image['caption']; ?></p> <?php endif; ?>
 				</div>
 
 	<?php if (!$gapless): ?>

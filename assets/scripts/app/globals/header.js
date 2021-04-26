@@ -8,7 +8,6 @@ $(document).ready(function() {
 	});
 
 	$(document).on('click', function (event) {
-		console.log('clicked', $(this));
 
 		if ($('#header').hasClass('menu-open')) {
 			$('#header').removeClass('menu-open');

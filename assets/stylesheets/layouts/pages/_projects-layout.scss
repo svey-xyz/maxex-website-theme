@@ -36,7 +36,9 @@
 
 .general-theme-submissions {
 	p {
+		// padding-top: $padding;
 		padding-top: $padding;
+		padding-bottom: $padding;
 		margin: auto;
 		max-width: 65%;
 		text-align: center;

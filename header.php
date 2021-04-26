@@ -43,6 +43,18 @@
 
 	<style type = "text/css"> 
 		body {
+			<?php if ($stylesheet_ref['background_image']): ?>
+				background-image: url(<?php echo $stylesheet_ref['background_image']; ?>);
+				background-position: top left;
+			<?php endif; ?>
+			<?php if ($stylesheet_ref['background_image_tile']): ?>
+				background-repeat: repeat;
+			<?php else: ?>
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			<?php endif;?>
+			
 			background-color: <?php echo $stylesheet_ref['background_colour']; ?>; 
 		}
 

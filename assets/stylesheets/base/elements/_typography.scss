@@ -39,11 +39,11 @@ h2 {
 	padding: 0;
 	
 	@include media (">mobile") {
-		font-size: 40px;
+		font-size: 42px;
 	}
 	
 	@include media (">laptop") {
-		font-size: 55px;
+		font-size: 58px;
 	}
 }
 
@@ -61,26 +61,28 @@ h3 {
 	
 	
 	@include media (">mobile") {
-		font-size: 30px;
+		font-size: 36px;
 	}
 	
-	@include media (">tablet") {
-		font-size: 48px;
+	@include media (">laptop") {
+		font-size: 50px;
 	}
 }
 
 	// body text
 p {
-	font-size: 20px;
+	font-size: 18px;
 	font-family: $sansserif;
 	margin-bottom: 24px;
 	padding: 0;
 	font-weight: 300;
+	line-height: 22px;
 
 	&:last-child { margin-bottom: 0; }
 	
 	@include media (">laptop") {
-		font-size: 24px;
+		font-size: 20px;
+		line-height: 26px;
 	}
 	
 	&.annotation{
@@ -142,6 +144,10 @@ a {
 			&:before { transform: translateX(5px); }
 		}
 	}
+}
+
+em {
+	font-weight: 700;
 }
 
 .copy {
