@@ -8,7 +8,7 @@
 	}
 
 	.project-heading-section {
-		margin-top: -$gutter;
+		// margin-top: -$gutter;
 
 		@include media("<=tablet") {
 			margin-top: -$gutter-mobile;
@@ -17,17 +17,19 @@
 		.header-image {
 			// max-height: 80vh;
 			// overflow: hidden;
+			height: auto;
 
 			picture {
-				display: flex;
+				display: block;
 				overflow: hidden;
 				height: 100%;
 				width: auto;
 				
-				@include media("<=tablet") {
-					display: block;
-					height: auto;
-				}
+				// @include media("<=tablet") {
+				// 	display: flex;
+				// 	width: 100%;
+				// 	height: auto;
+				// }
 				
 				img {
 					// max-width: 100%;
@@ -35,6 +37,12 @@
 					height: 100%;
 					width: auto;
 					margin: auto;
+
+					@include media("<=tablet") {
+						max-height: none;
+						width: 100%;
+						height: auto;
+					}
 					// object-fit: cover;
 					// object-position: center;
 				}
@@ -54,23 +62,40 @@
 
 		}
 		h3 {
-			// padding-top: $gutter;
-
-			// margin: 0;
-			// // font-size: 1.2rem;
 			text-align: center;
-			// font-family: $sans-serif;
-			// font-weight: 500;
-			// text-transform: uppercase;
-			// word-break: break-word;
-
-			// @include media("<=tablet") {
-			// 	padding-top: $gutter-mobile;
-			// }
+			word-break: keep-all;
+			word-wrap: break-word;
+			overflow-wrap: break-word;
+			white-space: normal;
+			hyphens: unset;
 		}
 	}
 
-	.third-year-project-nav {
-		font-size: 22px;
+	.project-nav-section {
+		padding-bottom: $padding;
+
+		@include media("<=tablet") {
+			padding-bottom: $padding * 2;
+		}
+
+		.third-year-project-nav {
+			display: inline;
+			font-size: 18px;
+
+
+			@include media("<=tablet") {
+				font-size: 16px;
+				display: block;
+				width: 100%;
+				margin-top: $padding;
+				position: relative;
+				text-align: center;
+			}
+
+			&.right {
+				position: absolute;
+				right: 0;
+			}
+		}
 	}
 }

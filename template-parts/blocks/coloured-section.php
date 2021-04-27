@@ -13,9 +13,9 @@
 		<div class="full-width-wrapper">
 			<div class="max-width-container">
 
-				<h3 style="color:<?php echo $heading_colour?>;"><?php echo $heading; ?></h3>
+				<h3 style="color:<?php echo $heading_colour?>;" class="block"><?php echo $heading; ?></h3>
 	
-				<div class="column image">
+				<div class="column image block">
 					<picture>
 						<source srcset="<?php print $image['sizes']['medium_large']; ?>" media="(max-width: 640px)">
 						<source srcset="<?php print $image['sizes']['large']; ?>" media="(max-width: 1024px)">

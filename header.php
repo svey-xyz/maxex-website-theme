@@ -1,5 +1,7 @@
 <?php
-	$stylesheet_ref = get_field('colours', 'option');
+	$main_stylesheet = get_field('colours', 'option')['site_styles'];
+	$stylesheet_ref = $main_stylesheet;
+	$sub_style_set = false;
 
 	$page_ID = get_the_ID();
 	$post_type = get_post_type();
@@ -19,18 +21,33 @@
 						
 						if ($style_page_id == $page_ID) {
 							$stylesheet_ref = get_sub_field('styles');
+							$sub_style_set = true;
 						}
 					} elseif ($style_type == 'project') {
 						$style_post_type = get_sub_field('project_type');
 						
 						if ($style_post_type == $post_type) {
 							$stylesheet_ref = get_sub_field('styles');
+							$sub_style_set = true;
 						}
 					}
 				}
 			}
 		}
 	}
+
+	if ($sub_style_set) {
+		foreach ($main_stylesheet as $style => $value) {
+			
+			if (!$stylesheet_ref[$style]) {
+				$changes_made = $style;
+				
+				$stylesheet_ref[$style] = $value;
+			}
+		}
+	}
+	
+	
 
 ?>
 
@@ -42,6 +59,8 @@
 	<?php wp_head() ?>
 
 	<style type = "text/css"> 
+		@import url('<?php echo $stylesheet_ref['heading_typeface']?>');
+
 		body {
 			<?php if ($stylesheet_ref['background_image']): ?>
 				background-image: url(<?php echo $stylesheet_ref['background_image']; ?>);
@@ -69,10 +88,12 @@
 		}
 
 		h1, h2 {
+			font-family: <?php echo $stylesheet_ref['heading_typeface_family_name'] ?> !important;
 			color: <?php echo $stylesheet_ref['heading_colour']; ?>; 
 		}
 
 		label, h3, h4, h5, h6 {
+			font-family: <?php echo $stylesheet_ref['heading_typeface_family_name'] ?>;
 			color: <?php echo $stylesheet_ref['sub_heading_colour']; ?>; 
 		}
 
@@ -91,3 +112,4 @@
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
 	<main>
+		<?php echo $changes_made; ?>

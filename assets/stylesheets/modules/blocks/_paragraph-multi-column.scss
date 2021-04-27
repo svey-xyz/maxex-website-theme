@@ -52,6 +52,10 @@
 			.read-more {
 				cursor: pointer;
 				text-align: center;
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 
 			.collapsible-content {

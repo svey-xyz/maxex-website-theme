@@ -1,8 +1,28 @@
 <?php
 	$heading = get_sub_field('heading');
-	$button_text = get_sub_field('button') ? get_sub_field('button_text') : null;
-	$button_link = get_sub_field('button') ? get_sub_field('button_link') : null;
+	$buttons = array();
 	$gallery = get_sub_field('gallery');
+
+	$i = 0;
+	if (have_rows('buttons')):
+		while ( have_rows('buttons')):
+			the_row();
+			$buttons[$i]['text'] = get_sub_field('button_text');
+			$buttons[$i]['link'] = get_sub_field('button_link');
+
+			$buttons[$i]['accent_colour'] = get_sub_field('accent_colour');
+			$buttons[$i]['background_colour'] = get_sub_field('background_colour');
+			$buttons[$i]['background_opacity'] = get_sub_field('background_opacity');
+
+			$i++;
+		endwhile;
+	endif;
+
+	
+	// $buttons[0]['has'] = get_sub_field('button_one');
+	// $button_text = get_sub_field('button') ? get_sub_field('button_text') : null;
+	// $button_link = get_sub_field('button') ? get_sub_field('button_link') : null;
+	
 ?>
 
 <section id="<?php echo theme_block_handle() . '-' . get_row_index() ?>" class="block <?php echo theme_block_handle() ?>">
@@ -17,13 +37,26 @@
 						</div>
 						
 					</div>
-					<?php if ($button_text): ?>
-						<div class="overlay-button">
-							<p class="smooth-scroll-to" scroll-loc="<?php echo $button_link; ?>"><?php echo $button_text; ?></p>
+					<div class="bottom-half-overlay">
+						<div class="buttons-container">
+						<?php
+							if ($buttons):
+								foreach ($buttons as $button):
+						
+						?>
+							<div border-color: <?php echo $button['accent_colour']?>;" class="overlay-button">
+								<p style="color: <?php echo $button['accent_colour']?>;" class="smooth-scroll-to" scroll-loc="<?php echo $button['link']; ?>"><?php echo $button['text']; ?></p>
+								<div style="background-color: <?php echo $button['background_colour']?>; opacity: <?php echo $button['background_opacity']?>;" class="button-cover"></div>
+							</div>
+
+						<?php
+								endforeach;
+							endif;
+						?>
 						</div>
-					<?php endif; ?>
-					
-					<div class="overlay-arrow smooth-scroll-to" scroll-loc="<?php echo $button_link; ?>"></div>
+						
+						<div class="overlay-arrow smooth-scroll-to" scroll-loc="<?php echo $button_link; ?>"></div>
+					</div>
 
 
 		</div>

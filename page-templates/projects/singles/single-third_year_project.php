@@ -49,7 +49,7 @@
 
 
 	<div class="full-width-wrapper">
-		<div class="max-width-container block">
+		<div class="max-width-container project-nav-section block">
 			<?php
 
 			$thirdYearProjectsQuery = get_posts(array(
@@ -88,7 +88,7 @@
 			if($next_post):
 				$next_student = get_field('student_name', $next_post);
 			?>
-				<a style="float:right;"rel="prev" href="<?php echo get_permalink($next_post); ?>" title="<?php echo $next_student?>" class="third-year-project-nav">
+				<a rel="prev" href="<?php echo get_permalink($next_post); ?>" title="<?php echo $next_student?>" class="third-year-project-nav right">
 					Next Project - <strong><?php echo $next_student; ?></strong>
 				</a>
 			<?php endif; ?>

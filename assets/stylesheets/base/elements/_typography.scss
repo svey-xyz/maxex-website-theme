@@ -48,7 +48,7 @@ h2 {
 }
 
 h3 {
-	font-size: 32px;
+	font-size: 24px;
 	// margin: 0 0 $gutter-half;
 	margin: 0;
 	padding: 0;
@@ -61,11 +61,11 @@ h3 {
 	
 	
 	@include media (">mobile") {
-		font-size: 36px;
+		font-size: 32px;
 	}
 	
 	@include media (">laptop") {
-		font-size: 50px;
+		font-size: 48px;
 	}
 }
 
@@ -100,7 +100,7 @@ p {
 a {
 	font-family: $sansserif;
 	// text-decoration: none;
-	// color: black;
+	color: $darkgrey;
 	margin: 0;
 	padding: 0;
 	transition: opacity $timing;

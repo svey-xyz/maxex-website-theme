@@ -9,11 +9,13 @@
 		while( have_rows('colours', 'option') ) {
 			the_row();
 
-			$background_colour = get_sub_field('header_background_colour');
-			$menu_colour = get_sub_field('menu_background_colour');
-			$text_colour = get_sub_field('menu_text_colour');
-			$white_icons = get_sub_field('use_white_icons') ? 'white-icons' : '';
-			$logo_colour = get_sub_field('use_white_icons') ? 'max_ex_logo_white' : 'max_ex_logo_colour';
+			$header_group = get_sub_field('main_header_styles');
+
+			$background_colour = $header_group['header_background_colour']; //#313d2c
+			$menu_colour = $header_group['menu_background_colour']; //#556353
+			$text_colour = $header_group['menu_text_colour'];
+			$white_icons = $header_group['use_white_icons'] ? 'white-icons' : '';
+			$logo_colour = $header_group['use_white_icons'] ? 'max_ex_logo_white' : 'max_ex_logo_colour';
 		}
 	 }
 

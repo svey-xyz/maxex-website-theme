@@ -856,7 +856,7 @@ h2 {
     h2 {
       font-size: 58px; } }
 h3 {
-  font-size: 32px;
+  font-size: 24px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -864,10 +864,10 @@ h3 {
   text-transform: uppercase; }
   @media (min-width: 641px) {
     h3 {
-      font-size: 36px; } }
+      font-size: 32px; } }
   @media (min-width: 1441px) {
     h3 {
-      font-size: 50px; } }
+      font-size: 48px; } }
 p {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
@@ -890,6 +890,7 @@ p {
 
 a {
   font-family: "Roboto", sans-serif;
+  color: #333333;
   margin: 0;
   padding: 0;
   transition: opacity 0.4s; }
@@ -1041,8 +1042,9 @@ b {
   font-size: 0;
   text-align: center; }
   .coloured-section .colour-block {
-    padding-top: 64px;
-    padding-bottom: 64px; }
+    padding-bottom: 64px;
+    word-break: break-word !important;
+    display: block; }
     .coloured-section .colour-block h3 {
       font-family: "Roboto", sans-serif;
       font-weight: 700; }
@@ -1053,7 +1055,15 @@ b {
       padding-top: 64px;
       font-size: 2rem;
       font-family: "Roboto", sans-serif;
-      font-weight: 500; }
+      font-weight: 500;
+      text-align: left;
+      word-break: keep-all;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+      -webkit-hyphens: unset;
+          -ms-hyphens: unset;
+              hyphens: unset; }
       @media (max-width: 1024px) {
         .coloured-section .colour-block h4 {
           font-size: 1.5rem;
@@ -1485,51 +1495,76 @@ b {
           @media (max-width: 1024px) {
             .hero-overlay .column .gallery-overlay .overlay-heading h3 {
               font-size: 1rem; } }
-      .hero-overlay .column .gallery-overlay .overlay-button {
-        margin-top: auto;
-        margin-bottom: 32px;
-        border: 1px solid #fff;
-        box-shadow: 0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 0px 5px -1px rgba(0, 0, 0, 0.06); }
-        .hero-overlay .column .gallery-overlay .overlay-button p {
+      .hero-overlay .column .gallery-overlay .bottom-half-overlay {
+        margin-top: auto; }
+        .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-flow: row wrap;
+                  flex-flow: row wrap; }
+          @media (max-width: 640px) {
+            .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container {
+              -webkit-flex-flow: column wrap;
+                      flex-flow: column wrap; } }
+          .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container .overlay-button {
+            margin: 16px;
+            margin-top: 0;
+            margin-bottom: 32px;
+            border: 1px solid;
+            border-color: #fff;
+            box-shadow: 0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 0px 5px -1px rgba(0, 0, 0, 0.06);
+            position: relative; }
+            .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container .overlay-button .button-cover {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              opacity: 0.5; }
+            .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container .overlay-button p {
+              position: relative;
+              z-index: 2;
+              opacity: 1 !important;
+              cursor: pointer;
+              font-size: 0.8rem;
+              margin: 0;
+              padding-left: 10.6666666667px;
+              padding-right: 10.6666666667px;
+              padding-top: 6.4px;
+              padding-bottom: 6.4px;
+              font-family: "Roboto", sans-serif;
+              text-align: center;
+              color: #fff;
+              text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 2px 2px 6px rgba(0, 0, 0, 0.1);
+              transition: all 0.5s; }
+              .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container .overlay-button p:hover {
+                -webkit-transform: scale(1.02);
+                        transform: scale(1.02); }
+              @media (max-width: 1024px) {
+                .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container .overlay-button p {
+                  font-size: 0.7rem; } }
+            .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container .overlay-button p:hover {
+              -webkit-text-decoration-color: white;
+                      text-decoration-color: white; }
+            @media (max-width: 1024px) {
+              .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container .overlay-button {
+                margin-bottom: 30px; } }
+        .hero-overlay .column .gallery-overlay .bottom-half-overlay .overlay-arrow {
+          margin: auto;
           cursor: pointer;
-          font-size: 1rem;
-          margin: 0;
-          padding-left: 16px;
-          padding-right: 16px;
-          padding-top: 8px;
-          padding-bottom: 8px;
-          font-family: "Roboto", sans-serif;
-          text-align: center;
-          color: #fff;
-          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 2px 2px 6px rgba(0, 0, 0, 0.1);
+          position: relative;
+          background-image: url("assets/images/icons/chevron.svg");
+          background-repeat: no-repeat;
+          border-radius: 100%;
+          height: 50px;
+          width: 50px;
+          background-size: 100%;
+          background-position: center;
+          background-size: contain;
           transition: all 0.5s; }
-          .hero-overlay .column .gallery-overlay .overlay-button p:hover {
-            -webkit-transform: scale(1.02);
-                    transform: scale(1.02); }
-          @media (max-width: 1024px) {
-            .hero-overlay .column .gallery-overlay .overlay-button p {
-              font-size: 0.8rem; } }
-        .hero-overlay .column .gallery-overlay .overlay-button p:hover {
-          -webkit-text-decoration-color: white;
-                  text-decoration-color: white; }
-        @media (max-width: 1024px) {
-          .hero-overlay .column .gallery-overlay .overlay-button {
-            margin-bottom: 30px; } }
-      .hero-overlay .column .gallery-overlay .overlay-arrow {
-        cursor: pointer;
-        position: relative;
-        background-image: url("assets/images/icons/chevron.svg");
-        background-repeat: no-repeat;
-        border-radius: 100%;
-        height: 50px;
-        width: 50px;
-        background-size: 100%;
-        background-position: center;
-        background-size: contain;
-        transition: all 0.5s; }
-        .hero-overlay .column .gallery-overlay .overlay-arrow:hover {
-          -webkit-transform: scale(1.2);
-                  transform: scale(1.2); }
+          .hero-overlay .column .gallery-overlay .bottom-half-overlay .overlay-arrow:hover {
+            -webkit-transform: scale(1.2);
+                    transform: scale(1.2); }
     .hero-overlay .column .gallery {
       width: 100%;
       display: inline-block;
@@ -1812,6 +1847,8 @@ b {
       .paragraph-multi-column .column .copy .read-more {
         cursor: pointer;
         text-align: center; }
+        .paragraph-multi-column .column .copy .read-more:hover {
+          text-decoration: underline; }
       .paragraph-multi-column .column .copy .collapsible-content {
         max-height: 0px;
         overflow: hidden; }
@@ -3336,15 +3373,16 @@ button.carousel-pagination-bullet {
     .third-year-header a h2 {
       font-family: "Roboto", sans-serif;
       letter-spacing: 5px;
-      font-size: 1.5rem;
+      font-size: 1.0rem;
       font-weight: 500;
       text-align: left;
       display: inline-block; }
       .third-year-header a h2:hover {
-        text-decoration: underline; }
+        text-decoration: none;
+        font-weight: 700; }
       @media (max-width: 1024px) {
         .third-year-header a h2 {
-          font-size: 1rem; } }
+          font-size: 0.8rem; } }
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -3777,31 +3815,56 @@ button.carousel-pagination-bullet {
 .third-year-project-layout .project-content {
   position: relative; }
 
-.third-year-project-layout .project-heading-section {
-  margin-top: -90px; }
-  @media (max-width: 1024px) {
-    .third-year-project-layout .project-heading-section {
-      margin-top: -30px; } }
+@media (max-width: 1024px) {
+  .third-year-project-layout .project-heading-section {
+    margin-top: -30px; } }
+
+.third-year-project-layout .project-heading-section .header-image {
+  height: auto; }
   .third-year-project-layout .project-heading-section .header-image picture {
-    display: -webkit-flex;
-    display: flex;
+    display: block;
     overflow: hidden;
     height: 100%;
     width: auto; }
-    @media (max-width: 1024px) {
-      .third-year-project-layout .project-heading-section .header-image picture {
-        display: block;
-        height: auto; } }
     .third-year-project-layout .project-heading-section .header-image picture img {
       max-height: 80vh;
       height: 100%;
       width: auto;
       margin: auto; }
-  .third-year-project-layout .project-heading-section h3 {
-    text-align: center; }
+      @media (max-width: 1024px) {
+        .third-year-project-layout .project-heading-section .header-image picture img {
+          max-height: none;
+          width: 100%;
+          height: auto; } }
+.third-year-project-layout .project-heading-section h3 {
+  text-align: center;
+  word-break: keep-all;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  -webkit-hyphens: unset;
+      -ms-hyphens: unset;
+          hyphens: unset; }
 
-.third-year-project-layout .third-year-project-nav {
-  font-size: 22px; }
+.third-year-project-layout .project-nav-section {
+  padding-bottom: 32px; }
+  @media (max-width: 1024px) {
+    .third-year-project-layout .project-nav-section {
+      padding-bottom: 64px; } }
+  .third-year-project-layout .project-nav-section .third-year-project-nav {
+    display: inline;
+    font-size: 18px; }
+    @media (max-width: 1024px) {
+      .third-year-project-layout .project-nav-section .third-year-project-nav {
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        margin-top: 32px;
+        position: relative;
+        text-align: center; } }
+    .third-year-project-layout .project-nav-section .third-year-project-nav.right {
+      position: absolute;
+      right: 0; }
 
 body {
   margin: 0;

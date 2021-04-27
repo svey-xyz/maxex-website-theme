@@ -17,7 +17,7 @@
 
 			// setup for masonry block
 			$masonry_items = array();
-			$id = 'masonry_gallery';
+			$id = 'masonry_gallery_thesis_project';
 			$overlay_enabled = false;
 			$handle = 'masonry-gallery';
 			$cover_enabled = true;

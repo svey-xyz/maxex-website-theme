@@ -10,7 +10,7 @@
 	.third-year-header {
 		position: sticky;
 		top: 0;
-		z-index: 10;
+		z-index: 11;
 	}
 
 </style>
@@ -28,18 +28,18 @@
 
 			// setup for masonry block
 			$masonry_items = array();
-			$id = 'masonry_gallery';
+			$id = 'masonry_gallery_third_year';
 			$overlay_enabled = false;
 			$handle = 'masonry-gallery';
 			$link_enabled = true;
-			$cover_enabled = false;
+			$cover_enabled = true;
 			
 			foreach ($thirdYearProjectsQuery as $project) {
-				setup_postdata( $project );
+				// setup_postdata( $project );
 				$item = array();
 
-				// $item['title'] = $project->post_title;
-				// $item['sub'] = get_field('student_name', $project);
+				$item['title'] = $project->post_title;
+				$item['sub'] = get_field('student_name', $project);
 				
 				$item['link'] = get_post_permalink($project);
 				$item['image'] = get_field('thumbnail', $project);
@@ -47,7 +47,7 @@
 				$masonry_items[] = $item;
 			}
 
-			wp_reset_postdata();
+			// wp_reset_postdata();
 
 			include( locate_template('template-parts/images/masonry-grid.php', false, false )); 
 
