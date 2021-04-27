@@ -36,12 +36,10 @@
 		}
 	}
 
+	// Set any values that were left blank on the sub style sheet with values from main style sheet
 	if ($sub_style_set) {
-		foreach ($main_stylesheet as $style => $value) {
-			
-			if (!$stylesheet_ref[$style]) {
-				$changes_made = $style;
-				
+		foreach ($main_stylesheet as $style => $value) {		
+			if (!$stylesheet_ref[$style]) {	
 				$stylesheet_ref[$style] = $value;
 			}
 		}
@@ -59,7 +57,34 @@
 	<?php wp_head() ?>
 
 	<style type = "text/css"> 
-		@import url('<?php echo $stylesheet_ref['heading_typeface']?>');
+
+		<?php
+			$test_var = '';
+			$typefaces = array();
+
+			foreach ($stylesheet_ref['typefaces'] as $typeface):
+				$font_type = $typeface['font_type'];
+
+				$typefaces[$font_type]['typeface_link'] = $typeface['typeface_link'];
+				$typefaces[$font_type]['font_family'] = $typeface['font_family'];
+// $test_var = 'made it';
+
+			// if (have_rows($stylesheet_ref['typefaces'])):
+			// 	$test_var = 'made it';
+			// 	while (have_rows($stylesheet_ref['typefaces'])):
+					
+			// 		the_row();
+			// 		$font_type = get_sub_field('font_type');
+			// 		echo $font_type;
+			// 		$typefaces[$font_type]['typeface_link'] = get_sub_field('typeface_link');
+			// 		$typefaces[$font_type]['font_family'] = get_sub_field('font_family');
+		?>
+				@import url('<?php echo $typefaces[$font_type]['typeface_link'] ?>');
+
+		<?php
+				endforeach;
+		?>
+		
 
 		body {
 			<?php if ($stylesheet_ref['background_image']): ?>
@@ -78,30 +103,34 @@
 		}
 
 		.accent-colour {
+			font-family: <?php echo $typefaces['paragraph']['font_family']; ?>;
 			background-color: <?php echo $stylesheet_ref['accent_colour']; ?>!important; 
 			color: <?php echo $stylesheet_ref['accent_text_colour']; ?>!important;
 			border-color: <?php echo $stylesheet_ref['accent_text_colour']; ?>!important;
 		}
 
 		.accent-text {
+			font-family: <?php echo $typefaces['paragraph']['font_family']; ?>;
 			color: <?php echo $stylesheet_ref['accent_text_colour']; ?>!important;
 		}
 
 		h1, h2 {
-			font-family: <?php echo $stylesheet_ref['heading_typeface_family_name'] ?> !important;
+			font-family: <?php echo $typefaces['heading']['font_family']; ?>;
 			color: <?php echo $stylesheet_ref['heading_colour']; ?>; 
 		}
 
 		label, h3, h4, h5, h6 {
-			font-family: <?php echo $stylesheet_ref['heading_typeface_family_name'] ?>;
+			font-family: <?php echo $typefaces['sub_heading']['font_family']; ?>;
 			color: <?php echo $stylesheet_ref['sub_heading_colour']; ?>; 
 		}
 
         p { 
+			font-family: <?php echo $typefaces['paragraph']['font_family']; ?>;
         	color: <?php echo $stylesheet_ref['paragraph_colour']; ?>; 
         }
 
 		a {
+			font-family: <?php echo $typefaces['paragraph']['font_family']; ?>;
 			color: <?php echo $stylesheet_ref['link_colour']; ?>; 
 		}
     </style> 
@@ -112,4 +141,4 @@
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
 	<main>
-		<?php echo $changes_made; ?>
+		<?php echo $test_var; ?>

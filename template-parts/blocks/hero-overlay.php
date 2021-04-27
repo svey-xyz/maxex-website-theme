@@ -1,5 +1,6 @@
 <?php
 	$heading = get_sub_field('heading');
+	$arrow_link = get_sub_field('arrow_link');
 	$buttons = array();
 	$gallery = get_sub_field('gallery');
 
@@ -55,7 +56,7 @@
 						?>
 						</div>
 						
-						<div class="overlay-arrow smooth-scroll-to" scroll-loc="<?php echo $button_link; ?>"></div>
+						<div class="overlay-arrow smooth-scroll-to" scroll-loc="<?php echo $arrow_link; ?>"></div>
 					</div>
 
 
