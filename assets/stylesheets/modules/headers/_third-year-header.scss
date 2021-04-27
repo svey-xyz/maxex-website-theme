@@ -3,13 +3,16 @@
 //
 
 .third-year-header {
+	background-color: #fff;
 	// padding-top: $padding;
-	padding-bottom: $gutter;
+	padding-bottom: $padding;
+	padding-top: $padding;
+	box-shadow: $shadow;
 	
-	@include media("<=tablet") {
-		padding-bottom: $gutter-mobile;
-		// padding-bottom: $gutter-mobile / 2;
-	}
+	// @include media("<=tablet") {
+	// 	padding-bottom: $gutter-mobile;
+	// 	// padding-bottom: $gutter-mobile / 2;
+	// }
 
 	a {
 		display: inline-block;

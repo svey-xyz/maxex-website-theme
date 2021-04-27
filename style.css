@@ -919,7 +919,7 @@ a {
         -webkit-transform: translateX(5px);
                 transform: translateX(5px); }
 
-em {
+b {
   font-weight: 700; }
 
 .copy a:not(.text-link) {
@@ -1460,7 +1460,7 @@ em {
       height: 100%;
       min-height: 100%;
       position: absolute;
-      z-index: 10;
+      z-index: 9;
       display: -webkit-flex;
       display: flex;
       -webkit-flex-flow: column nowrap;
@@ -1480,22 +1480,24 @@ em {
           text-align: center;
           color: #fff;
           text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 2px 2px 6px rgba(0, 0, 0, 0.1);
-          font-size: 1.5rem;
-          line-height: 2; }
+          font-size: 1.2rem;
+          line-height: 1.8; }
           @media (max-width: 1024px) {
             .hero-overlay .column .gallery-overlay .overlay-heading h3 {
               font-size: 1rem; } }
       .hero-overlay .column .gallery-overlay .overlay-button {
         margin-top: auto;
-        margin-bottom: 90px;
-        border: 2px solid #fff;
+        margin-bottom: 32px;
+        border: 1px solid #fff;
         box-shadow: 0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 0px 5px -1px rgba(0, 0, 0, 0.06); }
         .hero-overlay .column .gallery-overlay .overlay-button p {
+          cursor: pointer;
+          font-size: 1rem;
           margin: 0;
-          padding-left: 32px;
-          padding-right: 32px;
-          padding-top: 16px;
-          padding-bottom: 16px;
+          padding-left: 16px;
+          padding-right: 16px;
+          padding-top: 8px;
+          padding-bottom: 8px;
           font-family: "Roboto", sans-serif;
           text-align: center;
           color: #fff;
@@ -1507,13 +1509,14 @@ em {
           @media (max-width: 1024px) {
             .hero-overlay .column .gallery-overlay .overlay-button p {
               font-size: 0.8rem; } }
-        .hero-overlay .column .gallery-overlay .overlay-button a:hover {
+        .hero-overlay .column .gallery-overlay .overlay-button p:hover {
           -webkit-text-decoration-color: white;
                   text-decoration-color: white; }
         @media (max-width: 1024px) {
           .hero-overlay .column .gallery-overlay .overlay-button {
             margin-bottom: 30px; } }
       .hero-overlay .column .gallery-overlay .overlay-arrow {
+        cursor: pointer;
         position: relative;
         background-image: url("assets/images/icons/chevron.svg");
         background-repeat: no-repeat;
@@ -3324,10 +3327,10 @@ button.carousel-pagination-bullet {
                 margin: 0 auto; }
 
 .third-year-header {
-  padding-bottom: 90px; }
-  @media (max-width: 1024px) {
-    .third-year-header {
-      padding-bottom: 30px; } }
+  background-color: #fff;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  box-shadow: 0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 0px 5px -1px rgba(0, 0, 0, 0.06); }
   .third-year-header a {
     display: inline-block; }
     .third-year-header a h2 {
@@ -3796,6 +3799,9 @@ button.carousel-pagination-bullet {
       margin: auto; }
   .third-year-project-layout .project-heading-section h3 {
     text-align: center; }
+
+.third-year-project-layout .third-year-project-nav {
+  font-size: 22px; }
 
 body {
   margin: 0;

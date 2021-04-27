@@ -9,6 +9,7 @@
 // @codekit-append "app/blocks/video.js";
 // @codekit-append "app/blocks/readmore.js";
 // @codekit-append "app/blocks/masonry-gallery.js";
+// @codekit-append "app/blocks/smooth-scroll-to.js";
 
 // @codekit-append "app/progress-bar.js";
 // @codekit-append "app/form-verify.js";
@@ -239,6 +240,8 @@ $(document).on('click', '.read-more', function (event) {
 	var $tar = $(event.target);
 	var parentID = $tar.attr('block-parent');
 
+	console.log($tar)
+
 	if ($tar.hasClass('open')) {
 		$('#' + parentID + '-moreText').removeClass('open');
 		$tar.removeClass('open');
@@ -310,6 +313,19 @@ $(".pop-up-click ").on('click', function () {
 	$(popup_element).css({ 'opacity': '1', 'pointer-events': 'auto' });
 
 	page.style.overflow = 'hidden'; // disable scroll on page while popup is open
+});
+
+
+$(document).on('click', '.smooth-scroll-to', function (event) {
+	var $tar = $(event.target);
+	var destination = $tar.attr('scroll-loc');
+	console.log(destination);
+	let e = document.getElementById(destination);
+	e.scrollIntoView({
+		block: 'start',
+		behavior: 'smooth',
+		inline: 'start'
+	});
 });
 
 //

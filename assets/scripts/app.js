@@ -9,6 +9,7 @@
 // @codekit-append "app/blocks/video.js";
 // @codekit-append "app/blocks/readmore.js";
 // @codekit-append "app/blocks/masonry-gallery.js";
+// @codekit-append "app/blocks/smooth-scroll-to.js";
 
 // @codekit-append "app/progress-bar.js";
 // @codekit-append "app/form-verify.js";

@@ -20,8 +20,10 @@
 				?>
 					<div id="<?php echo $block_id . '-moreText'; ?>" class="collapsible-content"><?php echo $more_text; ?></div>
 
-					<p id="<?php $block_id . '-readMore'; ?>" block-parent="<?php echo $block_id; ?>" class="read-more">
-						Read More...
+					<p style="text-align: center;">
+						<em id="<?php $block_id . '-readMore'; ?>" block-parent="<?php echo $block_id; ?>" class="read-more">
+							Read More...
+						</em>
 					</p>
 				<?php endif; ?>
 

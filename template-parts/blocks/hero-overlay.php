@@ -19,17 +19,12 @@
 					</div>
 					<?php if ($button_text): ?>
 						<div class="overlay-button">
-							<a href="<?php echo $button_link; ?>"><p><?php echo $button_text; ?></p></a>
+							<p class="smooth-scroll-to" scroll-loc="<?php echo $button_link; ?>"><?php echo $button_text; ?></p>
 						</div>
 					<?php endif; ?>
+					
+					<div class="overlay-arrow smooth-scroll-to" scroll-loc="<?php echo $button_link; ?>"></div>
 
-					<?php if ($button_link): ?>
-						<a href="<?php echo $button_link; ?>">
-					<?php endif; ?>
-							<div class="overlay-arrow"></div>
-					<?php if ($button_link): ?>
-						</a>
-					<?php endif; ?>
 
 		</div>
        	<div class="gallery">

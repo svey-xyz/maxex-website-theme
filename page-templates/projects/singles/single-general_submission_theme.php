@@ -42,7 +42,7 @@
 			$student_name = get_field('student_name', $submission);
 			$year = get_field('student_year', $submission);
 
-			$caption = '<em>' . $title . '</em>, ' . $student_name . ', ' . $year;
+			$caption = '<b><em>' . $title . '</em></b>, ' . $student_name . ', ' . $year;
 
 			if (have_rows('submission', $submission)) {
 				while (have_rows('submission', $submission)) {

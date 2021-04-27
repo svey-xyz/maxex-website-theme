@@ -6,12 +6,21 @@
 	
 ?>
 
+<style type = "text/css"> 
+	.third-year-header {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+	}
+
+</style>
+
 <div class="full-width-wrapper">
 	<div class="max-width-container">
 							
 		<div id="content-marker"></div>
 		<?php
-			$thesisProjectsQuery = get_posts(array(
+			$thirdYearProjectsQuery = get_posts(array(
 				'post_type' => 'third_year_project',
 				'post_status' => 'publish',
 				'posts_per_page' => -1
@@ -25,7 +34,8 @@
 			$link_enabled = true;
 			$cover_enabled = false;
 			
-			foreach ($thesisProjectsQuery as $project) {
+			foreach ($thirdYearProjectsQuery as $project) {
+				setup_postdata( $project );
 				$item = array();
 
 				// $item['title'] = $project->post_title;
@@ -36,6 +46,8 @@
 
 				$masonry_items[] = $item;
 			}
+
+			wp_reset_postdata();
 
 			include( locate_template('template-parts/images/masonry-grid.php', false, false )); 
 

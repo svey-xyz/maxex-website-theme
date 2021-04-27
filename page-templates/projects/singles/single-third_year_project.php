@@ -14,6 +14,11 @@
 		padding-bottom: 100px;
 	}
 
+	.third-year-header {
+		padding-bottom: 55px;
+		padding-top: 55px;
+		box-shadow: none;
+	}
 </style>
 
 <article class="third-year-project-layout">
@@ -39,7 +44,56 @@
 		<!-- Handle flexible content -->
 		<?php get_template_part('template-parts/blocks/blocks'); ?>
 	</div>
-	
+	<p>
+
+
+
+	<div class="full-width-wrapper">
+		<div class="max-width-container block">
+			<?php
+
+			$thirdYearProjectsQuery = get_posts(array(
+				'post_type' => 'third_year_project',
+				'post_status' => 'publish',
+				'posts_per_page' => -1
+			));
+
+			$prev_post;
+			$next_post;
+			$my_ID = get_the_ID();
+			$i = 0;
+
+			foreach ($thirdYearProjectsQuery as $project) {
+				if ($project->ID == $my_ID) {
+					//add checks for start and end of array
+					$next_post = $thirdYearProjectsQuery[$i + 1]->ID;
+					$prev_post = $thirdYearProjectsQuery[$i - 1]->ID;
+
+					break;
+				}
+				$i += 1;
+			}
+
+			if($prev_post):
+				$prev_student = get_field('student_name', $prev_post);
+			?>
+				<a rel="prev" href="<?php echo get_permalink($prev_post); ?>" title="<?php echo $prev_student?>" class="third-year-project-nav">
+					Previous Project - <strong><?php echo $prev_student; ?></strong>
+				</a>
+
+			<?php
+			endif;
+
+			
+			if($next_post):
+				$next_student = get_field('student_name', $next_post);
+			?>
+				<a style="float:right;"rel="prev" href="<?php echo get_permalink($next_post); ?>" title="<?php echo $next_student?>" class="third-year-project-nav">
+					Next Project - <strong><?php echo $next_student; ?></strong>
+				</a>
+			<?php endif; ?>
+		</div>
+	</div>
 </article>
 
 <?php

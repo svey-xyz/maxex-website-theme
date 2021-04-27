@@ -332,6 +332,9 @@ function project_types_redirect() {
 	global $project_types;
 	foreach($project_types as $project_type) {
 		if (get_post_type($post) == $project_type && is_single()) {
+			// $prev_post = get_previous_post();
+			// $next_post = get_next_post();
+			// $current_post = get_post();
 			include( get_template_directory() . '/page-templates/projects/singles/single-' . $project_type . '.php' );
 			exit;
 		}
