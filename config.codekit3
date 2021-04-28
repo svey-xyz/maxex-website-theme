@@ -1004,6 +1004,20 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/stylesheets\/layouts\/pages\/_archives-layout.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_archives-layout.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/stylesheets\/layouts\/pages\/_contact-layout.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1018,7 +1032,7 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/assets\/stylesheets\/layouts\/pages\/_projects-layout.scss" : {
+    "\/assets\/stylesheets\/layouts\/pages\/_single-general_submission.scss" : {
       "aP" : 1,
       "bl" : 0,
       "dP" : 10,
@@ -1026,13 +1040,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_projects-layout.css",
+      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_single-general_submission.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
     },
-    "\/assets\/stylesheets\/layouts\/pages\/_rougher-films-layout.scss" : {
+    "\/assets\/stylesheets\/layouts\/pages\/_single-rougher_films.scss" : {
       "aP" : 1,
       "bl" : 0,
       "dP" : 10,
@@ -1040,7 +1054,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_rougher-films-layout.css",
+      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_single-rougher_films.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1060,7 +1074,7 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/assets\/stylesheets\/layouts\/pages\/_third-year-projects-layout.scss" : {
+    "\/assets\/stylesheets\/layouts\/pages\/_single-third_year_project.scss" : {
       "aP" : 1,
       "bl" : 0,
       "dP" : 10,
@@ -1068,7 +1082,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_third-year-projects-layout.css",
+      "oAP" : "\/assets\/stylesheets\/layouts\/pages\/_single-third_year_project.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1158,48 +1172,6 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/assets\/stylesheets\/modules\/blocks\/_event-listing.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_event-listing.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/stylesheets\/modules\/blocks\/_exhibition.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_exhibition.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/stylesheets\/modules\/blocks\/_featured-post.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_featured-post.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
     "\/assets\/stylesheets\/modules\/blocks\/_full-width-gallery.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1223,20 +1195,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_full-width-image.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/stylesheets\/modules\/blocks\/_hero-inner.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_hero-inner.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1340,20 +1298,6 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/assets\/stylesheets\/modules\/blocks\/_square-image-gallery.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_square-image-gallery.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
     "\/assets\/stylesheets\/modules\/blocks\/_thumbnail-page-navigation.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1377,6 +1321,76 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/stylesheets\/modules\/blocks\/_video.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/stylesheets\/modules\/blocks\/old\/_event-listing.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/old\/_event-listing.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/stylesheets\/modules\/blocks\/old\/_exhibition.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/old\/_exhibition.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/stylesheets\/modules\/blocks\/old\/_featured-post.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/old\/_featured-post.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/stylesheets\/modules\/blocks\/old\/_hero-inner.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/old\/_hero-inner.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/stylesheets\/modules\/blocks\/old\/_square-image-gallery.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/stylesheets\/modules\/blocks\/old\/_square-image-gallery.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1882,14 +1896,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-templates\/projects\/archives\/archive-third_year_project.php",
-      "oF" : 0
-    },
-    "\/page-templates\/projects\/archives\/general-submissions-years.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-templates\/projects\/archives\/general-submissions-years.php",
       "oF" : 0
     },
     "\/page-templates\/projects\/singles\/single-general_submission_theme.php" : {

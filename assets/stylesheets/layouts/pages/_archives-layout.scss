@@ -1,0 +1,28 @@
+// 
+// project layout
+// 
+
+.grid-sizer {
+	width: 2%;
+}
+
+.project-content {
+	position: relative;
+}
+
+.project-title-section {
+	h2 {
+		padding-bottom: $padding;
+
+		text-align: center;
+		display: block;
+		// font-weight: 500;
+	}
+
+	h3 {
+
+		text-align: center;
+		display: block;
+		font-size: 1.2rem;
+	}
+}

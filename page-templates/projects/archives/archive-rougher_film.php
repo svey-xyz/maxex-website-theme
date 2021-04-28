@@ -33,8 +33,9 @@
 				} ?>
 
 				<div class="film-attribution">
-					<p class="student"><em><?php echo $student_name . "</em>, " . $student_year; ?></p>
 					<p class="film-title"><?php echo $film_title; ?> </p>
+					<p class="student"><em><?php echo $student_name . "</em>, " . $student_year; ?></p>
+					
 				</div>
 			</div>
 

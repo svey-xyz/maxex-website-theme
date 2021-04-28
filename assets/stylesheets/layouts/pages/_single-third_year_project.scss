@@ -72,6 +72,7 @@
 	}
 
 	.project-nav-section {
+		position: relative;
 		padding-bottom: $padding;
 
 		@include media("<=tablet") {
@@ -81,7 +82,8 @@
 		.third-year-project-nav {
 			display: inline;
 			font-size: 18px;
-
+			position: absolute;
+			left: 0;
 
 			@include media("<=tablet") {
 				font-size: 16px;
@@ -93,8 +95,12 @@
 			}
 
 			&.right {
-				position: absolute;
+				left: auto;
 				right: 0;
+			}
+
+			p {
+				margin: 0;
 			}
 		}
 	}

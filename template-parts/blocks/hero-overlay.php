@@ -46,7 +46,20 @@
 						
 						?>
 							<div class="overlay-button">
-								<p style="color: <?php echo $button['accent_colour']?>;" class="smooth-scroll-to" scroll-loc="<?php echo $button['link']; ?>"><?php echo $button['text']; ?></p>
+								
+								
+								<?php if($button['link'][0] == '#'): ?>
+									<p style="color: <?php echo $button['accent_colour']?>;" class="smooth-scroll-to" scroll-loc="<?php echo $button['link']; ?>">
+										<?php echo $button['text']; ?>
+									</p>
+								<?php else: ?>
+									<a target="_blank" href="<?php echo $button['link']; ?>">
+										<p style="color: <?php echo $button['accent_colour']?>;">
+											<?php echo $button['text']; ?>
+										</p>
+									</a>
+								<?php endif; ?>
+								</a>
 								<div style="background-color: <?php echo $button['background_colour']?>; opacity: <?php echo $button['background_opacity']?>;" class="button-cover"></div>
 							</div>
 

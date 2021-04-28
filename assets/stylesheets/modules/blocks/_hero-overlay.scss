@@ -68,6 +68,7 @@
 					}
 
 					.overlay-button {	
+						width: 180px;
 						margin: $padding;
 						margin-top: 0;
 						margin-bottom: $padding;
@@ -101,8 +102,8 @@
 							cursor: pointer;
 							font-size: 0.8rem;
 							margin: 0;
-							padding-left: $padding / 3;
-							padding-right: $padding / 3;
+							// padding-left: $padding / 3;
+							// padding-right: $padding / 3;
 							padding-top: $padding / 5;
 							padding-bottom: $padding / 5;
 							font-family: $sans-serif;
@@ -115,6 +116,10 @@
 							@include media("<=tablet") {
 								font-size: 0.7rem;
 							}
+						}
+
+						a {
+							text-decoration: none;
 						}
 
 						p:hover {

@@ -323,7 +323,7 @@ $(document).on('click', '.smooth-scroll-to', function (event) {
 	let e = document.getElementById(destination);
 
 	$('html, body').animate({
-		scrollTop: $("#" + destination).offset().top
+		scrollTop: $(destination).offset().top
 	}, 800);
 
 	// e.scrollIntoView({

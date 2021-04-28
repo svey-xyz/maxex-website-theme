@@ -15,8 +15,6 @@
 	}
 
 	.third-year-header {
-		padding-bottom: 55px;
-		padding-top: 55px;
 		box-shadow: none;
 	}
 </style>
@@ -78,7 +76,7 @@
 				$prev_student = get_field('student_name', $prev_post);
 			?>
 				<a rel="prev" href="<?php echo get_permalink($prev_post); ?>" title="<?php echo $prev_student?>" class="third-year-project-nav">
-					Previous Project - <strong><?php echo $prev_student; ?></strong>
+					<p>Previous Project - <strong><?php echo $prev_student; ?></strong></p>
 				</a>
 
 			<?php
@@ -89,7 +87,7 @@
 				$next_student = get_field('student_name', $next_post);
 			?>
 				<a rel="prev" href="<?php echo get_permalink($next_post); ?>" title="<?php echo $next_student?>" class="third-year-project-nav right">
-					Next Project - <strong><?php echo $next_student; ?></strong>
+					<p>Next Project - <strong><?php echo $next_student; ?></strong></p>
 				</a>
 			<?php endif; ?>
 		</div>
