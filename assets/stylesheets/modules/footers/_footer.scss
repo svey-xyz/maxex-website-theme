@@ -24,13 +24,25 @@
 				.logo-nav {
 					display: flex;
 
-					@include media("<tablet") {
+					img {
+						margin: 0;
+
+						padding-right: $padding;
+						padding-left: 0;
+
+						@include media("<=tablet") {
+							padding-right: $padding / 2;
+							padding-left: $padding / 2;
+						}
+					}
+
+					@include media("<=tablet") {
 						justify-content: center;
 						align-items: center;
 					}
 				}
 				
-				@include media("<tablet") {
+				@include media("<=tablet") {
 					display: block;
 					width: 100%;
 					text-align: center;
@@ -40,7 +52,7 @@
 			&.sites{
 				width: 50%;
 				
-				@include media("<tablet") {
+				@include media("<=tablet") {
 					display: block;
 					width: 100%;
 				}
@@ -71,7 +83,7 @@
 			padding-bottom: $gutter;
 			right: 0;
 			
-			@include media(">=tablet") {
+			@include media(">tablet") {
 			
 				&:nth-child(1){
 					// width: 80%;
@@ -109,6 +121,11 @@
 					display: block;
 					font-size: 12px;
 					transition: $timing;
+
+					@include media("<=tablet") {
+						padding-right: $padding / 2;
+						padding-left: $padding / 2;
+					}
 					
 					&:hover{
 						// color: $midgrey;

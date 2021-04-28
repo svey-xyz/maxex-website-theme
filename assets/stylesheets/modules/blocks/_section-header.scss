@@ -12,6 +12,10 @@
 		flex-flow: row nowrap;
 
 		font-size: 0;
+
+		@include media("<=tablet") {
+			flex-flow: column nowrap;
+		}
 		
 		&.left {
 			.column {
@@ -90,6 +94,7 @@
 			vertical-align: top;
 			
 			@include media("<=tablet") {
+				display: block;
 				width: 100%;
 				padding-left: 0 !important;
 				padding-right: 0 !important;
