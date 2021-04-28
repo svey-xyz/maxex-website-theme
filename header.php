@@ -103,34 +103,31 @@
 		}
 
 		.accent-colour {
-			font-family: <?php echo $typefaces['paragraph']['font_family']; ?>;
 			background-color: <?php echo $stylesheet_ref['accent_colour']; ?>!important; 
 			color: <?php echo $stylesheet_ref['accent_text_colour']; ?>!important;
 			border-color: <?php echo $stylesheet_ref['accent_text_colour']; ?>!important;
 		}
 
 		.accent-text {
-			font-family: <?php echo $typefaces['paragraph']['font_family']; ?>;
 			color: <?php echo $stylesheet_ref['accent_text_colour']; ?>!important;
 		}
 
 		h1, h2 {
-			font-family: <?php echo $typefaces['heading']['font_family']; ?>;
+			font-family: <?php echo $typefaces['heading']['font_family']; ?> !important;
 			color: <?php echo $stylesheet_ref['heading_colour']; ?>; 
 		}
 
 		label, h3, h4, h5, h6 {
-			font-family: <?php echo $typefaces['sub_heading']['font_family']; ?>;
+			font-family: <?php echo $typefaces['sub_heading']['font_family']; ?> !important;
 			color: <?php echo $stylesheet_ref['sub_heading_colour']; ?>; 
 		}
 
         p { 
-			font-family: <?php echo $typefaces['paragraph']['font_family']; ?>;
+			font-family: <?php echo $typefaces['paragraph']['font_family']; ?> !important;
         	color: <?php echo $stylesheet_ref['paragraph_colour']; ?>; 
         }
 
 		a {
-			font-family: <?php echo $typefaces['paragraph']['font_family']; ?>;
 			color: <?php echo $stylesheet_ref['link_colour']; ?>; 
 		}
     </style> 

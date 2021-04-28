@@ -1080,9 +1080,16 @@ b {
         margin: 0 auto; }
 
 .embed .embed-container {
+  display: block;
   width: 100%;
   margin: auto;
   max-width: 1000px; }
+  .embed .embed-container .iframe-wrapper {
+    display: block;
+    margin: auto; }
+    .embed .embed-container .iframe-wrapper iframe {
+      display: block;
+      margin: auto; }
 
 .event-listing {
   margin: 0 45px 45px; }
@@ -1507,13 +1514,15 @@ b {
               -webkit-flex-flow: column wrap;
                       flex-flow: column wrap; } }
           .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container .overlay-button {
-            margin: 16px;
+            margin: 32px;
             margin-top: 0;
             margin-bottom: 32px;
-            border: 1px solid;
-            border-color: #fff;
             box-shadow: 0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 0px 5px -1px rgba(0, 0, 0, 0.06);
-            position: relative; }
+            position: relative;
+            transition: all 0.5s; }
+            .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container .overlay-button:hover {
+              -webkit-transform: scale(1.02);
+                      transform: scale(1.02); }
             .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container .overlay-button .button-cover {
               position: absolute;
               top: 0;
@@ -1535,11 +1544,7 @@ b {
               font-family: "Roboto", sans-serif;
               text-align: center;
               color: #fff;
-              text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 2px 2px 6px rgba(0, 0, 0, 0.1);
-              transition: all 0.5s; }
-              .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container .overlay-button p:hover {
-                -webkit-transform: scale(1.02);
-                        transform: scale(1.02); }
+              text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 2px 2px 6px rgba(0, 0, 0, 0.1); }
               @media (max-width: 1024px) {
                 .hero-overlay .column .gallery-overlay .bottom-half-overlay .buttons-container .overlay-button p {
                   font-size: 0.7rem; } }

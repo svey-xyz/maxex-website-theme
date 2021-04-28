@@ -68,13 +68,20 @@
 					}
 
 					.overlay-button {	
-						margin: $padding / 2;
+						margin: $padding;
 						margin-top: 0;
 						margin-bottom: $padding;
-						border: 1px solid;
-						border-color: #fff;
+						// border: 1px solid;
+						// border-color: #fff;
 						box-shadow: $shadow;
 						position: relative;
+
+						transition: all 0.5s;
+
+						&:hover {
+							transform: scale(1.02);
+							// font-weight: 700;
+						}
 						
 
 						.button-cover {
@@ -103,12 +110,7 @@
 							color: #fff;
 							text-shadow: $text-shadow-strong;
 
-							transition: all 0.5s;
-
-							&:hover {
-								transform: scale(1.02);
-								// font-weight: 700;
-							}
+							
 
 							@include media("<=tablet") {
 								font-size: 0.7rem;
