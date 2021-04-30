@@ -1850,6 +1850,14 @@
       "oAP" : "\/page-templates\/contact-template.php",
       "oF" : 0
     },
+    "\/page-templates\/no-header.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-templates\/no-header.php",
+      "oF" : 0
+    },
     "\/page-templates\/page.php" : {
       "cB" : 0,
       "ft" : 8192,
